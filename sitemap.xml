@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://sdspag.github.io/blog/robots.txt</loc>
+        <lastmod>2013-06-24T22:14:46+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://sdspag.github.io/blog/</loc>
+        <lastmod>2013-06-24T22:34:25+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://sdspag.github.io/blog/blog/archives/</loc>
+        <lastmod>2013-06-24T22:34:25+05:30</lastmod>
+    </url>
+</urlset>
