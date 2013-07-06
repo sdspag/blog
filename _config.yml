@@ -3,11 +3,12 @@
 # ----------------------- #
 
 url: http://pag.sdslabs.co/blog
-title: Algorithms and beyond...
-subtitle: Algorithms and beyond...
-author: PAG
+title: PAG, IIT Roorkee
+head: Programming & Algorithms Group, IIT Roorkee
+author: Programming & Algorithms Group, Software Development Section, IIT Roorkee
 simple_search: http://google.com/search
 description:
+page.sidebar: false
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -27,7 +28,7 @@ email:
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /blog
-permalink: /blog/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 source: source
 destination: public/blog
 plugins: plugins
@@ -50,7 +51,7 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/facebook.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [asides/facebook.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -63,7 +64,7 @@ default_asides: [asides/recent_posts.html, asides/facebook.html, asides/github.h
 # ----------------------- #
 
 # Github repositories
-github_user: sdspag
+github_user:sdspag
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
@@ -98,7 +99,7 @@ google_analytics_tracking_id: UA-42005293-1
 
 # Facebook Like
 facebook_like: true
-facebook_user: groups/sdspag/
+facebook_user: sdspag
 
 #Add this button
 104 addthis_button: true

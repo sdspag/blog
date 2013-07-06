@@ -13,6 +13,9 @@ html {
 
 #content {
     background: #FEFFFB;
+    div {
+        padding-top: 0px;
+    }
 }
 
 body {
@@ -31,6 +34,11 @@ body > header {
         text-align: right;
         font-size: 2.2em;
     }
+
+    span img {
+        width: 30px;
+        vertical-align: middle;
+    }
 }
 
 body > header h1 a, body > header h1 a:visited, body > header h1 a:hover {
@@ -40,7 +48,7 @@ body > header h1 a, body > header h1 a:visited, body > header h1 a:hover {
 
 body > footer {
     background: $bgcolor;
-    color: $bgcolor;
+    color: #999;
     border: none;
     text-shadow: none;
 
