@@ -1,18 +1,30 @@
 ---
 layout: default
 ---
-
+ 
+<div>
 {% assign index = true %}
-{% for post in paginator.posts %}
-{% assign content = post.content %}
-    <article class="post">{% include article.html %}</article>
-{% endfor %}
-<nav id="pagenavi">
-    {% if paginator.previous_page %}
-        <a href="{{paginator.previous_page}}" class="prev">Prev</a>
-    {% endif %}
-    {% if paginator.next_page %}
-        <a href="{{paginator.next_page}}" class="next">Next</a>
-    {% endif %}
-    <div class="center"><a href="{{ root_url }}/blog/archives">Blog Archives</a></div>
-</nav>
+<article role="article">
+<div id="blog-archives">
+  {% for post in site.posts reverse %}
+
+  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% unless year == this_year %}
+    {% assign year = this_year %}
+    <h2>{{ year }}</h2>
+  {% endunless %}
+    <article>
+      {% include archive_post.html %}
+    </article>
+  {% endfor %}
+</div>
+</article>
+</div>
+
+<aside class="sidebar">
+  {% if site.blog_index_asides.size %}
+    {% include_array blog_index_asides %}
+  {% else %}
+    {% include_array default_asides %}
+  {% endif %}
+</aside>
