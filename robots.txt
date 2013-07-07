@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://sdspag.github.io/blog/sitemap.xml 
