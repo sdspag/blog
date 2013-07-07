@@ -82,9 +82,9 @@ Two years back we had a team in top 10, one year back we had a team in top 5 and
 
 #How we manage all this :#
 
-*Coderunner*
+*CodeRunner*
 
-We feel proud to host Insomnia as well as other coding events on an in-house developed open-source online judge [Coderunner](https://github.com/shashankkumar/CodeRunner)(developed by an alumni), which is similar to [Sphere Online Judge](http://spoj.pl). Currently it supports grading submissions in C, C++, Java, Python,  PHP and Perl with plans for adding more  languages in future.
+We feel proud to host Insomnia as well as other coding events on an in-house developed open-source online judge [CodeRunner](https://github.com/shashankkumar/CodeRunner)(developed by SDSLabs), which is similar to [Sphere Online Judge](http://spoj.pl). Currently it supports grading submissions in C, C++, Java, Python,  PHP and Perl with plans for adding more  languages in future.
 
 *CodeVillage*:
 
