@@ -4,11 +4,11 @@
   <title><![CDATA[PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog/"/>
-  <updated>2013-07-07T18:18:22+05:30</updated>
+  <updated>2013-07-07T22:50:01+05:30</updated>
   <id>http://pag.sdslabs.co/blog/</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
-    
+    <email><![CDATA[pagiitr@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
