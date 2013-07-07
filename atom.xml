@@ -4,7 +4,7 @@
   <title><![CDATA[PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog/"/>
-  <updated>2013-07-07T16:39:13+05:30</updated>
+  <updated>2013-07-07T17:05:49+05:30</updated>
   <id>http://pag.sdslabs.co/blog/</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -22,13 +22,13 @@
 
 <h1>About Us:</h1>
 
-<p>For those who are hearing about us for the first time &ndash; <a href="http://facebook.com/sdspag">PAG</a> is a group of enthusiastic and young programmers spanning across multiple departments, branches and years in IIT Roorkee operating under the aegis of Software Development Section with the aim of improving the algorithmic, mathematical and programatically problem solving capability of students of IIT Roorkee.</p>
+<p>For those who are hearing about us for the first time &ndash; PAG is a group of enthusiastic and young programmers spanning across multiple departments, branches and years in IIT Roorkee operating under the aegis of Software Development Section with the aim of improving the algorithmic, mathematical and programatically problem solving capability of students of IIT Roorkee.</p>
 
 <h1>Why Us:</h1>
 
 <p>There is already SDSLabs and IMG in IIT Roorkee, then what is the need of another programming focused student body on campus?</p>
 
-<p>While IMG is mainly concerned with maintaining web applications for the administration, and SDSlabs innovating and building applications for the web, mobile, network, and so on, there is a strong need of improving the algorithmic and competitive programming capability in the campus. How many people knew about ACM ICPC or TopCoder or CodeChef before <a href="http://facebook.com/sdspag">PAG</a> came around the corner?
+<p>While IMG is mainly concerned with maintaining web applications for the administration, and SDSlabs innovating and building applications for the web, mobile, network, and so on, there is a strong need of improving the algorithmic and competitive programming capability in the campus. How many people knew about ACM ICPC or TopCoder or CodeChef before PAG came around the corner?
 We caters to this very need. We are not just another programming group. The sole objective of this group is to develop a platform where passionate people can learn about algorithms/logic irrespective of their branch.</p>
 
 <h1>What We Do:</h1>
@@ -42,7 +42,7 @@ We caters to this very need. We are not just another programming group. The sole
 <p>We also maintain an active <a href="https://www.facebook.com/groups/sdspag/">Facebook group</a> where people can ask us any kind of programming/algorithm related doubt.
  We believe that Programming is not a zero-sum game. Teaching something to a fellow programmer doesn&rsquo;t take it away from us. We are happy to share what we can, because we are in it for the love of programming.</p>
 
-<p>This blog is another step in this direction where in we will be regularly posting about different algorithms and problems on various online judges. We are also coming up with the concept of <em>*Problem Of The Week</em> where in we will post a problem every week on our <a href="https://www.facebook.com/groups/sdspag/">Facebook group</a> group and allow people to discuss it and work on it for a week. One week later, before posting the next week’s problem, we will post an editorial about it on our blog. This way we can reach out to more people within and outside IITR.</p>
+<p>This blog is another step in this direction where in we will be regularly posting about different algorithms and problems on various online judges. We are also coming up with the concept of <strong>Problem Of The Week</strong> where in we will post a problem every week on our Facebook group group and allow people to discuss it and work on it for a week. One week later, before posting the next week’s problem, we will post an editorial about it on our blog. This way we can reach out to more people within and outside IITR.</p>
 
 <p>We are also launching a <a href="http://facebook.com/sdspag">Facebook</a> and a <a href="https://plus.google.com/117727978834269911101">Google+</a> page to share updates about various coding events, algorithms and programming techniques. Follow those pages so that you don&rsquo;t miss out on anything.</p>
 
@@ -50,7 +50,7 @@ We caters to this very need. We are not just another programming group. The sole
 
 <p>Every year we organize a variety of coding events which includes :</p>
 
-<p><em>Insomnia</em>: Every year during <a href="http://www.cognizance.org.in/">Cognizance</a>, the exclusive Annual Technical Festival of IIT Roorkee, the second largest of its kind in Asia; we organizes a fiercely contested online coding contest <a href=".%20An%20overnight%20contest,%20which%20boasts%20of%20a%20huge%20competition%20from%20the%20world%20over,%20including%20some%20of%20the%20best%20known%20names%20in%20the%20field%20of%20sport%20programming,%20consists%20problems%20of%20ACM%20style,%20with%20varying%20difficulties%20covering%20various%20topics%20of%20algorithmic%20programming%20like%20graph-theory,%20dynamic%20programming,%20sorting,%20game%20theory,%20computational%20geometry,%20flows%20-%20almost%20everything.%20And%20for%20the%20stats,%20the%20best%20team%20in%20India%20could%20solve%206%20out%20of%20the%20total%2014%20problems%20(Insomnia%20-%202013">Insomnia</a>.</p>
+<p><em>Insomnia</em>: Every year during <a href="http://www.cognizance.org.in/">Cognizance</a>, the exclusive Annual Technical Festival of IIT Roorkee, the second largest of its kind in Asia; we organizes a fiercely contested online coding contest Insomnia. An overnight contest, which boasts of a huge competition from the world over, including some of the best known names in the field of sport programming, consists problems of ACM style, with varying difficulties covering various topics of algorithmic programming like graph-theory, dynamic programming, sorting, game theory, computational geometry, flows &ndash; almost everything. And for the stats, the best team in India could solve 6 out of the total 14 problems (Insomnia &ndash; 2013).</p>
 
 <p>And the team works days and nights, for weeks to rigorously set and test the problems and solutions. We put our best efforts to generate an original and clean problem set, which our participants enjoy to solve. Take a look at last year’s <a href="http://ge.tt/5gEcv6l?c">problem set and editorial</a>.</p>
 
@@ -71,9 +71,9 @@ We caters to this very need. We are not just another programming group. The sole
 
 <h1>On Campus Activities:</h1>
 
-<p>In fact, Insomnia and Codematics are not the only coding contests that PAG organizes. Along with SDSLabs, we are actively involved in organizing several coding contests on intranet at IITR. Known as CodeBlitz, these contests are anticipated by the students at Roorkee who reward us with their active participation. It is one of the several attempts by <a href="http://facebook.com/sdspag">PAG</a> to improve the coding culture in R-land, and it makes us extremely happy to see our little efforts bear fruit.</p>
+<p>In fact, Insomnia and Codematics are not the only coding contests that PAG organizes. Along with SDSLabs, we are actively involved in organizing several coding contests on intranet at IITR. Known as CodeBlitz, these contests are anticipated by the students at Roorkee who reward us with their active participation. It is one of the several attempts by PAG to improve the coding culture in R-land, and it makes us extremely happy to see our little efforts bear fruit.</p>
 
-<p>We also hold lectures on algorithms for both our members and IITR junta (whose frequency will increase in the coming time). Several teams as well as individuals from <a href="http://facebook.com/sdspag">PAG</a> participate regularly in programming competitions on almost all popular online judges.</p>
+<p>We also hold lectures on algorithms for both our members and IITR junta (whose frequency will increase in the coming time). Several teams as well as individuals from PAG participate regularly in programming competitions on almost all popular online judges.</p>
 
 <p>Only few years back IITR was nowhere in the arena of ACM ICPC. There was a severe lack of competitive coding culture in the campus. Few seniors who saw the big picture around, and  with the ambition of improving the culture in campus started this group.</p>
 

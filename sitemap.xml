@@ -2,22 +2,22 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://pag.sdslabs.co/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot/</loc>
-        <lastmod>2013-07-07T16:35:11+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://pag.sdslabs.co/blog/about/</loc>
-        <lastmod>2013-07-06T23:38:04+05:30</lastmod>
+        <lastmod>2013-07-07T17:04:28+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog/robots.txt</loc>
-        <lastmod>2013-07-06T23:38:04+05:30</lastmod>
+        <lastmod>2013-07-07T10:33:41+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog/</loc>
-        <lastmod>2013-07-07T16:35:11+05:30</lastmod>
+        <lastmod>2013-07-07T17:04:28+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog/blog/archives/</loc>
-        <lastmod>2013-07-07T16:35:11+05:30</lastmod>
+        <lastmod>2013-07-07T17:04:28+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://pag.sdslabs.co/blog/about/</loc>
+        <lastmod>2013-07-07T10:33:41+05:30</lastmod>
     </url>
 </urlset>
