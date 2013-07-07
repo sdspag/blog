@@ -4,20 +4,20 @@
   <title><![CDATA[PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog/"/>
-  <updated>2013-07-07T22:50:01+05:30</updated>
+  <updated>2013-07-07T23:59:17+05:30</updated>
   <id>http://pag.sdslabs.co/blog/</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
-    <email><![CDATA[pagiitr@gmail.com]]></email>
+    
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://pag.sdslabs.co/blog/2013/07/07/hello-world/"/>
-    <updated>2013-07-07T18:00:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog/2013/07/07/hello-world</id>
+    <title type="html"><![CDATA[Algorithms and Beyond...]]></title>
+    <link href="http://pag.sdslabs.co/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot/"/>
+    <updated>2013-07-07T15:03:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot</id>
     <content type="html"><![CDATA[<p>Here, we present the official blog of one of the recent but very promising student bodies of <a href="http://www.iitr.ac.in/">IIT Roorkee</a> &ndash;  <strong>Programming and Algorithms Group</strong>, aka <a href="http://facebook.com/sdspag"><strong>PAG</strong></a>.</p>
 
 <h1>About Us:</h1>
@@ -28,8 +28,8 @@
 
 <p>There is already SDSLabs and IMG in IIT Roorkee, then what is the need of another programming focused student body on campus?</p>
 
-<p>While IMG is mainly concerned with maintaining web applications for the administration, and SDSlabs innovating and building applications for the web, mobile, network, and so on, there is a strong need of improving the algorithmic and competitive programming capability in the campus. How many people knew about ACM ICPC or TopCoder or CodeChef before PAG came around the corner?
-We caters to this very need. We are not just another programming group. The sole objective of this group is to develop a platform where passionate people can learn about algorithms/logic irrespective of their branch.</p>
+<p>While IMG is mainly concerned with maintaining web applications for the administration, and SDSlabs is innovating and building applications for the web, mobile, network, and so on, there is a strong need of improving the algorithmic and competitive programming capability in the campus. How many people knew about ACM ICPC or TopCoder or CodeChef before PAG came around the corner?
+We cater to this very need. We are not just another programming group. The sole objective of this group is to develop a platform where passionate people can learn about algorithms/logic irrespective of their branch.</p>
 
 <h1>What We Do:</h1>
 
@@ -57,13 +57,13 @@ We caters to this very need. We are not just another programming group. The sole
 <p>Here are some glimpses of the event night &ndash; those insomniac nights ensuring smooth run:</p>
 
 <p><em>Insomnia’11</em>:
-<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/11.jpg" width="870"></p>
+<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/11.JPG"></p>
 
 <p><em>Insomnia’12</em>:
-<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/12.jpg" width="870"></p>
+<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/12.jpg"></p>
 
 <p><em>Insomnia’13</em>:
-<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/13.jpg" width="870"></p>
+<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/13.JPG"></p>
 
 <p><em>Codematics</em>: For those who love solving mathematical problems and <strong>not just algorithms</strong> our team organizes Codematics. This event features problems just like Project Euler &ndash; Challenging mathematical/computer programming problems that  require more than just maths to solve. Along with maths one has to use his/her programming skills to win. And this too gets participation from all over the world.</p>
 
@@ -99,13 +99,13 @@ We caters to this very need. We are not just another programming group. The sole
 
 <p>After working a lot, we enjoy a lot!!! Ohh ya we have our share of fun too. We go on trips and walks, we play football on holidays and we don&rsquo;t miss out of any reason to have a chapo!!! “Awesome” is not sufficient to describe these. Take some glimpses here:</p>
 
-<p><img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/trip1.JPG" width="870">
-<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/trip2.JPG" width="870">
-<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/trip3.JPG" width="870"></p>
+<p><img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/trip1.JPG">
+<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/trip2.JPG">
+<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/trip3.JPG"></p>
 
 <p>Thats all for now. We will be back soon with a new blog discussing some algorithm or some maths trick  or some coding problem or sharing our own experience with programming.</p>
 
-<p><img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/grp1.jpg" width="870"></p>
+<p><img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/grp1.jpg"></p>
 ]]></content>
   </entry>
   
