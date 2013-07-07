@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[PAG, IIT Roorkee]]></title>
-  <link href="http://sdspag.github.io/blog/atom.xml" rel="self"/>
-  <link href="http://sdspag.github.io/blog/"/>
-  <updated>2013-07-07T16:29:44+05:30</updated>
-  <id>http://sdspag.github.io/blog/</id>
+  <link href="http://pag.sdslabs.co/blog/atom.xml" rel="self"/>
+  <link href="http://pag.sdslabs.co/blog/"/>
+  <updated>2013-07-07T16:36:43+05:30</updated>
+  <id>http://pag.sdslabs.co/blog/</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Algorithms and Beyond...]]></title>
-    <link href="http://sdspag.github.io/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot/"/>
+    <link href="http://pag.sdslabs.co/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot/"/>
     <updated>2013-07-07T15:03:00+05:30</updated>
-    <id>http://sdspag.github.io/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot</id>
+    <id>http://pag.sdslabs.co/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot</id>
     <content type="html"><![CDATA[<p>Here, we present the official blog of one of the recent but very promising student bodies of <a href="http://www.iitr.ac.in/">IIT Roorkee</a> &ndash;  <strong>Programming and Algorithms Group</strong>, aka <a href="http://facebook.com/sdspag"><strong>PAG</strong></a>.</p>
 
 <h1>About Us:</h1>
@@ -83,9 +83,9 @@ We caters to this very need. We are not just another programming group. The sole
 
 <h1>How we manage all this :</h1>
 
-<p><em>Coderunner</em></p>
+<p><em>CodeRunner</em></p>
 
-<p>We feel proud to host Insomnia as well as other coding events on an in-house developed open-source online judge <a href="https://github.com/shashankkumar/CodeRunner">Coderunner</a>(developed by an alumni), which is similar to <a href="http://spoj.pl">Sphere Online Judge</a>. Currently it supports grading submissions in C, C++, Java, Python,  PHP and Perl with plans for adding more  languages in future.</p>
+<p>We feel proud to host Insomnia as well as other coding events on an in-house developed open-source online judge <a href="https://github.com/shashankkumar/CodeRunner">CodeRunner</a>(developed by SDSLabs), which is similar to <a href="http://spoj.pl">Sphere Online Judge</a>. Currently it supports grading submissions in C, C++, Java, Python,  PHP and Perl with plans for adding more  languages in future.</p>
 
 <p><em>CodeVillage</em>:</p>
 
@@ -105,7 +105,7 @@ We caters to this very need. We are not just another programming group. The sole
 
 <p>Thats all for now. We will be back soon with a new blog discussing some algorithm or some maths trick  or some coding problem or sharing our own experience with programming.</p>
 
-<p><img src="http://sdspag.github.io/blog/images/posts/Hello-World/grp1.jpg"></p>
+<p><img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/grp1.jpg"></p>
 ]]></content>
   </entry>
   
