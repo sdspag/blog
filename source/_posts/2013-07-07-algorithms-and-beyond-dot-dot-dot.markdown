@@ -16,8 +16,8 @@ For those who are hearing about us for the first time - PAG is a group of enthus
 
 There is already SDSLabs and IMG in IIT Roorkee, then what is the need of another programming focused student body on campus?
 
-While IMG is mainly concerned with maintaining web applications for the administration, and SDSlabs innovating and building applications for the web, mobile, network, and so on, there is a strong need of improving the algorithmic and competitive programming capability in the campus. How many people knew about ACM ICPC or TopCoder or CodeChef before PAG came around the corner?
-We caters to this very need. We are not just another programming group. The sole objective of this group is to develop a platform where passionate people can learn about algorithms/logic irrespective of their branch.
+While IMG is mainly concerned with maintaining web applications for the administration, and SDSlabs is innovating and building applications for the web, mobile, network, and so on, there is a strong need of improving the algorithmic and competitive programming capability in the campus. How many people knew about ACM ICPC or TopCoder or CodeChef before PAG came around the corner?
+We cater to this very need. We are not just another programming group. The sole objective of this group is to develop a platform where passionate people can learn about algorithms/logic irrespective of their branch.
 
 
 #What We Do:#
