@@ -8,7 +8,7 @@ head: Programming & Algorithms Group, IIT Roorkee
 author: Programming & Algorithms Group, Software Development Section, IIT Roorkee
 simple_search: http://google.com/search
 description:
-page.sidebar: false
+page.sidebar: true
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -18,9 +18,8 @@ date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /blog/atom.xml
-subscribe_email:
+subscribe_email: pagiitr@gmail.co
 # RSS feeds can list your email address if you like
-email:
 
 # ----------------------- #
 #    Jekyll & Plugins     #
