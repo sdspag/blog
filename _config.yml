@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://pag.sdslabs.co/blog
+url: http://sdspag.github.io/blog
 title: PAG, IIT Roorkee
 head: Programming & Algorithms Group, IIT Roorkee
 author: Programming & Algorithms Group, Software Development Section, IIT Roorkee
@@ -64,7 +64,7 @@ default_asides: [asides/facebook.html, asides/github.html, asides/delicious.html
 # ----------------------- #
 
 # Github repositories
-github_user:sdspag
+github_user: sdspag
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
