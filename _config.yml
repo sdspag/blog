@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://pag.sdslabs.co/blog
+url: http://pag.sdslabs.co/blog/
 title: PAG, IIT Roorkee
 head: Programming & Algorithms Group, IIT Roorkee
 author: Programming & Algorithms Group, Software Development Section, IIT Roorkee
@@ -17,8 +17,8 @@ page.sidebar: true
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /blog/atom.xml
-subscribe_email: pagiitr@gmail.co
+subscribe_rss: http://feeds.feedburner.com/sdspag
+subscribe_email: pagiitr@gmail.com
 # RSS feeds can list your email address if you like
 
 # ----------------------- #
