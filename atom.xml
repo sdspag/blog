@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[PAG, IIT Roorkee]]></title>
-  <link href="http://pag.sdslabs.co/blog/atom.xml" rel="self"/>
-  <link href="http://pag.sdslabs.co/blog/"/>
-  <updated>2013-07-09T15:18:27+05:30</updated>
-  <id>http://pag.sdslabs.co/blog/</id>
+  <link href="http://pag.sdslabs.co/blog//atom.xml" rel="self"/>
+  <link href="http://pag.sdslabs.co/blog//"/>
+  <updated>2013-07-09T22:14:32+05:30</updated>
+  <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Algorithms and Beyond...]]></title>
-    <link href="http://pag.sdslabs.co/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot/"/>
+    <link href="http://pag.sdslabs.co/blog//2013/07/07/algorithms-and-beyond-dot-dot-dot/"/>
     <updated>2013-07-07T15:03:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot</id>
+    <id>http://pag.sdslabs.co/blog//2013/07/07/algorithms-and-beyond-dot-dot-dot</id>
     <content type="html"><![CDATA[<p>Here, we present the official blog of one of the recent but very promising student bodies of <a href="http://www.iitr.ac.in/">IIT Roorkee</a> &ndash;  <strong>Programming and Algorithms Group</strong>, aka <a href="http://facebook.com/sdspag"><strong>PAG</strong></a>.</p>
 
 <h1>About Us:</h1>
@@ -42,7 +42,7 @@ We cater to this very need. We are not just another programming group. The sole 
 <p>We also maintain an active <a href="https://www.facebook.com/groups/sdspag/">Facebook group</a> where people can ask us any kind of programming/algorithm related doubt.
  We believe that Programming is not a zero-sum game. Teaching something to a fellow programmer doesn&rsquo;t take it away from us. We are happy to share what we can, because we are in it for the love of programming.</p>
 
-<p>This blog is another step in this direction where in we will be regularly posting about different algorithms and problems on various online judges. We are also coming up with the concept of <strong>Problem Of The Week</strong> where in we will post a problem every week on our Facebook group group and allow people to discuss it and work on it for a week. One week later, before posting the next week’s problem, we will post an editorial about it on our blog. This way we can reach out to more people within and outside IITR.</p>
+<p>This blog is another step in this direction where in we will be regularly posting about different algorithms and problems on various online judges. We are also coming up with the concept of <strong>Problem Of The Week</strong> where in we will post a problem every week on our Facebook group and allow people to discuss it and work on it for a week. One week later, before posting the next week’s problem, we will post an editorial about it on our blog. This way we can reach out to more people within and outside IITR.</p>
 
 <p>We are also launching a <a href="http://facebook.com/sdspag">Facebook</a> and a <a href="https://plus.google.com/117727978834269911101">Google+</a> page to share updates about various coding events, algorithms and programming techniques. Follow those pages so that you don&rsquo;t miss out on anything.</p>
 
@@ -50,20 +50,20 @@ We cater to this very need. We are not just another programming group. The sole 
 
 <p>Every year we organize a variety of coding events which includes :</p>
 
-<p><em>Insomnia</em>: Every year during <a href="http://www.cognizance.org.in/">Cognizance</a>, the exclusive Annual Technical Festival of IIT Roorkee, the second largest of its kind in Asia; we organizes a fiercely contested online coding contest Insomnia. An overnight contest, which boasts of a huge competition from the world over, including some of the best known names in the field of sport programming, consists problems of ACM style, with varying difficulties covering various topics of algorithmic programming like graph-theory, dynamic programming, sorting, game theory, computational geometry, flows &ndash; almost everything. And for the stats, the best team in India could solve 6 out of the total 14 problems (Insomnia &ndash; 2013).</p>
+<p><em>Insomnia</em>: Every year during <a href="http://www.cognizance.org.in/">Cognizance</a>, the exclusive Annual Technical Festival of IIT Roorkee, the second largest of its kind in Asia; we organize a fiercely contested online coding contest Insomnia. An overnight contest, which boasts of a huge competition from the world over, including some of the best known names in the field of sport programming, consists problems of ACM style, with varying difficulties covering various topics of algorithmic programming like graph-theory, dynamic programming, sorting, game theory, computational geometry, flows &ndash; almost everything. And for the stats, the best team in India could solve only 6 out of the total 14 problems (Insomnia &ndash; 2013).</p>
 
 <p>And the team works days and nights, for weeks to rigorously set and test the problems and solutions. We put our best efforts to generate an original and clean problem set, which our participants enjoy to solve. Take a look at last year’s <a href="http://ge.tt/5gEcv6l?c">problem set and editorial</a>.</p>
 
 <p>Here are some glimpses of the event night &ndash; those insomniac nights ensuring smooth run:</p>
 
 <p><em>Insomnia’11</em>:
-<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/11.JPG"></p>
+<img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/11.JPG"></p>
 
 <p><em>Insomnia’12</em>:
-<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/12.jpg"></p>
+<img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/12.jpg"></p>
 
 <p><em>Insomnia’13</em>:
-<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/13.JPG"></p>
+<img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/13.JPG"></p>
 
 <p><em>Codematics</em>: For those who love solving mathematical problems and <strong>not just algorithms</strong> our team organizes Codematics. This event features problems just like Project Euler &ndash; Challenging mathematical/computer programming problems that  require more than just maths to solve. Along with maths one has to use his/her programming skills to win. And this too gets participation from all over the world.</p>
 
@@ -99,13 +99,13 @@ We cater to this very need. We are not just another programming group. The sole 
 
 <p>After working a lot, we enjoy a lot!!! Ohh ya we have our share of fun too. We go on trips and walks, we play football on holidays and we don&rsquo;t miss out of any reason to have a chapo!!! “Awesome” is not sufficient to describe these. Take some glimpses here:</p>
 
-<p><img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/trip1.JPG">
-<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/trip2.JPG">
-<img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/trip3.JPG"></p>
+<p><img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/trip1.JPG">
+<img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/trip2.JPG">
+<img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/trip3.JPG"></p>
 
 <p>Thats all for now. We will be back soon with a new blog discussing some algorithm or some maths trick  or some coding problem or sharing our own experience with programming.</p>
 
-<p><img src="http://pag.sdslabs.co/blog/images/posts/Hello-World/grp1.jpg"></p>
+<p><img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/grp1.jpg"></p>
 ]]></content>
   </entry>
   

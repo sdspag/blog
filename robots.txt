@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://pag.sdslabs.co/blog/sitemap.xml 
+Sitemap: http://pag.sdslabs.co/blog//sitemap.xml 
