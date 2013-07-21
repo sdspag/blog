@@ -4,7 +4,7 @@
   <title><![CDATA[PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-07-21T22:05:47+05:30</updated>
+  <updated>2013-07-21T22:14:07+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ RPSSL]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl/"/>
+    <updated>2013-07-21T22:10:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl</id>
+    <content type="html"><![CDATA[<p>Problem Link : <a href="http://www.spoj.com/problems/RPSSL/">http://www.spoj.com/problems/RPSSL/</a></p>
+
+<p>Prerequisites : <a href="http://en.wikipedia.org/wiki/Bayes'_theorem">Bayes Theorem</a></p>
+
+<p>Here comes the editorial for <a href="http://www.spoj.com/problems/RPSSL/">previous week’s question</a> as posted on <a href="https://www.facebook.com/groups/sdspag/">our group.</a></p>
+
+<p>Let the probability that Rajesh beats Sheldon in a single round be <script type="math/tex"> w </script> and let <script type="math/tex"> d </script> be the probability that a single round results in a draw and <script type="math/tex"> l </script> be the probability that Sheldon beats Rajesh in a single round. <script type="math/tex"> w ,\ d ,\ l </script> can be calculated simply as follows :</p>
+
+<script type="math/tex; mode=display">
+
+w = R_R*(S_L +S_{Sc}) + R_{Sc}*(S_P + S_L) + R_P*( S_R + S_{Sp}) + R_L*( S_{Sp}+ S_P) + R_{Sp}*( S_R + S_{Sc}) \\
+
+d =  (R_R*S_R) + (R_{Sc}*S_{Sc}) + (R_P*S_P) + (R_L*S_L)+ (R_{Sp}*S_{Sp}) \\
+              
+l=1-d-w\\         
+
+</script>
+
+<p>Now Rajesh will win the game if he wins two rounds first.
+The following are the different cases : </p>
+
+<script type="math/tex; mode=display">
+
+ww \: or \: wdw \: or \: dww \: or \: ddww \: or \: dwdw \: or \: wddw \: ... \\
+OR\\
+lww \: or \: wlw \: or \: lwdw \: or \: wdlw \: or \: wldw \: ... \\
+
+</script>
+
+<p>Thus we need to sum up all the above cases which result in
+victory for rajesh. Both the above series  can be simplified by using some maths tricks. (Refer to <a href="http://en.wikipedia.org/wiki/Arithmetico-geometric_sequence">Arithmetico-geometric series</a>.)</p>
+
+<p>The final expression is :</p>
+
+<script type="math/tex; mode=display">
+
+P = w*w*(1-d)-2 + w*w*2*(1-d)-3
+
+</script>
+
+<p><strong>Caution:</strong> Check for the cases where d=1.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Algorithms and Beyond...]]></title>

@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - PAG, IIT Roorkee</title>
+  <title>SPOJ RPSSL - PAG, IIT Roorkee</title>
   <meta name="author" content="Programming & Algorithms Group, Software Development Section, IIT Roorkee">
 
   
-  <meta name="description" content="Blog Archive 2013 SPOJ RPSSL
-Jul 21 2013 posted in Editorial, Probability, Question of the week, SPOJ Algorithms and Beyond&#8230;
-Jul 07 2013 &hellip;">
+  <meta name="description" content="Problem Link : http://www.spoj.com/problems/RPSSL/ Prerequisites : Bayes Theorem Here comes the editorial for previous week’s question as posted on &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Jul 07 2013 &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://pag.sdslabs.co/blog//blog/archives">
+  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://feeds.feedburner.com/sdspag" rel="alternate" title="PAG, IIT Roorkee" type="application/atom+xml">
@@ -73,53 +71,139 @@ Jul 07 2013 &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">SPOJ RPSSL</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-21T22:10:00+05:30" pubdate data-updated="true">Jul 21<span>st</span>, 2013</time>
+        <!-- 
+         | <a href="#disqus_thread">Comments</a>
+         -->
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>Problem Link : <a href="http://www.spoj.com/problems/RPSSL/">http://www.spoj.com/problems/RPSSL/</a></p>
 
-  
-  <h2>2013</h2>
+<p>Prerequisites : <a href="http://en.wikipedia.org/wiki/Bayes'_theorem">Bayes Theorem</a></p>
 
-<article>
-  
-<h1><a href="/blog/2013/07/21/spoj-rpssl/">SPOJ RPSSL</a></h1>
-<time datetime="2013-07-21T22:10:00+05:30" pubdate><span class='month'>Jul</span> <span class='day'>21</span> <span class='year'>2013</span></time>
+<p>Here comes the editorial for <a href="http://www.spoj.com/problems/RPSSL/">previous week’s question</a> as posted on <a href="https://www.facebook.com/groups/sdspag/">our group.</a></p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/probability/'>Probability</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a></span>
-</footer>
+<p>Let the probability that Rajesh beats Sheldon in a single round be <script type="math/tex"> w </script> and let <script type="math/tex"> d </script> be the probability that a single round results in a draw and <script type="math/tex"> l </script> be the probability that Sheldon beats Rajesh in a single round. <script type="math/tex"> w ,\ d ,\ l </script> can be calculated simply as follows :</p>
 
+<script type="math/tex; mode=display">
 
-</article>
+w = R_R*(S_L +S_{Sc}) + R_{Sc}*(S_P + S_L) + R_P*( S_R + S_{Sp}) + R_L*( S_{Sp}+ S_P) + R_{Sp}*( S_R + S_{Sc}) \\
 
+d =  (R_R*S_R) + (R_{Sc}*S_{Sc}) + (R_P*S_P) + (R_L*S_L)+ (R_{Sp}*S_{Sp}) \\
+              
+l=1-d-w\\         
 
+</script>
 
-<article>
-  
-<h1><a href="/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot/">Algorithms and Beyond&#8230;</a></h1>
-<time datetime="2013-07-07T15:03:00+05:30" pubdate><span class='month'>Jul</span> <span class='day'>07</span> <span class='year'>2013</span></time>
+<p>Now Rajesh will win the game if he wins two rounds first.
+The following are the different cases : </p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/blog/categories/hello-world/'>Hello World</a></span>
-</footer>
+<script type="math/tex; mode=display">
 
+ww \: or \: wdw \: or \: dww \: or \: ddww \: or \: dwdw \: or \: wddw \: ... \\
+OR\\
+lww \: or \: wlw \: or \: lwdw \: or \: wdlw \: or \: wldw \: ... \\
 
-</article>
+</script>
 
+<p>Thus we need to sum up all the above cases which result in
+victory for rajesh. Both the above series  can be simplified by using some maths tricks. (Refer to <a href="http://en.wikipedia.org/wiki/Arithmetico-geometric_sequence">Arithmetico-geometric series</a>.)</p>
+
+<p>The final expression is :</p>
+
+<script type="math/tex; mode=display">
+
+P = w*w*(1-d)-2 + w*w*2*(1-d)-3
+
+</script>
+
+<p><strong>Caution:</strong> Check for the cases where d=1.</p>
 </div>
 
-  
-</article>
 
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Programming & Algorithms Group, Software Development Section, IIT Roorkee</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-21T22:10:00+05:30" pubdate data-updated="true">Jul 21<span>st</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/probability/'>Probability</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
 </div>
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/07/07/algorithms-and-beyond-dot-dot-dot/" title="Previous Post: Algorithms and Beyond...">&laquo; Algorithms and Beyond...</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -171,7 +255,10 @@ Jul 07 2013 &hellip;">
       var disqus_shortname = 'pagblog';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl/';
+        var disqus_url = 'http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
