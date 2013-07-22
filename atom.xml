@@ -4,7 +4,7 @@
   <title><![CDATA[PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-07-21T22:18:32+05:30</updated>
+  <updated>2013-07-22T23:03:07+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -54,7 +54,7 @@ victory for rajesh. Both the above series  can be simplified by using some maths
 
 <script type="math/tex; mode=display">
 
-P = w*w*(1-d)-2 + w*w*2*(1-d)-3
+P = w*w*(1-d)^{-2} + 2*l*w*w*(1-d)^{-3}
 
 </script>
 
