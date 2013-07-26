@@ -77,7 +77,7 @@ Only few years back IITR was nowhere in the arena of ACM ICPC. There was a sever
 
 The founders of the group had a dream - *To produce an ACM world finalist team from IIT Roorkee*. This dream soon became reality.
 
-Two years back we had a team in top 10, one year back we had a team in top 5 and this year for the first time we have the team “The 65th Bit” from IITR that not only qualified for World Finals, ACM ICPC but also scored [best rank](http://ahmed-aly.com/ICPC.jsp) among all Indian teams and overall 61st rank, which is held in Russia this year. Only Bombay and Indore were the other IITs among the five Indian teams that qualified (IIIT-Hyderabad and Chennai Mathematical Institute being the other two).
+Two years back we had a team in top 10, one year back we had a team in top 5 and this year for the first time we have the team “The 65th Bit” from IITR that not only qualified for World Finals, ACM ICPC but also scored [best rank](http://ahmed-aly.com/ICPC.jsp) among all Indian teams and overall 60th rank, which is held in Russia this year. Only Bombay and Indore were the other IITs among the five Indian teams that qualified (IIIT-Hyderabad and Chennai Mathematical Institute being the other two).
 
 
 #How we manage all this :#
