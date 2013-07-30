@@ -41,7 +41,7 @@ Here are some useful references to help you:
 
 Here are some resources to make you familiar with the commonly used algorithms.
 
-[Courseera](https://www.coursera.org/course/algo)
+[Coursera](https://www.coursera.org/course/algo)
 
 [Stanford Open Class Room](http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=IntroToAlgorithms)
 
