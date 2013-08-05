@@ -4,7 +4,7 @@
   <title><![CDATA[Category: SPOJ | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/spoj/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-07-30T23:29:11+05:30</updated>
+  <updated>2013-08-05T15:29:41+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ MBALL]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/08/05/spoj-mball/"/>
+    <updated>2013-08-05T15:26:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/08/05/spoj-mball</id>
+    <content type="html"><![CDATA[<p><strong><a href="http://www.spoj.com/problems/MBALL/">Problem</a></strong> :
+Given the possible ways of scoring in a game, you neeed to find in how many ways can a given score be achieved.</p>
+
+<p><strong>Pre-requisites</strong> : <a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=dynProg&amp;module=Static">Dynamic Programming</a>(read DP)</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>The problem is quite simple. The different ways of scoring can be as follows:</p>
+
+<ul>
+  <li>safety: 2 points</li>
+  <li>field goal: 3 points</li>
+  <li>touchdown: 6 points</li>
+  <li>one-point conversion try after touchdown: 7 points</li>
+  <li>two-point conversion try after touchdown: 8 points</li>
+</ul>
+
+<p>We start by subtracting the smallest possible score ie 2 from the given score and reduce it to smaller instance of the same problem. This way we continue till we reach 0. Then carry out this step with 3,6,7and 8 as well.</p>
+
+<p>eg 10 points can be scored in following ways:</p>
+
+<ul>
+  <li>first 2 points and then scoring 8 points.
+    <ul>
+      <li>2 points can be scored in 1 way only and 8 points can be scored in following way:
+        <ul>
+          <li>first 2 points and then 6 points.</li>
+          <li>first 3 points and then 5 points.</li>
+          <li>first 4 points and then 4 points.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>first 3 points and then scoring 7 points.</li>
+  <li>first 4 points and then scoring 6 points.</li>
+  <li>first 5 points and then scoring 5 points.</li>
+</ul>
+
+<p>In each case we reduce the problem to a subproblem of the same type.</p>
+
+<p>Notice a pitfall here. Even if there is just one test case (say S=10 itself), We are doing the computation for various subproblems again and again. eg we calculate the number of ways of scoring 6 points when we are calculating the number of ways of scoring 8 points. And we are doing this calculation again when we try to find number of ways scoring 10 points. </p>
+
+<p>Basically we are solving the same sub problem again and again even when we have just one test case. Surely this method will timeeout. </p>
+
+<p>So what do we do? We use DP. DP means we save the result of various sub problems so that we do not have to calculate them again and again. In this case, we make an array called <em>result[N]</em> (and initialise with -1) in which we store the number of ways of achieving <em>i</em> score for all <em>i</em> varying from 2 to <em>N</em>. Also there is only one way of achieving score of ‘0’. So <em>result[0]</em>=1. Now when we need to calcualte the number of ways of achieving score <em>i</em>, we check the array. If it contains -1, we calculate the result and update the array entry else we use the value from the array.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SPOJ DQUERY]]></title>
