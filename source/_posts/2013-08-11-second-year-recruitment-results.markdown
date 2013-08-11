@@ -26,3 +26,4 @@ Here comes the result of Programming and Algorithms Group's second year recruitm
 *	Sandeep Pathry
 *	Satyam Vijay
 *	Ujjawal Mittal
+* 	Varun Syal
