@@ -6,7 +6,7 @@ comments: true
 categories: [Recruitments, Second Year] 
 ---
 
-Congratulations to everyone who made it to the group. We were extremely happy to see the response by second yearities. We got to interview some of the most talented coders in our campus and it was a wonderful experience for us and hopefully for them to. We had to reject people because of limited vacancies even though they were equally capable.
+Congratulations to everyone who made it to the group. We were extremely happy to see the response by second yearites. We got to interview some of the most talented coders in our campus and it was a wonderful experience for us and hopefully for them to. We had to reject people because of limited vacancies even though they were equally capable.
 
 Here comes the result of Programming and Algorithms Group's second year recruitment test : 
 
