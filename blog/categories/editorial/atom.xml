@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Editorial | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/editorial/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-08-21T00:31:49+05:30</updated>
+  <updated>2013-08-21T00:33:59+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -18,7 +18,7 @@
     <link href="http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor/"/>
     <updated>2013-08-21T00:29:00+05:30</updated>
     <id>http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor</id>
-    <content type="html"><![CDATA[<p>Problem :</p>
+    <content type="html"><![CDATA[<p><a href="http://www.spoj.com/problems/TREZOR/">Problem</a> :</p>
 
 <p>Given a 2-D Coordinate Plane, find how many points are visible from one point. Two persons are standing at two other points, and you need to find how many other points are visible to both, points visible to only one, and none.</p>
 
