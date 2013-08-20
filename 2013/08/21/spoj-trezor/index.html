@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Second Year Recruitment Results - PAG, IIT Roorkee</title>
+  <title>SPOJ-TREZOR - PAG, IIT Roorkee</title>
   <meta name="author" content="Programming & Algorithms Group, Software Development Section, IIT Roorkee">
 
   
-  <meta name="description" content="Congratulations to everyone who made it to the group. We were extremely happy to see the response by second yearites. We got to interview some of the &hellip;">
+  <meta name="description" content="Problem : Given a 2-D Coordinate Plane, find how many points are visible from one point. Two persons are standing at two other points, and you need &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/08/11/second-year-recruitment-results">
+  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://feeds.feedburner.com/sdspag" rel="alternate" title="PAG, IIT Roorkee" type="application/atom+xml">
@@ -74,7 +74,7 @@
 <article class="hentry" role="article">
   
   <header>
-      <h1 class="entry-title"><a href="/blog/2013/08/11/second-year-recruitment-results/">Second Year Recruitment Results</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/21/spoj-trezor/">SPOJ-TREZOR</a></h1>
     
       <p class="meta">
         
@@ -89,7 +89,7 @@
   
 
 
-<time datetime="2013-08-11T23:55:00+05:30" pubdate data-updated="true">Aug 11<span>th</span>, 2013</time>
+<time datetime="2013-08-21T00:29:00+05:30" pubdate data-updated="true">Aug 21<span>st</span>, 2013</time>
         <!-- 
          | <a href="#disqus_thread">Comments</a>
          -->
@@ -98,29 +98,19 @@
   </header>
 
 
-<div class="entry-content"><p>Congratulations to everyone who made it to the group. We were extremely happy to see the response by second yearites. We got to interview some of the most talented coders in our campus and it was a wonderful experience for us and hopefully for them too. We had to reject people only because of limited vacancies even though they were all equally capable.</p>
+<div class="entry-content"><p>Problem :</p>
 
-<p>Here comes the result of Programming and Algorithms Group’s second year recruitment test : </p>
+<p>Given a 2-D Coordinate Plane, find how many points are visible from one point. Two persons are standing at two other points, and you need to find how many other points are visible to both, points visible to only one, and none.</p>
 
-<ul>
-  <li>Aakshesh Doshi</li>
-  <li>Abhishek Kandoi</li>
-  <li>Akarsh Agarwal</li>
-  <li>Aman Kedia</li>
-  <li>Anubhav Bindlish</li>
-  <li>Bharat Gaind</li>
-  <li>Deepali Jain</li>
-  <li>Ishu goyal</li>
-  <li>Kshitij Bathla</li>
-  <li>Meghana Agrawal</li>
-  <li>Mehak Gupta</li>
-  <li>Priyanshu Seth</li>
-  <li>Rajat Jain</li>
-  <li>Sandeep Pathry</li>
-  <li>Satyam Vijay</li>
-  <li>Ujjawal Mittal</li>
-  <li>Varun Syal</li>
-</ul>
+<p>Explanation:</p>
+
+<p>For Simplicity consider one guard standing at <strong>(0,0)</strong> and rectangle of size <strong>L*(A+B+1)</strong> is present with corner points <strong>(1,0) (L,0) (1,A+B) (L,A+B)</strong> and other guard is standing at <strong>(0,A+B)</strong>.</p>
+
+<p>Lets discuss the solution to one guard. A point <strong>(X,Y)</strong> will be blocked by another point <strong>(X1,Y1)</strong> to the origin if the slopes of lines joining points are equal, i.e <strong>X / X1 = Y / Y1 = Z (Z &gt; 1)</strong>. That means <strong>X = X1 * Z</strong> and <strong>Y = Y1 * Z</strong>, which inturn means that <strong>X</strong> and <strong>Y</strong> are not coprimes (have a common factor). So for every horizontal row <strong>(i,Y)</strong> number of points visible to origin are number of <strong>i’s</strong> from <strong>1 to L</strong> that are coprime to <strong>Y</strong>.</p>
+
+<p>Similar is the situation to other guard, points of the form <strong>(i,Y)</strong> are visible if and only if <strong>‘i’</strong> is coprime to <strong>(A+B-Y)</strong>. and visible to both if <strong>‘i’</strong> is coprime to <strong>(A+B-Y)</strong> and <strong>Y</strong>, which means <strong>‘i’</strong> is coprime to <strong>(A+B-Y)*Y</strong>..</p>
+
+<p>Now the problem is reduced for a given <strong>Y</strong> , how many numbers from <strong>1 to L</strong> are coprime to <strong>Y</strong>. For this we can prime factorize <strong>Y</strong> and use inclusion and exclusion principle on primes to find the final answer. Total there can be at max 6 prime factors to <strong>Y</strong>, as the product of first six primes  &gt; 4000 = <strong>(A+B)</strong>. Now it takes <strong>2^N = (2^6) = 64</strong> steps for finding number of coprimes of each Y, so 3 * 64 for each horizontal row, so (3 * 64 * 4000) for all rows  = 768000 steps which comes under time limit.</p>
 </div>
 
 
@@ -143,12 +133,12 @@
   
 
 
-<time datetime="2013-08-11T23:55:00+05:30" pubdate data-updated="true">Aug 11<span>th</span>, 2013</time>
+<time datetime="2013-08-21T00:29:00+05:30" pubdate data-updated="true">Aug 21<span>st</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/blog/categories/recruitments/'>Recruitments</a>, <a class='category' href='/blog/blog/categories/second-year/'>Second Year</a>
+    <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the Week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a>
   
 </span>
 
@@ -157,7 +147,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/08/11/second-year-recruitment-results/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/08/11/second-year-recruitment-results/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -170,10 +160,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/08/05/spoj-mball/" title="Previous Post: SPOJ MBALL">&laquo; SPOJ MBALL</a>
+        <a class="basic-alignment left" href="/blog/2013/08/11/second-year-recruitment-results/" title="Previous Post: Second Year Recruitment Results">&laquo; Second Year Recruitment Results</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/08/21/spoj-trezor/" title="Next Post: SPOJ-TREZOR">SPOJ-TREZOR &raquo;</a>
       
     </p>
   </footer>
@@ -238,8 +226,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/08/11/second-year-recruitment-results/';
-        var disqus_url = 'http://pag.sdslabs.co/blog//2013/08/11/second-year-recruitment-results/';
+        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor/';
+        var disqus_url = 'http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor/';
         var disqus_script = 'embed.js';
       
     (function () {
