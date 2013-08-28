@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>SPOJ-TREZOR - PAG, IIT Roorkee</title>
+  <title>SPOJ NACCI - PAG, IIT Roorkee</title>
   <meta name="author" content="Programming & Algorithms Group, Software Development Section, IIT Roorkee">
 
   
-  <meta name="description" content="Problem : Given a 2-D Coordinate Plane, find how many points are visible from one point. Two persons are standing at two other points, and you need &hellip;">
+  <meta name="description" content="Prerequisites : Matrix Exponentation. Problem : Find f[M] such that if (M &gt; N) f[M] = sum(f[M - i]) for(i = 1 to N) else f[M] = M. Explaination : &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor">
+  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/08/28/spoj-nacci">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://feeds.feedburner.com/sdspag" rel="alternate" title="PAG, IIT Roorkee" type="application/atom+xml">
@@ -74,7 +74,7 @@
 <article class="hentry" role="article">
   
   <header>
-      <h1 class="entry-title"><a href="/blog/2013/08/21/spoj-trezor/">SPOJ-TREZOR</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/28/spoj-nacci/">SPOJ NACCI</a></h1>
     
       <p class="meta">
         
@@ -89,7 +89,7 @@
   
 
 
-<time datetime="2013-08-21T00:29:00+05:30" pubdate data-updated="true">Aug 21<span>st</span>, 2013</time>
+<time datetime="2013-08-28T20:00:00+05:30" pubdate data-updated="true">Aug 28<span>th</span>, 2013</time>
         <!-- 
          | <a href="#disqus_thread">Comments</a>
          -->
@@ -98,19 +98,184 @@
   </header>
 
 
-<div class="entry-content"><p><a href="http://www.spoj.com/problems/TREZOR/">Problem</a> :</p>
+<div class="entry-content"><p>Prerequisites : Matrix Exponentation.</p>
 
-<p>Given a 2-D Coordinate Plane, find how many points are visible from one point. Two persons are standing at two other points, and you need to find how many other points are visible to both, points visible to only one, and none.</p>
+<p><a href="http://www.spoj.com/problems/NACCI/">Problem</a> : </p>
 
-<p>Explanation:</p>
+<p>Find f[M] such that if (M &gt; N) f[M] = sum(f[M - i]) for(i = 1 to N) else f[M] = M.</p>
 
-<p>For Simplicity consider one guard standing at <strong>(0,0)</strong> and rectangle of size <strong>L*(A+B+1)</strong> is present with corner points <strong>(1,0) (L,0) (1,A+B) (L,A+B)</strong> and other guard is standing at <strong>(0,A+B)</strong>.</p>
+<p>Explaination :</p>
 
-<p>Lets discuss the solution to one guard. A point <strong>(X,Y)</strong> will be blocked by another point <strong>(X1,Y1)</strong> to the origin if the slopes of lines joining points are equal, i.e <strong>X / X1 = Y / Y1 = Z (Z &gt; 1)</strong>. That means <strong>X = X1 * Z</strong> and <strong>Y = Y1 * Z</strong>, which inturn means that <strong>X</strong> and <strong>Y</strong> are not coprimes (have a common factor). So for every horizontal row <strong>(i,Y)</strong> number of points visible to origin are number of <strong>i’s</strong> from <strong>1 to L</strong> that are coprime to <strong>Y</strong>.</p>
+<p>For convenience let us take k = 4. So f[n] = f[n - 1] + f[n - 2] + f[n - 3] + f[n - 4].
+Let us consider two matrices A,B of size (4 X 4)</p>
 
-<p>Similar is the situation to other guard, points of the form <strong>(i,Y)</strong> are visible if and only if <strong>‘i’</strong> is coprime to <strong>(A+B-Y)</strong>. and visible to both if <strong>‘i’</strong> is coprime to <strong>(A+B-Y)</strong> and <strong>Y</strong>, which means <strong>‘i’</strong> is coprime to <strong>(A+B-Y)*Y</strong>..</p>
+<p>Matrix A :</p>
 
-<p>Now the problem is reduced for a given <strong>Y</strong> , how many numbers from <strong>1 to L</strong> are coprime to <strong>Y</strong>. For this we can prime factorize <strong>Y</strong> and use inclusion and exclusion principle on primes to find the final answer. Total there can be at max 6 prime factors to <strong>Y</strong>, as the product of first six primes  &gt; 4000 = <strong>(A+B)</strong>. Now it takes <strong>2^N = (2^6) = 64</strong> steps for finding number of coprimes of each Y, so 3 * 64 for each horizontal row, so (3 * 64 * 4000) for all rows  = 768000 steps which comes under time limit.</p>
+<pre><code>{ f[i]  f[i - 1]  f[i - 2] f[i - 3] }
+{  0        0        0         0    }
+{  0        0        0         0    }
+{  0        0        0         0    }
+</code></pre>
+
+<p>Matrix B :</p>
+
+<pre><code>{ 1   1   0   0 }
+{ 1   0   1   0 }
+{ 1   0   0   1 }
+{ 1   0   0   0 }
+</code></pre>
+
+<p>MAtrix A X B :</p>
+
+<pre><code>{ (f[i]+f[i-1]+f[i-2]+f[i-3]   f[i]   f[i - 1]   f[i - 2] }
+{  0                             0        0         0     }
+{  0                             0        0         0     }
+{  0                             0        0         0     }
+</code></pre>
+
+<p>That will be equal to</p>
+
+<pre><code>{ (f[i+1]   f[i]   f[i - 1]   f[i - 2] }
+{    0        0        0         0     }
+{    0        0        0         0     }
+{    0        0        0         0     }		
+</code></pre>
+
+<p>So multiplying matrix A by matrix B by p times leaves f[i+p] in the first row first column position.
+Let initially Matrix A be</p>
+
+<pre><code>{ f[3]     f[2]     f[1]    f[0] }
+{  0        0        0       0   }
+{  0        0        0       0   }
+{  0        0        0       0   }
+</code></pre>
+
+<p>So Multiplying A with B by p times leaves f[3+p] in the first row first column element of product matrix.</p>
+
+<p>To get M’th element we just need to multiply A with B by M - 3 times. As M is very large we can calculate this my repeated squaring in O(logM) multiplications. For a (N X N) matrix as each matrix multiplication takes O(N^3) steps overall complexity becomes O(log(M)*(N^3)).</p>
+
+<p>For an (N X N) matrix, B might look as </p>
+
+<p>Matrix B :</p>
+
+<pre><code>{ 1  1  0  0  0 ...}
+{ 1  0  1  0  0 ...}
+{ 1  0  0  1  0 ...}
+{ 1  0  0  0  1 ...}  
+{ .................}
+</code></pre>
+
+<p>(So on till N rows N columns)</p>
+
+<p>To be generalized let b(i,j) be i’th row j’th column element of matrix. Then b(i,j) = 1 if (j == 0) or (j == i + 1)
+In general any linear equation of above type like f[n] = a1<em>f[n - 1] + a2</em>f[n - 2] + … can be solved by making B[i][0] = ai for all (i = 0 to N - 1)</p>
+
+<p>PseudoCode :</p>
+
+<pre><code>int[][] MatrixMul(int[][] A, int[][] B)
+
+	int[][] P;
+
+	int i,j,k;
+
+    for(k = 0 to n - 1)
+
+	    for(i = 0 to n - 1)
+	
+    	    for(j = 0 to n - 1)
+		
+        	    P[i][j] += A[i][k] * B[k][j]
+		
+        	end loop
+	
+	    end loop
+
+	end loop
+
+	return P
+
+end MatrixMul
+
+
+int[][] PowerMatrix(int[][] B , power) :
+
+	if(power == 1) :
+	
+    	return B
+
+	else
+
+    	int[][] temp = PowerMatrix(B , power / 2) 
+	
+    	temp = MatrixMul(temp,temp)
+	
+	    if(power % 2 == 1) :
+	
+    	    temp = MatrixMul(temp,B)
+	
+	    end if
+	
+    	return temp
+
+	end ifelse
+
+end PowerMatrix
+
+
+int NACCI(int M , int N) :
+
+	if M &lt; N
+	
+    	return M
+	else
+
+    	int A[N][N],B[N][N],i,j;
+	
+    	for(j = 0 to N - 1)
+	
+        	A[0][j] = N - 1 - j
+    
+   	 	end loop
+	
+	    for(i = 1 to N - 1)
+		
+    	    for(j = 0 to N - 1)
+		
+        	    A[i][j] = 0
+		
+       		end loop
+	
+    	end loop
+	
+    	for(i = 0 to N - 1)
+	
+        	B[i][0] = 1
+		
+        	for(j = 1 to N - 1)
+		
+	            if (j == i + 1)
+			
+    	            B[i][j] = 1
+			
+        	    else 
+			
+            	    B[i][j] = 0
+			
+            	end ifelse
+		
+        	end loop
+
+    	end loop
+	
+	    A = MatrixMul( A , PowerMatrix(B,M - N + 1) )
+	
+    	retrurn A[0][0]
+
+	end ifelse
+
+end NACCI
+</code></pre>
+
 </div>
 
 
@@ -133,12 +298,12 @@
   
 
 
-<time datetime="2013-08-21T00:29:00+05:30" pubdate data-updated="true">Aug 21<span>st</span>, 2013</time>
+<time datetime="2013-08-28T20:00:00+05:30" pubdate data-updated="true">Aug 28<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the Week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a>
+    <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/matrix-exponentation/'>Matrix Exponentation</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the Week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a>
   
 </span>
 
@@ -147,7 +312,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/08/28/spoj-nacci/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/08/28/spoj-nacci/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -160,10 +325,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/08/11/second-year-recruitment-results/" title="Previous Post: Second Year Recruitment Results">&laquo; Second Year Recruitment Results</a>
+        <a class="basic-alignment left" href="/blog/2013/08/21/spoj-trezor/" title="Previous Post: SPOJ-TREZOR">&laquo; SPOJ-TREZOR</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/08/28/spoj-nacci/" title="Next Post: SPOJ NACCI">SPOJ NACCI &raquo;</a>
       
     </p>
   </footer>
@@ -228,8 +391,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor/';
-        var disqus_url = 'http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor/';
+        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/08/28/spoj-nacci/';
+        var disqus_url = 'http://pag.sdslabs.co/blog//2013/08/28/spoj-nacci/';
         var disqus_script = 'embed.js';
       
     (function () {
