@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Editorial | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/editorial/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-08-28T20:11:18+05:30</updated>
+  <updated>2013-09-16T20:26:17+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -12,6 +12,104 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ MORSE]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/09/16/spoj-morse/"/>
+    <updated>2013-09-16T18:30:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/09/16/spoj-morse</id>
+    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> : Dynamic Programming.</p>
+
+<p><strong><a href="http://www.spoj.com/problems/MORSE/">Problem</a></strong> : </p>
+
+<p>Given the Morse code for English alphabet, a list of words(dictionary) and a Morse sequence, the task is to compute the number of distinct phrases that can be obtained from the sequence using words from the dictionary.</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>In this problem, we are given N words in a dictionary and a Morse string containing ‘.’ and ‘-’ of length L. Now we are asked to find how many strings from the dictionary words when converted to their Morse part will exactly map to the given Morse sequence.</p>
+
+<p>Say we have .-..–.-..-.-…- and the dictionary as a aa bc acm shuka etc., one naive way is to generate all possible strings using the given words of the dictionary and see if they map to the given Morse string or not. But this approach is too slow and can take centuries to calculate if number of letters in dictionary are large enough (O(L<sup>N</sup>)).</p>
+
+<p>So, one thing to observe here is there will be several sub-cases counted a lot more times than required as in sub part of Morse string ‘.-..-’ might map to one english string and the rest part of Morse string doesn’t, so for calculating that this isn’t a valid string will itself take order O(L^N) time. </p>
+
+<p>Such problems where only number of solutions are to be found are approached as given:</p>
+
+<ol>
+  <li>Start iterating Morse string either from left or right.</li>
+  <li>At each point,check if the current string covered using the iterator maps to any word in the dictionary(So this iteration is finding the last(or first) word that could be placed from dictionary to the position of the iterator).</li>
+  <li>When a word is found,use recursion on the remaining string.</li>
+</ol>
+
+<p>Here we were also given some constraints to help us out with our complexity analysis:</p>
+
+<ol>
+  <li>Length of Morse string : 10000</li>
+  <li>Length of a word : 20</li>
+  <li>Number of words in the dictionary : 10000 </li>
+</ol>
+
+<p>The pseudocode of the above idea looks something like :</p>
+
+<pre><code>    Function TotalStrings(int i) //the current position of the iterator
+	{
+
+		for(k from i to Morselength) // Morselength stores the length of the Morse string
+		{
+
+			if string[i…k] is valid and in dictionary
+			then answer = answer + TotalStrings(k)
+
+		}
+	   
+		return answer;
+
+	}
+</code></pre>
+
+<p>Disclaimer: The below arguments are assuming we can search a Morse in a dictionary in O(1) time.</p>
+
+<p>The above solution still doesn’t seem to ease our problem as we still have to face the worst case time complexity as O(L^N) but whenever we find some repeating subproblems we should always think of Dynamic Programming.</p>
+
+<p>Now the question is: What if in the above code, the value TotalStrings(k) was already known to us? In that case what would the time complexity be?</p>
+
+<p>It will be linear if all values of TotalStrings(k) are pre-known. Here comes the concept of Dynamic programming in which we can store the values of TotalStrings(k) whenever we calculate it. As we use linear time for calculating all the TotalStrings(k) with k in (0,Morselength),we use a total of O(L^2) time where L is the length of the Morse string.</p>
+
+<p>All we need to change in code is before returning answer, just store the answer calculated in some global array so that next time the same value is asked it could be returned immediately.</p>
+
+<p>Now,taking advantage of the constraints :</p>
+
+<p>Length of a word cannot exceed 20 as given in the question,hence the conclusions are :</p>
+
+<ol>
+  <li>Each alphabet can have maximum 4 ‘.’ or ’-‘ characters. So a word of length 20 can have maximum 80 Morse characters</li>
+  <li>Hence in the inner loop of the above pseudo code k varies from i to i+80</li>
+  <li>If the word searching is extremely fast, our complexity reduces to O(80*l)</li>
+</ol>
+
+<p>The problem left now is word searching. We can think of various methods and techniques to find a map from dictionary to the iterated part being used.</p>
+
+<ol>
+  <li>Hash maps</li>
+  <li>STL library map</li>
+  <li>Brute force</li>
+  <li>Trie implementation</li>
+</ol>
+
+<p>Of all the above methods,the most reliable for this problem is trie, given the constraints and the difficulty in using large length strings(~80).</p>
+
+<p>Trie implementation is simple and can be performed using arrays as well as link lists.</p>
+
+<p><strong>Links</strong> :</p>
+
+<p><a href="http://www.geeksforgeeks.org/trie-insert-and-search/">http://www.geeksforgeeks.org/trie-insert-and-search/</a></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Trie">http://en.wikipedia.org/wiki/Trie</a></p>
+
+<p><strong>Related problem on trie</strong> :</p>
+
+<p><a href="http://www.spoj.com/problems/REVFIB/">SPOJ-REVFIB</a> (Difficulty Level: Hard)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SPOJ NACCI]]></title>
@@ -24,7 +122,7 @@
 
 <p>Find f[M] such that if (M &gt; N) f[M] = sum(f[M - i]) for(i = 1 to N) else f[M] = M.</p>
 
-<p>Explaination :</p>
+<p>Explanation :</p>
 
 <p>For convenience let us take k = 4. So f[n] = f[n - 1] + f[n - 2] + f[n - 3] + f[n - 4].
 Let us consider two matrices A,B of size (4 X 4)</p>
@@ -345,55 +443,6 @@ end loop</p>
 
 <p>print output
 ```</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SPOJ RPSSL]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl/"/>
-    <updated>2013-07-21T22:10:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl</id>
-    <content type="html"><![CDATA[<p>Problem Link : <a href="http://www.spoj.com/problems/RPSSL/">http://www.spoj.com/problems/RPSSL/</a></p>
-
-<p>Prerequisites : <a href="http://en.wikipedia.org/wiki/Bayes'_theorem">Bayes Theorem</a></p>
-
-<p>Here comes the editorial for <a href="http://www.spoj.com/problems/RPSSL/">previous week’s question</a> as posted on <a href="https://www.facebook.com/groups/sdspag/">our group.</a></p>
-
-<p>Let the probability that Rajesh beats Sheldon in a single round be <script type="math/tex"> w </script> and let <script type="math/tex"> d </script> be the probability that a single round results in a draw and <script type="math/tex"> l </script> be the probability that Sheldon beats Rajesh in a single round. <script type="math/tex"> w ,\ d ,\ l </script> can be calculated simply as follows :</p>
-
-<script type="math/tex; mode=display">
-
-w = R_R*(S_L +S_{Sc}) + R_{Sc}*(S_P + S_L) + R_P*( S_R + S_{Sp}) + R_L*( S_{Sp}+ S_P) + R_{Sp}*( S_R + S_{Sc}) \\
-
-d =  (R_R*S_R) + (R_{Sc}*S_{Sc}) + (R_P*S_P) + (R_L*S_L)+ (R_{Sp}*S_{Sp}) \\
-              
-l=1-d-w\\         
-
-</script>
-
-<p>Now Rajesh will win the game if he wins two rounds first.
-The following are the different cases : </p>
-
-<script type="math/tex; mode=display">
-
-ww \: or \: wdw \: or \: dww \: or \: ddww \: or \: dwdw \: or \: wddw \: ... \\
-OR\\
-lww \: or \: wlw \: or \: lwdw \: or \: wdlw \: or \: wldw \: ... \\
-
-</script>
-
-<p>Thus we need to sum up all the above cases which result in
-victory for rajesh. Both the above series  can be simplified by using some maths tricks. (Refer to <a href="http://en.wikipedia.org/wiki/Arithmetico-geometric_sequence">Arithmetico-geometric series</a>.)</p>
-
-<p>The final expression is :</p>
-
-<script type="math/tex; mode=display">
-
-P = w*w*(1-d)^{-2} + 2*l*w*w*(1-d)^{-3}
-
-</script>
-
-<p><strong>Caution:</strong> Check for the cases where d=1.</p>
 ]]></content>
   </entry>
   
