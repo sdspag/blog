@@ -6,7 +6,7 @@ comments: true
 categories: [Editorial, SPOJ, Question of the Week, Dynamic Programming, DP, Trie, Digital Tree]
 ---
 
-**Prerequisites** : Dynamic Programming.
+**Prerequisites** : Dynamic Programming, Trie
 
 **[Problem](http://www.spoj.com/problems/MORSE/)** : 
 
