@@ -4,7 +4,7 @@
   <title><![CDATA[Category: SPOJ | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/spoj/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-09-27T16:30:45+05:30</updated>
+  <updated>2013-09-27T21:57:41+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -32,60 +32,44 @@ and number of dots in given board configuration.
 Also let xWins and oWins denotes the number of x winning possible configuration and number of o winning possible configurations respectively.
 There will be total of 8 winning configurations:</p>
 
-<pre><code>  |        |       |        |
-  |:------:|:-----:|:------:|         
-  |x       |   -   |-       |
-  |    -   |x      |  -     |
-  |    -   |      -|x       |
+<pre><code>  |    x   |       |        |
+  |        |   x   |        |
+  |        |       |   x    |
 
 
-  |        |        |        |
-  |:------:|:------:|:------:|
-  |x       |      - | -      |
-  |x       |-       |       -|
-  | x      | -      |      - |
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
 
 
-  |        |        |        |
-  |:------:|:------:|:------:|
-  |x       |x       | x      |
-  |-       |      - |       -|
-  | -      |       -|       -|
+  |    x   |   x   |   x    |
+  |        |       |        |
+  |        |       |        |
 
 
-  |        |        |        |
-  |:------:|:------:|:------:|
-  |     -  | -      |  -     |
-  |      - |-       |   -    |
-  |      x |x       |x       |
+  |        |       |        |
+  |        |       |        |
+  |    x   |   x   |   x    |
 
 
-  |        |        |        |
-  |:------:|:------:|:------:|
-  |x       |  -     |   -    |
-  |x       | -      |    -   |
-  |x       |-       |     -  |
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
 
 
-  |        |        |       |
-  |:------:|:-----:|:------:|
-  |       -| -      |x      |
-  |       -|-       |x      |
-  |       -|-       |x      |
+  |        |       |   x    |
+  |        |       |   x    |
+  |        |       |   x    |
 
 
-  |        |        |       |
-  |:------:|:------:|:-----:|
-  |      - |  x    |      - |
-  |      - |   x   |       -|
-  |      - |    x  |       -|
+  |        |   x   |        |
+  |        |   x   |        |
+  |        |   x   |        |
 
 
-  |        |        |        |
-  |:------:|:------:|:------:|
-  |     -  |  -     |      - |
-  |       x|     x  |x     - |
-  |       -| -      |      - |
+  |        |       |        |
+  |    x   |   x   |   x    |
+  |        |       |        |
 </code></pre>
 
 <p><strong>Pseudocode</strong> :</p>
