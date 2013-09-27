@@ -1,0 +1,100 @@
+---
+layout: post
+title: "SPOJ TIC-TAC-TOE 2"
+date: 2013-09-27 16:30
+comments: true
+categories: [Editorial, SPOJ, Question of the Week, Simple Maths, Easy]
+---
+
+**Problem** : [Tic Tac Toe 2](http://www.spoj.com/problems/TOE2/)
+
+**Difficulty** : Easy
+
+**Prerequisites** : Simple Maths
+
+**Explanation** : 
+
+For the given board configuration we have to check whether it is the final state of some possible tic-tac-toe game or not.
+Let numX, numO and numE represents the number of X's, number of O's
+and number of dots in given board configuration.
+Also let xWins and oWins denotes the number of x winning possible configuration and number of o winning possible configurations respectively.
+There will be total of 8 winning configurations:
+
+      |        |       |        |
+      |:------:|:-----:|:------:|         
+      |x       |   -   |-       |
+      |    -   |x      |  -     |
+      |    -   |      -|x       |
+
+
+      |        |        |        |
+      |:------:|:------:|:------:|
+      |x       |      - | -      |
+      |x       |-       |       -|
+      | x      | -      |      - |
+
+
+      |        |        |        |
+      |:------:|:------:|:------:|
+      |x       |x       | x      |
+      |-       |      - |       -|
+      | -      |       -|       -|
+
+
+      |        |        |        |
+      |:------:|:------:|:------:|
+      |     -  | -      |  -     |
+      |      - |-       |   -    |
+      |      x |x       |x       |
+
+
+      |        |        |        |
+      |:------:|:------:|:------:|
+      |x       |  -     |   -    |
+      |x       | -      |    -   |
+      |x       |-       |     -  |
+
+
+      |        |        |       |
+      |:------:|:-----:|:------:|
+      |       -| -      |x      |
+      |       -|-       |x      |
+      |       -|-       |x      |
+
+
+      |        |        |       |
+      |:------:|:------:|:-----:|
+      |      - |  x    |      - |
+      |      - |   x   |       -|
+      |      - |    x  |       -|
+
+
+      |        |        |        |
+      |:------:|:------:|:------:|
+      |     -  |  -     |      - |
+      |       x|     x  |x     - |
+      |       -| -      |      - |
+
+
+**Pseudocode** :
+
+```
+If |numX - numO|<=1 # Since each player gets an alternative chance in tic tac toe game
+ 	If numE>0 and xWins=0 and oWins=0  #Case when there is empty block and no player has win till now
+		then it is "invalid"
+	If xWins>0 and oWins>0 #Case when there is winning configuration of both players simultaneously
+		then it is "invalid"
+	If xWins>0
+		If numX > numO
+			then it is "valid"
+		Else 
+			then it is "invalid"
+	If oWins>0
+		If numX < numO
+			then it is "valid"
+		Else 
+			then it is "invalid"
+	rest all are "valid"
+Else
+	rest all are "invalid"
+```
