@@ -4,7 +4,7 @@
   <title><![CDATA[PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-09-17T00:19:30+05:30</updated>
+  <updated>2013-09-27T16:30:45+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -12,6 +12,122 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ TIC-TAC-TOE 2]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2/"/>
+    <updated>2013-09-27T16:30:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/TOE2/">Tic Tac Toe 2</a></p>
+
+<p><strong>Difficulty</strong> : Easy</p>
+
+<p><strong>Prerequisites</strong> : Simple Maths</p>
+
+<p><strong>Explanation</strong> : </p>
+
+<p>For the given board configuration we have to check whether it is the final state of some possible tic-tac-toe game or not.
+Let numX, numO and numE represents the number of X’s, number of O’s
+and number of dots in given board configuration.
+Also let xWins and oWins denotes the number of x winning possible configuration and number of o winning possible configurations respectively.
+There will be total of 8 winning configurations:</p>
+
+<pre><code>  |        |       |        |
+  |:------:|:-----:|:------:|         
+  |x       |   -   |-       |
+  |    -   |x      |  -     |
+  |    -   |      -|x       |
+
+
+  |        |        |        |
+  |:------:|:------:|:------:|
+  |x       |      - | -      |
+  |x       |-       |       -|
+  | x      | -      |      - |
+
+
+  |        |        |        |
+  |:------:|:------:|:------:|
+  |x       |x       | x      |
+  |-       |      - |       -|
+  | -      |       -|       -|
+
+
+  |        |        |        |
+  |:------:|:------:|:------:|
+  |     -  | -      |  -     |
+  |      - |-       |   -    |
+  |      x |x       |x       |
+
+
+  |        |        |        |
+  |:------:|:------:|:------:|
+  |x       |  -     |   -    |
+  |x       | -      |    -   |
+  |x       |-       |     -  |
+
+
+  |        |        |       |
+  |:------:|:-----:|:------:|
+  |       -| -      |x      |
+  |       -|-       |x      |
+  |       -|-       |x      |
+
+
+  |        |        |       |
+  |:------:|:------:|:-----:|
+  |      - |  x    |      - |
+  |      - |   x   |       -|
+  |      - |    x  |       -|
+
+
+  |        |        |        |
+  |:------:|:------:|:------:|
+  |     -  |  -     |      - |
+  |       x|     x  |x     - |
+  |       -| -      |      - |
+</code></pre>
+
+<p><strong>Pseudocode</strong> :</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">If |numX - numO|&lt;=1 # Since each player gets an alternative chance in tic tac toe game
+</span><span class="line"> 	If numE&gt;0 and xWins=0 and oWins=0  #Case when there is empty block and no player has win till now
+</span><span class="line">		then it is "invalid"
+</span><span class="line">	If xWins&gt;0 and oWins&gt;0 #Case when there is winning configuration of both players simultaneously
+</span><span class="line">		then it is "invalid"
+</span><span class="line">	If xWins&gt;0
+</span><span class="line">		If numX &gt; numO
+</span><span class="line">			then it is "valid"
+</span><span class="line">		Else 
+</span><span class="line">			then it is "invalid"
+</span><span class="line">	If oWins&gt;0
+</span><span class="line">		If numX &lt; numO
+</span><span class="line">			then it is "valid"
+</span><span class="line">		Else 
+</span><span class="line">			then it is "invalid"
+</span><span class="line">	rest all are "valid"
+</span><span class="line">Else
+</span><span class="line">	rest all are "invalid"</span></code></pre></td></tr></table></div></figure></notextile></div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SPOJ MORSE]]></title>
