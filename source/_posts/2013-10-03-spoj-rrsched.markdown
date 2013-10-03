@@ -37,7 +37,7 @@ Now for every iteration all we need to do is to keep track of  Current time and 
 
 Thus BIT comes in handy here where we have to query the no of tasks not completed and update a task as completed in O(logN). For this purpose initially keep a BIT array and update every element by ‘+1’ which means that the task is not completed yet.You can use Update(i,-1) to update the task as completed. You can find the no of tasks which are not completed  before an index i by Query(i).
 
-The [psudo code](http://code.hackerearth.com/d8db76J) is as follows:
+The [pesudo code](http://code.hackerearth.com/d8db76J) is as follows:
 
 
 	//Initialize bit array to zero 
