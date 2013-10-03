@@ -28,7 +28,7 @@ Now for every iteration all we need to do is to keep track of  Current time and 
 
 1. Time Taken for present task to be completed
 	= 	(no of remaining elements)\*(Pair[i].Time-Pair[i-1].Time) +
- 		1*no of Taskss before Pair[i].Index which are not completed
+ 		1\*no of Tasks before Pair[i].Index which are not completed
 
 2. Extra Time to complete the  round
 	= 1\*no of Tasks after Pair[i].Index which are not completed.
