@@ -4,7 +4,7 @@
   <title><![CDATA[PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-10-18T22:23:19+05:30</updated>
+  <updated>2013-10-19T22:35:32+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -14,31 +14,232 @@
 
   
   <entry>
-    <title type="html"><![CDATA[SPOJ-DGAME]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame/"/>
-    <updated>2013-10-18T21:16:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame</id>
-    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> :  Game of Nim</p>
+    <title type="html"><![CDATA[First Year Recruitment Results]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/10/19/first-year-recruitment-results/"/>
+    <updated>2013-10-19T22:30:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/10/19/first-year-recruitment-results</id>
+    <content type="html"><![CDATA[<p>Congratulations to everyone who made it to the group. We were extremely happy to see the response by the first yearites. We got to interview some of the most talented first yearities in our campus and it was a wonderful experience for us and hopefully for them too. We had to reject people only because of limited vacancies even though they were all equally capable.</p>
 
-<p><strong><a href="http://www.spoj.com/problems/DGAME/">Problem</a></strong> : Game of Nim with variations. (N piles with i<sup>th</sup> pile containing either 2<em>i or 2</em>i+1 stones where even number of stones may be removed from selected pile.)</p>
+<p>Here comes the result of Programming and Algorithms Group’s first year recruitment test : </p>
 
-<p><strong>Explanation</strong> :</p>
+<ul>
+  <li>Abhishek Uppal</li>
+  <li>Akhil Gupta</li>
+  <li>Anal Kumar Shahi</li>
+  <li>Chitra Kumari</li>
+  <li>Dhaval Kapil</li>
+  <li>Eklavya Sharma</li>
+  <li>Harsh Kumar Sahu</li>
+  <li>Ishu</li>
+  <li>Jahnavi Singh</li>
+  <li>Jay Bosamiya</li>
+  <li>M. Sai Varun Reddy</li>
+  <li>Rahul Yadav</li>
+  <li>Rishabh Ravi Gupta</li>
+  <li>Shubhangi Singar</li>
+  <li>Vaibhav Daga</li>
+  <li>Vinay Malik</li>
+</ul>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-RRSCHED]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/10/03/spoj-rrsched/"/>
+    <updated>2013-10-03T18:38:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/10/03/spoj-rrsched</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/RRSCHED/">RRSCHED</a></p>
 
-<p>At every index i, can have stones in two ways, so total no. of ways comes out to be 2 * 2 * &#8230; . * 2 (n times).</p>
+<p><strong>Difficulty</strong> : Medium</p>
 
-<p>Now whether an index have 2<em>i or 2</em>i+1 stones the game remains unaffected because if there are 2<em>i+1 stones in any pile there will be one stone left out anyways, and the game will be same as the one played with 2</em>i stones. We shall be considering only this case.</p>
+<p><strong>Prerequisites</strong> : BIT</p>
 
-<p>At any point of the game i<sup>th</sup> pile contains 2*(i - k) stones (where k is any arbitrary constant). Now you can interpret the question as the ith pile had i stones in the beginning and you can take out any positive number of stones from it. This is the standard nim game containing N piles, where the ith pile contains i stones.</p>
+<p><strong>Explanation</strong> : </p>
 
-<p>Now our task is to find XOR of N numbers(1 to N). Every number can be represented 4*p+q where 0 &lt;= q &lt;= 3 and p is any arbitrary.</p>
+<p>A very naive approach would be to iterate over time and keep on decreasing the no of tasks to be performed and storing the task completion time in a separate array.This implementation would definitely give TLE  O(N*T) with the given constraints.</p>
 
-<p>For every N of type 4*p+3, it can be easily proved that XOR of 1 to N is 0. So the first person will always lose the game. The answer for such numbers is zero.</p>
+<p>In the above approach we can observe that we can do better by jumping times from t = completion of easiest task (w.r.t time) to t = completion of next easiest task . </p>
 
-<p>For N of type 4*p+1 XOR of numbers from 1 to N is 1, so the first player can remove 1 stone from any pile containing odd number of stones so that the XOR becomes zero. There are (N+1)/2 piles containing odd number of stones, so the answer for this case is (N+1)/2.</p>
+<p>For this we need to sort the input array w.r.t time .But we would also want their original indices(because order matters).So you can use pair&lt;int,int&gt;  to store both the index and time  of a task.That way you would not lose your index’s by sorting the array.</p>
 
-<p>For numbers of type 4<em>p or 4</em>p+2 XOR is N and N+1 respectively So first player can make XOR zero by removing stones from any pile whose most significant bit is same as the most significant bit of N. Thus the answer for this case is the number of piles which has x stones, such that when x is represented in binary, it has the same number of bits as the binary representation of N. This can be obtained by subtracting from N the maximum power of 2 which is less than or equal to N.</p>
+<p>In the following discussion:</p>
 
-<p><strong>Links</strong> : <a href="http://community.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=algorithmGames">Game of Nim</a></p>
+<p>Pair [i] denotes i th pair in sorted array
+Pair[i].Time denotes time needed for ‘Pir[i].Index’ th task to complete.</p>
+
+<p>Now for every iteration all we need to do is to keep track of  Current time and do as follows.</p>
+
+<ol>
+  <li>
+    <p>Time Taken for present task to be completed
+ = 	(no of remaining elements)*(Pair[i].Time-Pair[i-1].Time) +
+ 		1*no of Tasks before Pair[i].Index which are not completed</p>
+  </li>
+  <li>
+    <p>Extra Time to complete the  round
+ = 1*no of Tasks after Pair[i].Index which are not completed.</p>
+  </li>
+  <li>
+    <p>Update Pair[i].Index as completed</p>
+  </li>
+</ol>
+
+<p>Thus BIT comes in handy here where we have to query the no of tasks not completed and update a task as completed in O(logN). For this purpose initially keep a BIT array and update every element by ‘+1’ which means that the task is not completed yet.You can use Update(i,-1) to update the task as completed. You can find the no of tasks which are not completed  before an index i by Query(i).</p>
+
+<p>The <a href="http://code.hackerearth.com/d8db76J">pesudo code</a> is as follows:</p>
+
+<pre><code>//Initialize bit array to zero 
+
+BIT[MaxN] = 0
+
+// Update bit array 
+
+Upadte(i , x)
+	for(; i &lt;= n; i += i&amp;-i)
+    	BIT[i] += x
+
+//Query Cummulative Frequency in a bit array 
+
+Query(i)
+	s=0
+	for(; i&gt;0 ; i-=i&amp;-i)
+    	s += BIT[i]
+	return s
+
+//Take Input and Do the necessary initializations for BIT array
+
+TakeInput()
+for(i = 1; i &lt;= N; i++)
+	Update(i, 1)
+
+//Main Part
+
+CurrentTime = 0
+for(i = 1; i &lt;= N; i++)
+
+	//N-i+1 total uncompleted tasks
+	
+	CurrentTime += (Pair[i].Time - Pair[i-1].Time - 1)*(N-i+1)
+	
+	//query for uncompleted tasks before the present task
+	
+	CurrentTime +=  Query(Pair[i].Index)
+	
+	//Store the final anwer for the present task
+	
+	Answer[Pair[i].Index] = CurrentTime
+	
+	//Update current task as completed
+	
+	Update(Pair[i].Index, -1)
+	
+	//Increase by no of uncompleted tasks after the present task
+	
+	CurrentTime += (N-i) - Query(Pair[i].Index)
+
+//Note that the above psudo code also handles the case where two tasks have equal completion Time.
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ TIC-TAC-TOE 2]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2/"/>
+    <updated>2013-09-27T16:30:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/TOE2/">Tic Tac Toe 2</a></p>
+
+<p><strong>Difficulty</strong> : Easy</p>
+
+<p><strong>Prerequisites</strong> : Simple Maths</p>
+
+<p><strong>Explanation</strong> : </p>
+
+<p>For the given board configuration we have to check whether it is the final state of some possible tic-tac-toe game or not.
+Let numX, numO and numE represents the number of X’s, number of O’s
+and number of dots in given board configuration.
+Also let xWins and oWins denotes the number of x winning possible configuration and number of o winning possible configurations respectively.
+There will be total of 8 winning configurations:</p>
+
+<pre><code>  |    x   |       |        |
+  |        |   x   |        |
+  |        |       |   x    |
+
+
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
+
+
+  |    x   |   x   |   x    |
+  |        |       |        |
+  |        |       |        |
+
+
+  |        |       |        |
+  |        |       |        |
+  |    x   |   x   |   x    |
+
+
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
+
+
+  |        |       |   x    |
+  |        |       |   x    |
+  |        |       |   x    |
+
+
+  |        |   x   |        |
+  |        |   x   |        |
+  |        |   x   |        |
+
+
+  |        |       |        |
+  |    x   |   x   |   x    |
+  |        |       |        |
+</code></pre>
+
+<p><strong>Pseudocode</strong> :</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">If |numX - numO|&lt;=1 # Since each player gets an alternative chance in tic tac toe game
+</span><span class="line"> 	If numE&gt;0 and xWins=0 and oWins=0  #Case when there is empty block and no player has win till now
+</span><span class="line">		then it is "invalid"
+</span><span class="line">	If xWins&gt;0 and oWins&gt;0 #Case when there is winning configuration of both players simultaneously
+</span><span class="line">		then it is "invalid"
+</span><span class="line">	If xWins&gt;0
+</span><span class="line">		If numX &gt; numO
+</span><span class="line">			then it is "valid"
+</span><span class="line">		Else 
+</span><span class="line">			then it is "invalid"
+</span><span class="line">	If oWins&gt;0
+</span><span class="line">		If numX &lt; numO
+</span><span class="line">			then it is "valid"
+</span><span class="line">		Else 
+</span><span class="line">			then it is "invalid"
+</span><span class="line">	rest all are "valid"
+</span><span class="line">Else
+</span><span class="line">	rest all are "invalid"</span></code></pre></td></tr></table></div></figure></notextile></div>
 ]]></content>
   </entry>
   
@@ -47,7 +248,7 @@
     <link href="http://pag.sdslabs.co/blog//2013/09/16/spoj-morse/"/>
     <updated>2013-09-16T18:30:00+05:30</updated>
     <id>http://pag.sdslabs.co/blog//2013/09/16/spoj-morse</id>
-    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> : Dynamic Programming.</p>
+    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> : Dynamic Programming, Trie</p>
 
 <p><strong><a href="http://www.spoj.com/problems/MORSE/">Problem</a></strong> : </p>
 
@@ -151,7 +352,7 @@
 
 <p>Find f[M] such that if (M &gt; N) f[M] = sum(f[M - i]) for(i = 1 to N) else f[M] = M.</p>
 
-<p>Explanation :</p>
+<p>Explaination :</p>
 
 <p>For convenience let us take k = 4. So f[n] = f[n - 1] + f[n - 2] + f[n - 3] + f[n - 4].
 Let us consider two matrices A,B of size (4 X 4)</p>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: DP | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/dp/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-10-18T22:23:19+05:30</updated>
+  <updated>2013-10-19T22:35:32+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -18,7 +18,7 @@
     <link href="http://pag.sdslabs.co/blog//2013/09/16/spoj-morse/"/>
     <updated>2013-09-16T18:30:00+05:30</updated>
     <id>http://pag.sdslabs.co/blog//2013/09/16/spoj-morse</id>
-    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> : Dynamic Programming.</p>
+    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> : Dynamic Programming, Trie</p>
 
 <p><strong><a href="http://www.spoj.com/problems/MORSE/">Problem</a></strong> : </p>
 

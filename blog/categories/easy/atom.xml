@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Easy | PAG, IIT Roorkee]]></title>
+  <link href="http://pag.sdslabs.co/blog//blog/categories/easy/atom.xml" rel="self"/>
+  <link href="http://pag.sdslabs.co/blog//"/>
+  <updated>2013-10-19T22:35:32+05:30</updated>
+  <id>http://pag.sdslabs.co/blog//</id>
+  <author>
+    <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ TIC-TAC-TOE 2]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2/"/>
+    <updated>2013-09-27T16:30:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/TOE2/">Tic Tac Toe 2</a></p>
+
+<p><strong>Difficulty</strong> : Easy</p>
+
+<p><strong>Prerequisites</strong> : Simple Maths</p>
+
+<p><strong>Explanation</strong> : </p>
+
+<p>For the given board configuration we have to check whether it is the final state of some possible tic-tac-toe game or not.
+Let numX, numO and numE represents the number of X’s, number of O’s
+and number of dots in given board configuration.
+Also let xWins and oWins denotes the number of x winning possible configuration and number of o winning possible configurations respectively.
+There will be total of 8 winning configurations:</p>
+
+<pre><code>  |    x   |       |        |
+  |        |   x   |        |
+  |        |       |   x    |
+
+
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
+
+
+  |    x   |   x   |   x    |
+  |        |       |        |
+  |        |       |        |
+
+
+  |        |       |        |
+  |        |       |        |
+  |    x   |   x   |   x    |
+
+
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
+
+
+  |        |       |   x    |
+  |        |       |   x    |
+  |        |       |   x    |
+
+
+  |        |   x   |        |
+  |        |   x   |        |
+  |        |   x   |        |
+
+
+  |        |       |        |
+  |    x   |   x   |   x    |
+  |        |       |        |
+</code></pre>
+
+<p><strong>Pseudocode</strong> :</p>
+
+<p><code>
+If |numX - numO|&lt;=1 # Since each player gets an alternative chance in tic tac toe game
+ 	If numE&gt;0 and xWins=0 and oWins=0  #Case when there is empty block and no player has win till now
+		then it is "invalid"
+	If xWins&gt;0 and oWins&gt;0 #Case when there is winning configuration of both players simultaneously
+		then it is "invalid"
+	If xWins&gt;0
+		If numX &gt; numO
+			then it is "valid"
+		Else 
+			then it is "invalid"
+	If oWins&gt;0
+		If numX &lt; numO
+			then it is "valid"
+		Else 
+			then it is "invalid"
+	rest all are "valid"
+Else
+	rest all are "invalid"
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

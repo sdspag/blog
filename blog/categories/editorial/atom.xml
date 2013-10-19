@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Editorial | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/editorial/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-10-18T22:23:19+05:30</updated>
+  <updated>2013-10-19T22:35:32+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -14,31 +14,186 @@
 
   
   <entry>
-    <title type="html"><![CDATA[SPOJ-DGAME]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame/"/>
-    <updated>2013-10-18T21:16:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame</id>
-    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> :  Game of Nim</p>
+    <title type="html"><![CDATA[SPOJ-RRSCHED]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/10/03/spoj-rrsched/"/>
+    <updated>2013-10-03T18:38:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/10/03/spoj-rrsched</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/RRSCHED/">RRSCHED</a></p>
 
-<p><strong><a href="http://www.spoj.com/problems/DGAME/">Problem</a></strong> : Game of Nim with variations. (N piles with i<sup>th</sup> pile containing either 2<em>i or 2</em>i+1 stones where even number of stones may be removed from selected pile.)</p>
+<p><strong>Difficulty</strong> : Medium</p>
 
-<p><strong>Explanation</strong> :</p>
+<p><strong>Prerequisites</strong> : BIT</p>
 
-<p>At every index i, can have stones in two ways, so total no. of ways comes out to be 2 * 2 * . . . . * 2 (n times).</p>
+<p><strong>Explanation</strong> : </p>
 
-<p>Now whether an index have 2<em>i or 2</em>i+1 stones the game remains unaffected because if there are 2<em>i+1 stones in any pile there will be one stone left out anyways, and the game will be same as the one played with 2</em>i stones. We shall be considering only this case.</p>
+<p>A very naive approach would be to iterate over time and keep on decreasing the no of tasks to be performed and storing the task completion time in a separate array.This implementation would definitely give TLE  O(N*T) with the given constraints.</p>
 
-<p>At any point of the game i<sup>th</sup> pile contains 2*(i - k) stones (where k is any arbitrary constant). Now you can interpret the question as the ith pile had i stones in the beginning and you can take out any positive number of stones from it. This is the standard nim game containing N piles, where the ith pile contains i stones.</p>
+<p>In the above approach we can observe that we can do better by jumping times from t = completion of easiest task (w.r.t time) to t = completion of next easiest task . </p>
 
-<p>Now our task is to find XOR of N numbers(1 to N). Every number can be represented 4*p+q where 0 &lt;= q &lt;= 3 and p is any arbitrary.</p>
+<p>For this we need to sort the input array w.r.t time .But we would also want their original indices(because order matters).So you can use pair&lt;int,int&gt;  to store both the index and time  of a task.That way you would not lose your index’s by sorting the array.</p>
 
-<p>For every N of type 4*p+3, it can be easily proved that XOR of 1 to N is 0. So the first person will always lose the game. The answer for such numbers is zero.</p>
+<p>In the following discussion:</p>
 
-<p>For N of type 4*p+1 XOR of numbers from 1 to N is 1, so the first player can remove 1 stone from any pile containing odd number of stones so that the XOR becomes zero. There are (N+1)/2 piles containing odd number of stones, so the answer for this case is (N+1)/2.</p>
+<p>Pair [i] denotes i th pair in sorted array
+Pair[i].Time denotes time needed for ‘Pir[i].Index’ th task to complete.</p>
 
-<p>For numbers of type 4<em>p or 4</em>p+2 XOR is N and N+1 respectively So first player can make XOR zero by removing stones from any pile whose most significant bit is same as the most significant bit of N. Thus the answer for this case is the number of piles which has x stones, such that when x is represented in binary, it has the same number of bits as the binary representation of N. This can be obtained by subtracting from N the maximum power of 2 which is less than or equal to N.</p>
+<p>Now for every iteration all we need to do is to keep track of  Current time and do as follows.</p>
 
-<p><strong>Links</strong> : <a href="http://community.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=algorithmGames">Game of Nim</a></p>
+<ol>
+  <li>
+    <p>Time Taken for present task to be completed
+ = 	(no of remaining elements)*(Pair[i].Time-Pair[i-1].Time) +
+ 		1*no of Tasks before Pair[i].Index which are not completed</p>
+  </li>
+  <li>
+    <p>Extra Time to complete the  round
+ = 1*no of Tasks after Pair[i].Index which are not completed.</p>
+  </li>
+  <li>
+    <p>Update Pair[i].Index as completed</p>
+  </li>
+</ol>
+
+<p>Thus BIT comes in handy here where we have to query the no of tasks not completed and update a task as completed in O(logN). For this purpose initially keep a BIT array and update every element by ‘+1’ which means that the task is not completed yet.You can use Update(i,-1) to update the task as completed. You can find the no of tasks which are not completed  before an index i by Query(i).</p>
+
+<p>The <a href="http://code.hackerearth.com/d8db76J">pesudo code</a> is as follows:</p>
+
+<pre><code>//Initialize bit array to zero 
+
+BIT[MaxN] = 0
+
+// Update bit array 
+
+Upadte(i , x)
+	for(; i &lt;= n; i += i&amp;-i)
+    	BIT[i] += x
+
+//Query Cummulative Frequency in a bit array 
+
+Query(i)
+	s=0
+	for(; i&gt;0 ; i-=i&amp;-i)
+    	s += BIT[i]
+	return s
+
+//Take Input and Do the necessary initializations for BIT array
+
+TakeInput()
+for(i = 1; i &lt;= N; i++)
+	Update(i, 1)
+
+//Main Part
+
+CurrentTime = 0
+for(i = 1; i &lt;= N; i++)
+
+	//N-i+1 total uncompleted tasks
+	
+	CurrentTime += (Pair[i].Time - Pair[i-1].Time - 1)*(N-i+1)
+	
+	//query for uncompleted tasks before the present task
+	
+	CurrentTime +=  Query(Pair[i].Index)
+	
+	//Store the final anwer for the present task
+	
+	Answer[Pair[i].Index] = CurrentTime
+	
+	//Update current task as completed
+	
+	Update(Pair[i].Index, -1)
+	
+	//Increase by no of uncompleted tasks after the present task
+	
+	CurrentTime += (N-i) - Query(Pair[i].Index)
+
+//Note that the above psudo code also handles the case where two tasks have equal completion Time.
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ TIC-TAC-TOE 2]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2/"/>
+    <updated>2013-09-27T16:30:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/TOE2/">Tic Tac Toe 2</a></p>
+
+<p><strong>Difficulty</strong> : Easy</p>
+
+<p><strong>Prerequisites</strong> : Simple Maths</p>
+
+<p><strong>Explanation</strong> : </p>
+
+<p>For the given board configuration we have to check whether it is the final state of some possible tic-tac-toe game or not.
+Let numX, numO and numE represents the number of X’s, number of O’s
+and number of dots in given board configuration.
+Also let xWins and oWins denotes the number of x winning possible configuration and number of o winning possible configurations respectively.
+There will be total of 8 winning configurations:</p>
+
+<pre><code>  |    x   |       |        |
+  |        |   x   |        |
+  |        |       |   x    |
+
+
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
+
+
+  |    x   |   x   |   x    |
+  |        |       |        |
+  |        |       |        |
+
+
+  |        |       |        |
+  |        |       |        |
+  |    x   |   x   |   x    |
+
+
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
+
+
+  |        |       |   x    |
+  |        |       |   x    |
+  |        |       |   x    |
+
+
+  |        |   x   |        |
+  |        |   x   |        |
+  |        |   x   |        |
+
+
+  |        |       |        |
+  |    x   |   x   |   x    |
+  |        |       |        |
+</code></pre>
+
+<p><strong>Pseudocode</strong> :</p>
+
+<p><code>
+If |numX - numO|&lt;=1 # Since each player gets an alternative chance in tic tac toe game
+ 	If numE&gt;0 and xWins=0 and oWins=0  #Case when there is empty block and no player has win till now
+		then it is "invalid"
+	If xWins&gt;0 and oWins&gt;0 #Case when there is winning configuration of both players simultaneously
+		then it is "invalid"
+	If xWins&gt;0
+		If numX &gt; numO
+			then it is "valid"
+		Else 
+			then it is "invalid"
+	If oWins&gt;0
+		If numX &lt; numO
+			then it is "valid"
+		Else 
+			then it is "invalid"
+	rest all are "valid"
+Else
+	rest all are "invalid"
+</code></p>
 ]]></content>
   </entry>
   
@@ -47,7 +202,7 @@
     <link href="http://pag.sdslabs.co/blog//2013/09/16/spoj-morse/"/>
     <updated>2013-09-16T18:30:00+05:30</updated>
     <id>http://pag.sdslabs.co/blog//2013/09/16/spoj-morse</id>
-    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> : Dynamic Programming.</p>
+    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> : Dynamic Programming, Trie</p>
 
 <p><strong><a href="http://www.spoj.com/problems/MORSE/">Problem</a></strong> : </p>
 
@@ -151,7 +306,7 @@
 
 <p>Find f[M] such that if (M &gt; N) f[M] = sum(f[M - i]) for(i = 1 to N) else f[M] = M.</p>
 
-<p>Explanation :</p>
+<p>Explaination :</p>
 
 <p>For convenience let us take k = 4. So f[n] = f[n - 1] + f[n - 2] + f[n - 3] + f[n - 4].
 Let us consider two matrices A,B of size (4 X 4)</p>
@@ -344,59 +499,6 @@ end NACCI
 <p>Similar is the situation to other guard, points of the form <strong>(i,Y)</strong> are visible if and only if <strong>‘i’</strong> is coprime to <strong>(A+B-Y)</strong>. and visible to both if <strong>‘i’</strong> is coprime to <strong>(A+B-Y)</strong> and <strong>Y</strong>, which means <strong>‘i’</strong> is coprime to <strong>(A+B-Y)*Y</strong>..</p>
 
 <p>Now the problem is reduced for a given <strong>Y</strong> , how many numbers from <strong>1 to L</strong> are coprime to <strong>Y</strong>. For this we can prime factorize <strong>Y</strong> and use inclusion and exclusion principle on primes to find the final answer. Total there can be at max 6 prime factors to <strong>Y</strong>, as the product of first six primes  &gt; 4000 = <strong>(A+B)</strong>. Now it takes <strong>2^N = (2^6) = 64</strong> steps for finding number of coprimes of each Y, so 3 * 64 for each horizontal row, so (3 * 64 * 4000) for all rows  = 768000 steps which comes under time limit.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SPOJ MBALL]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/08/05/spoj-mball/"/>
-    <updated>2013-08-05T15:26:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/08/05/spoj-mball</id>
-    <content type="html"><![CDATA[<p><strong><a href="http://www.spoj.com/problems/MBALL/">Problem</a></strong> :
-Given the possible ways of scoring in a game, you neeed to find in how many ways can a given score be achieved.</p>
-
-<p><strong>Pre-requisites</strong> : <a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=dynProg&amp;module=Static">Dynamic Programming</a>(read DP)</p>
-
-<p><strong>Explanation</strong> :</p>
-
-<p>The problem is quite simple. The different ways of scoring can be as follows:</p>
-
-<ul>
-  <li>safety: 2 points</li>
-  <li>field goal: 3 points</li>
-  <li>touchdown: 6 points</li>
-  <li>one-point conversion try after touchdown: 7 points</li>
-  <li>two-point conversion try after touchdown: 8 points</li>
-</ul>
-
-<p>We start by subtracting the smallest possible score ie 2 from the given score and reduce it to smaller instance of the same problem. This way we continue till we reach 0. Then carry out this step with 3,6,7and 8 as well.</p>
-
-<p>eg 10 points can be scored in following ways:</p>
-
-<ul>
-  <li>first 2 points and then scoring 8 points.
-    <ul>
-      <li>2 points can be scored in 1 way only and 8 points can be scored in following way:
-        <ul>
-          <li>first 2 points and then 6 points.</li>
-          <li>first 3 points and then 5 points.</li>
-          <li>first 4 points and then 4 points.</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>first 3 points and then scoring 7 points.</li>
-  <li>first 4 points and then scoring 6 points.</li>
-  <li>first 5 points and then scoring 5 points.</li>
-</ul>
-
-<p>In each case we reduce the problem to a subproblem of the same type.</p>
-
-<p>Notice a pitfall here. Even if there is just one test case (say S=10 itself), We are doing the computation for various subproblems again and again. eg we calculate the number of ways of scoring 6 points when we are calculating the number of ways of scoring 8 points. And we are doing this calculation again when we try to find number of ways scoring 10 points. </p>
-
-<p>Basically we are solving the same sub problem again and again even when we have just one test case. Surely this method will timeeout. </p>
-
-<p>So what do we do? We use DP. DP means we save the result of various sub problems so that we do not have to calculate them again and again. In this case, we make an array called <em>result[N]</em> (and initialise with -1) in which we store the number of ways of achieving <em>i</em> score for all <em>i</em> varying from 2 to <em>N</em>. Also there is only one way of achieving score of ‘0’. So <em>result[0]</em>=1. Now when we need to calcualte the number of ways of achieving score <em>i</em>, we check the array. If it contains -1, we calculate the result and update the array entry else we use the value from the array.</p>
 ]]></content>
   </entry>
   

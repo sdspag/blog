@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>SPOJ-DGAME - PAG, IIT Roorkee</title>
+  <title>Category: First Year - PAG, IIT Roorkee</title>
   <meta name="author" content="Programming & Algorithms Group, Software Development Section, IIT Roorkee">
 
   
-  <meta name="description" content="Prerequisites : Game of Nim Problem : Game of Nim with variations. (N piles with ith pile containing either 2i or 2i+1 stones where even number of &hellip;">
+  <meta name="description" content="Category: First Year">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame">
+  <link rel="canonical" href="http://pag.sdslabs.co/blog/blog/categories/first-year">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://feeds.feedburner.com/sdspag" rel="alternate" title="PAG, IIT Roorkee" type="application/atom+xml">
@@ -71,117 +71,39 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-      <h1 class="entry-title"><a href="/blog/2013/10/18/spoj-dgame/">SPOJ-DGAME</a></h1>
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-18T21:16:00+05:30" pubdate data-updated="true">Oct 18<span>th</span>, 2013</time>
-        <!-- 
-         | <a href="#disqus_thread">Comments</a>
-         -->
-      </p>
+    <h1 class="entry-title">Category: First Year</h1>
     
   </header>
-
-
-<div class="entry-content"><p><strong>Prerequisites</strong> :  Game of Nim</p>
-
-<p><strong><a href="http://www.spoj.com/problems/DGAME/">Problem</a></strong> : Game of Nim with variations. (N piles with i<sup>th</sup> pile containing either 2<em>i or 2</em>i+1 stones where even number of stones may be removed from selected pile.)</p>
-
-<p><strong>Explanation</strong> :</p>
-
-<p>At every index i, can have stones in two ways, so total no. of ways comes out to be 2 * 2 * &#8230; . * 2 (n times).</p>
-
-<p>Now whether an index have 2<em>i or 2</em>i+1 stones the game remains unaffected because if there are 2<em>i+1 stones in any pile there will be one stone left out anyways, and the game will be same as the one played with 2</em>i stones. We shall be considering only this case.</p>
-
-<p>At any point of the game i<sup>th</sup> pile contains 2*(i - k) stones (where k is any arbitrary constant). Now you can interpret the question as the ith pile had i stones in the beginning and you can take out any positive number of stones from it. This is the standard nim game containing N piles, where the ith pile contains i stones.</p>
-
-<p>Now our task is to find XOR of N numbers(1 to N). Every number can be represented 4*p+q where 0 &lt;= q &lt;= 3 and p is any arbitrary.</p>
-
-<p>For every N of type 4*p+3, it can be easily proved that XOR of 1 to N is 0. So the first person will always lose the game. The answer for such numbers is zero.</p>
-
-<p>For N of type 4*p+1 XOR of numbers from 1 to N is 1, so the first player can remove 1 stone from any pile containing odd number of stones so that the XOR becomes zero. There are (N+1)/2 piles containing odd number of stones, so the answer for this case is (N+1)/2.</p>
-
-<p>For numbers of type 4<em>p or 4</em>p+2 XOR is N and N+1 respectively So first player can make XOR zero by removing stones from any pile whose most significant bit is same as the most significant bit of N. Thus the answer for this case is the number of piles which has x stones, such that when x is represented in binary, it has the same number of bits as the binary representation of N. This can be obtained by subtracting from N the maximum power of 2 which is less than or equal to N.</p>
-
-<p><strong>Links</strong> : <a href="http://community.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=algorithmGames">Game of Nim</a></p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Programming & Algorithms Group, Software Development Section, IIT Roorkee</span></span>
-
-      
-
-
-
-
-
+  <div id="blog-archives" class="category">
 
 
 
   
+  <h2>2013</h2>
+
+<article>
+  
+<h1><a href="/blog/2013/10/19/first-year-recruitment-results/">First Year Recruitment Results</a></h1>
+<time datetime="2013-10-19T22:30:00+05:30" pubdate><span class='month'>Oct</span> <span class='day'>19</span> <span class='year'>2013</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/blog/categories/first-year/'>First Year</a>, <a class='category' href='/blog/blog/categories/recruitments/'>Recruitments</a></span>
+</footer>
 
 
-<time datetime="2013-10-18T21:16:00+05:30" pubdate data-updated="true">Oct 18<span>th</span>, 2013</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/game-theory/'>Game Theory</a>, <a class='category' href='/blog/blog/categories/game-of-nim/'>Game of Nim</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the Week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2013/09/16/spoj-morse/" title="Previous Post: SPOJ MORSE">&laquo; SPOJ MORSE</a>
-      
-      
-    </p>
-  </footer>
 </article>
 
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  </section>
+
+  
+</article>
 
 </div>
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -233,10 +155,7 @@
       var disqus_shortname = 'pagblog';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame/';
-        var disqus_url = 'http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
