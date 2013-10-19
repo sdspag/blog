@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Editorial | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/editorial/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-10-19T22:35:32+05:30</updated>
+  <updated>2013-10-19T22:53:39+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-DGAME]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame/"/>
+    <updated>2013-10-18T21:16:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame</id>
+    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> :  Game of Nim</p>
+
+<p><strong><a href="http://www.spoj.com/problems/DGAME/">Problem</a></strong> : Game of Nim with variations. (N piles with i<sup>th</sup> pile containing either 2<em>i or 2</em>i+1 stones where even number of stones may be removed from selected pile.)</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>At every index i, can have stones in two ways, so total no. of ways comes out to be 2 * 2 * . . . . * 2 (n times).</p>
+
+<p>Now whether an index have 2<em>i or 2</em>i+1 stones the game remains unaffected because if there are 2<em>i+1 stones in any pile there will be one stone left out anyways, and the game will be same as the one played with 2</em>i stones. We shall be considering only this case.</p>
+
+<p>At any point of the game i<sup>th</sup> pile contains 2*(i - k) stones (where k is any arbitrary constant). Now you can interpret the question as the ith pile had i stones in the beginning and you can take out any positive number of stones from it. This is the standard nim game containing N piles, where the ith pile contains i stones.</p>
+
+<p>Now our task is to find XOR of N numbers(1 to N). Every number can be represented 4*p+q where 0 &lt;= q &lt;= 3 and p is any arbitrary.</p>
+
+<p>For every N of type 4*p+3, it can be easily proved that XOR of 1 to N is 0. So the first person will always lose the game. The answer for such numbers is zero.</p>
+
+<p>For N of type 4*p+1 XOR of numbers from 1 to N is 1, so the first player can remove 1 stone from any pile containing odd number of stones so that the XOR becomes zero. There are (N+1)/2 piles containing odd number of stones, so the answer for this case is (N+1)/2.</p>
+
+<p>For numbers of type 4<em>p or 4</em>p+2 XOR is N and N+1 respectively So first player can make XOR zero by removing stones from any pile whose most significant bit is same as the most significant bit of N. Thus the answer for this case is the number of piles which has x stones, such that when x is represented in binary, it has the same number of bits as the binary representation of N. This can be obtained by subtracting from N the maximum power of 2 which is less than or equal to N.</p>
+
+<p><strong>Links</strong> : <a href="http://community.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=algorithmGames">Game of Nim</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SPOJ-RRSCHED]]></title>
@@ -306,7 +335,7 @@ Else
 
 <p>Find f[M] such that if (M &gt; N) f[M] = sum(f[M - i]) for(i = 1 to N) else f[M] = M.</p>
 
-<p>Explaination :</p>
+<p>Explanation :</p>
 
 <p>For convenience let us take k = 4. So f[n] = f[n - 1] + f[n - 2] + f[n - 3] + f[n - 4].
 Let us consider two matrices A,B of size (4 X 4)</p>
@@ -478,27 +507,6 @@ int NACCI(int M , int N) :
 end NACCI
 </code></pre>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SPOJ-TREZOR]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor/"/>
-    <updated>2013-08-21T00:29:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/08/21/spoj-trezor</id>
-    <content type="html"><![CDATA[<p><a href="http://www.spoj.com/problems/TREZOR/">Problem</a> :</p>
-
-<p>Given a 2-D Coordinate Plane, find how many points are visible from one point. Two persons are standing at two other points, and you need to find how many other points are visible to both, points visible to only one, and none.</p>
-
-<p>Explanation:</p>
-
-<p>For Simplicity consider one guard standing at <strong>(0,0)</strong> and rectangle of size <strong>L*(A+B+1)</strong> is present with corner points <strong>(1,0) (L,0) (1,A+B) (L,A+B)</strong> and other guard is standing at <strong>(0,A+B)</strong>.</p>
-
-<p>Lets discuss the solution to one guard. A point <strong>(X,Y)</strong> will be blocked by another point <strong>(X1,Y1)</strong> to the origin if the slopes of lines joining points are equal, i.e <strong>X / X1 = Y / Y1 = Z (Z &gt; 1)</strong>. That means <strong>X = X1 * Z</strong> and <strong>Y = Y1 * Z</strong>, which inturn means that <strong>X</strong> and <strong>Y</strong> are not coprimes (have a common factor). So for every horizontal row <strong>(i,Y)</strong> number of points visible to origin are number of <strong>i’s</strong> from <strong>1 to L</strong> that are coprime to <strong>Y</strong>.</p>
-
-<p>Similar is the situation to other guard, points of the form <strong>(i,Y)</strong> are visible if and only if <strong>‘i’</strong> is coprime to <strong>(A+B-Y)</strong>. and visible to both if <strong>‘i’</strong> is coprime to <strong>(A+B-Y)</strong> and <strong>Y</strong>, which means <strong>‘i’</strong> is coprime to <strong>(A+B-Y)*Y</strong>..</p>
-
-<p>Now the problem is reduced for a given <strong>Y</strong> , how many numbers from <strong>1 to L</strong> are coprime to <strong>Y</strong>. For this we can prime factorize <strong>Y</strong> and use inclusion and exclusion principle on primes to find the final answer. Total there can be at max 6 prime factors to <strong>Y</strong>, as the product of first six primes  &gt; 4000 = <strong>(A+B)</strong>. Now it takes <strong>2^N = (2^6) = 64</strong> steps for finding number of coprimes of each Y, so 3 * 64 for each horizontal row, so (3 * 64 * 4000) for all rows  = 768000 steps which comes under time limit.</p>
 ]]></content>
   </entry>
   
