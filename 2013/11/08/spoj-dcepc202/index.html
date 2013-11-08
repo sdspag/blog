@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>First Year Recruitment Results - PAG, IIT Roorkee</title>
+  <title>SPOJ-DCEPC202 - PAG, IIT Roorkee</title>
   <meta name="author" content="Programming & Algorithms Group, Software Development Section, IIT Roorkee">
 
   
-  <meta name="description" content="Congratulations to everyone who made it to the group. We were extremely happy to see the response by the first yearites. We got to interview some of &hellip;">
+  <meta name="description" content="Problem :
+Given the number of unique shortest paths across a rectangular grid with broken tiles, to find its dimensions. Pre-requisites : Principle &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/10/19/first-year-recruitment-results">
+  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://feeds.feedburner.com/sdspag" rel="alternate" title="PAG, IIT Roorkee" type="application/atom+xml">
@@ -74,7 +75,7 @@
 <article class="hentry" role="article">
   
   <header>
-      <h1 class="entry-title"><a href="/blog/2013/10/19/first-year-recruitment-results/">First Year Recruitment Results</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/11/08/spoj-dcepc202/">SPOJ-DCEPC202</a></h1>
     
       <p class="meta">
         
@@ -89,7 +90,7 @@
   
 
 
-<time datetime="2013-10-19T22:30:00+05:30" pubdate data-updated="true">Oct 19<span>th</span>, 2013</time>
+<time datetime="2013-11-08T13:33:00+05:30" pubdate data-updated="true">Nov 8<span>th</span>, 2013</time>
         <!-- 
          | <a href="#disqus_thread">Comments</a>
          -->
@@ -98,28 +99,83 @@
   </header>
 
 
-<div class="entry-content"><p>Congratulations to everyone who made it to the group. We were extremely happy to see the response by the first yearites. We got to interview some of the most talented first yearities in our campus and it was a wonderful experience for us and hopefully for them too. We had to reject people only because of limited vacancies even though they were all equally capable.</p>
+<div class="entry-content"><p><strong><a href="http://www.spoj.com/problems/DCEPC202/">Problem</a></strong> :
+Given the number of unique shortest paths across a rectangular grid with broken tiles, to find its dimensions.</p>
 
-<p>Here comes the result of Programming and Algorithms Group’s first year recruitment test : </p>
+<p><strong>Pre-requisites</strong> : Principle of inclusion and exclusion, Binary Search</p>
 
-<ul>
-  <li>Abhishek Uppal</li>
-  <li>Akhil Gupta</li>
-  <li>Anal Kumar Shahi</li>
-  <li>Chitra Kumari</li>
-  <li>Dhaval Kapil</li>
-  <li>Eklavya Sharma</li>
-  <li>Harsh Kumar Sahu</li>
-  <li>Ishu</li>
-  <li>Jahnavi Singh</li>
-  <li>Jay Bosamiya</li>
-  <li>M. Sai Varun Reddy</li>
-  <li>Rahul Yadav</li>
-  <li>Rishabh Ravi Gupta</li>
-  <li>Shubhangi Singar</li>
-  <li>Vaibhav Daga</li>
-  <li>Vinay Malik</li>
-</ul>
+<p><strong>Explanation</strong> :</p>
+
+<p>First consider a corridor of dimension m*n, with no broken tiles. Now, for ‘shortest’ path, you can only move to tiles (x,y+1) or (x+1,y) if you’re currently on tile (x,y). So, to go from (0,0) to (m-1,n-1), you need to move m+n-2 steps with m-1 steps in x direction and n-1 steps in y direction. The number of unique paths will be the number of ways in which you can choose those m-1 (or n-1) steps out of the total m+n steps 
+i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
+
+<p>Now, lets take into account the broken tiles:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">  .____.____.____.____.____.____.G
+</span><span class="line">  |    |    |    |    |    |    |
+</span><span class="line"> 4|    |    |    | F* |    |    |
+</span><span class="line">  .____.____.____.____.____.____.
+</span><span class="line">  |    |    |    |    |    |    |
+</span><span class="line"> 3|    |    |    |    |    |    |
+</span><span class="line">  .____.____.____.____.____.____.
+</span><span class="line">  |    |    |    |    |    |    |
+</span><span class="line"> 2| C *|    |    | D* |    | E* |
+</span><span class="line">  .____.____.____.____.____.____. 
+</span><span class="line">  |    |    |    |    |    |    |
+</span><span class="line"> 1|    |    |    |    |    |    |
+</span><span class="line">  .____.____.____.____.____.____.
+</span><span class="line">  |    |    |    |    |    |    |
+</span><span class="line"> 0|    |    |    | B *|    |    |
+</span><span class="line">  .____.____.____.____.____.____.
+</span><span class="line"> A  0     1        n/2       n-1
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>* represents broken tiles.</p>
+
+<p>Now, employing the principle of inclusion and exclusion, we will first determine the total number of paths and then subtract the number of paths passing through the broken tiles. The total number of paths, therefore, is:</p>
+
+<p>N(AG) - N(AB)*N(BG) - N(AC)*N(CG) - N(AD)*N(DG) - N(AE)*N(EG) - N(AF)*N(FG) + N(AB)*N(BD)*N(DG) + N(AB)*N(BE)*N(EG) + N(AC)*N(CD)*N(DG) + N(AC)*N(CF)*N(FG) + N(AD)*N(DE)*N(EG) + N(AD)*N(DF)*N(FG) - N(AB)*N(BD)*N(DF)*N(FG) - N(AC)*N(CD)*N(DE)*N(EG)</p>
+
+<p>where:</p>
+
+<p>N(AG)= <sup>(n - 1 + 4)</sup>C<sub>4</sub> = p</p>
+
+<p>N(AF)= <sup>(n/2 + 4)</sup>C<sub>4</sub> = q</p>
+
+<p>N(AE)=N(CG)= <sup>(n-1+2)</sup>C<sub>2</sub> = r</p>
+
+<p>N(BG)= <sup>(n - 1 - n/2 + 4)</sup>C<sub>4</sub> = s</p>
+
+<p>N(AD)=N(CF)= <sup>(n/2 + 2)</sup>C<sub>2</sub> = t</p>
+
+<p>N(BE)=N(DG)= <sup>(n - 1 - n/2 + 2)</sup>C<sub>2</sub> = u</p>
+
+<p>N(AB)=N(AC)=N(BD)=N(CD)=N(DE)=N(DF)=N(EG)=N(FG)=1</p>
+
+<p>So, the final expression for number of unique paths, k is:</p>
+
+<p>k = p - 1*s - 1*r - t*u - r*1 - q*1 + 1*1*u + 1*u*1 + 1*1*u + 1*t*1 + t*1*1 + t*1*1 - 1 - 1</p>
+
+<p>=&gt;  k = p - s - 2*r - t*u -q + 3*u + 3*t -2</p>
+
+<p>According to the problem, we have to find out the dimension of the corridor i.e. n for a given k. For this we will make an array of the k values of all 1&lt;=n&lt;=10000 beforehand. Now for each k, we’ll carry out a binary search in the array to find out the value of n for which no. of paths is equal to or just larger than k.</p>
 </div>
 
 
@@ -142,12 +198,12 @@
   
 
 
-<time datetime="2013-10-19T22:30:00+05:30" pubdate data-updated="true">Oct 19<span>th</span>, 2013</time>
+<time datetime="2013-11-08T13:33:00+05:30" pubdate data-updated="true">Nov 8<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/blog/categories/first-year/'>First Year</a>, <a class='category' href='/blog/blog/categories/recruitments/'>Recruitments</a>
+    <a class='category' href='/blog/blog/categories/binary-search/'>Binary Search</a>, <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/principle-of-inclusion-and-exclusion/'>Principle of inclusion and exclusion</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the Week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a>
   
 </span>
 
@@ -156,7 +212,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/10/19/first-year-recruitment-results/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/10/19/first-year-recruitment-results/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -169,10 +225,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/10/18/spoj-dgame/" title="Previous Post: SPOJ-DGAME">&laquo; SPOJ-DGAME</a>
+        <a class="basic-alignment left" href="/blog/2013/10/19/first-year-recruitment-results/" title="Previous Post: First Year Recruitment Results">&laquo; First Year Recruitment Results</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/11/08/spoj-dcepc202/" title="Next Post: SPOJ-DCEPC202">SPOJ-DCEPC202 &raquo;</a>
       
     </p>
   </footer>
@@ -237,8 +291,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/10/19/first-year-recruitment-results/';
-        var disqus_url = 'http://pag.sdslabs.co/blog//2013/10/19/first-year-recruitment-results/';
+        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/';
+        var disqus_url = 'http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/';
         var disqus_script = 'embed.js';
       
     (function () {
