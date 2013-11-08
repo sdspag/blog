@@ -12,7 +12,7 @@ Prerequisites : Matrix Exponentation.
 
 Find f[M] such that if (M > N) f[M] = sum(f[M - i]) for(i = 1 to N) else f[M] = M.
 
-Explaination :
+Explanation :
 
 For convenience let us take k = 4. So f[n] = f[n - 1] + f[n - 2] + f[n - 3] + f[n - 4].
 Let us consider two matrices A,B of size (4 X 4)
