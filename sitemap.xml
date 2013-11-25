@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://pag.sdslabs.co/blog//2013/07/07/algorithms-and-beyond-dot-dot-dot/</loc>
-        <lastmod>2013-07-26T14:36:14+05:30</lastmod>
+        <lastmod>2013-11-25T22:21:55+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl/</loc>
@@ -57,16 +57,20 @@
         <lastmod>2013-11-08T13:57:59+05:30</lastmod>
     </url>
     <url>
+        <loc>http://pag.sdslabs.co/blog//2013/11/25/acm-qualifications-2013/</loc>
+        <lastmod>2013-11-25T22:45:08+05:30</lastmod>
+    </url>
+    <url>
         <loc>http://pag.sdslabs.co/blog//robots.txt</loc>
         <lastmod>2013-07-08T10:07:15+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//</loc>
-        <lastmod>2013-11-08T13:57:59+05:30</lastmod>
+        <lastmod>2013-11-25T22:45:08+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//blog/archives/</loc>
-        <lastmod>2013-11-08T13:57:59+05:30</lastmod>
+        <lastmod>2013-11-25T22:45:08+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//about/</loc>

@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>SPOJ-DCEPC202 - PAG, IIT Roorkee</title>
+  <title>ACM Qualifications 2013 - PAG, IIT Roorkee</title>
   <meta name="author" content="Programming & Algorithms Group, Software Development Section, IIT Roorkee">
 
   
-  <meta name="description" content="Problem :
-Given the number of unique shortest paths across a rectangular grid with broken tiles, to find its dimensions. Pre-requisites : Principle &hellip;">
+  <meta name="description" content="As a long-awaited winter break comes closer catalyzing our recovery from the haunting memories of a badly screwed up end sem, it’s good news for the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Given the number of unique shortest paths across a rectangular grid with broken 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202">
+  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/11/25/acm-qualifications-2013">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://feeds.feedburner.com/sdspag" rel="alternate" title="PAG, IIT Roorkee" type="application/atom+xml">
@@ -75,7 +74,7 @@ Given the number of unique shortest paths across a rectangular grid with broken 
 <article class="hentry" role="article">
   
   <header>
-      <h1 class="entry-title"><a href="/blog/2013/11/08/spoj-dcepc202/">SPOJ-DCEPC202</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/11/25/acm-qualifications-2013/">ACM Qualifications 2013</a></h1>
     
       <p class="meta">
         
@@ -90,7 +89,7 @@ Given the number of unique shortest paths across a rectangular grid with broken 
   
 
 
-<time datetime="2013-11-08T13:33:00+05:30" pubdate data-updated="true">Nov 8<span>th</span>, 2013</time>
+<time datetime="2013-11-25T22:20:00+05:30" pubdate data-updated="true">Nov 25<span>th</span>, 2013</time>
         <!-- 
          | <a href="#disqus_thread">Comments</a>
          -->
@@ -99,83 +98,129 @@ Given the number of unique shortest paths across a rectangular grid with broken 
   </header>
 
 
-<div class="entry-content"><p><strong><a href="http://www.spoj.com/problems/DCEPC202/">Problem</a></strong> :
-Given the number of unique shortest paths across a rectangular grid with broken tiles, to find its dimensions.</p>
+<div class="entry-content"><p>As a long-awaited winter break comes closer catalyzing our recovery from the haunting memories of a badly screwed up end sem, it’s  good news for the geeks at IIT Roorkee coming after the online prelims of the ACM ICPC Indian Regionals. ACM ICPC is arguably the most reputed programming competition for college students across the world, and seeing Roorkee perform impressively at this huge scale makes us all really proud.</p>
 
-<p><strong>Pre-requisites</strong> : Principle of inclusion and exclusion, Binary Search</p>
+<p>In India there are three sites which play host to the ACM ICPC Regionals: IIT Kanpur, IIT Kharagpur and Amritapuri. There have been a total of 14 qualifications from IIT Roorkee across the three sites this year, a new record in itself for the institute. In the regionals, which will be held around mid December, a total of about 600 teams from the very best technical institutes of the country and abroad shall be competing for their shot at a glorious opportunity of participating in the World Finals of the ACM ICPC. Every year the World Finals are held early July in Russia. This is a great achievement for the programmers and geeks alike at IIT Roorkee; and a record that we should strive to improve every year.</p>
 
-<p><strong>Explanation</strong> :</p>
+<p>PAG congratulates all the teams that will be representing IIT Roorkee at the Regionals this year and wishes them the very best of luck as they gear up to take on the best in the business.</p>
 
-<p>First consider a corridor of dimension m*n, with no broken tiles. Now, for ‘shortest’ path, you can only move to tiles (x,y+1) or (x+1,y) if you’re currently on tile (x,y). So, to go from (0,0) to (m-1,n-1), you need to move m+n-2 steps with m-1 steps in x direction and n-1 steps in y direction. The number of unique paths will be the number of ways in which you can choose those m-1 (or n-1) steps out of the total m+n steps 
-i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
+<p>Here are the team and students from IIT Roorkee who have qualified for the ACM ICPC  Regionals 2013:</p>
 
-<p>Now, lets take into account the broken tiles:</p>
+<h3 id="amritapuri">Amritapuri</h3>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">  .____.____.____.____.____.____.G
-</span><span class="line">  |    |    |    |    |    |    |
-</span><span class="line"> 4|    |    |    | F* |    |    |
-</span><span class="line">  .____.____.____.____.____.____.
-</span><span class="line">  |    |    |    |    |    |    |
-</span><span class="line"> 3|    |    |    |    |    |    |
-</span><span class="line">  .____.____.____.____.____.____.
-</span><span class="line">  |    |    |    |    |    |    |
-</span><span class="line"> 2| C *|    |    | D* |    | E* |
-</span><span class="line">  .____.____.____.____.____.____. 
-</span><span class="line">  |    |    |    |    |    |    |
-</span><span class="line"> 1|    |    |    |    |    |    |
-</span><span class="line">  .____.____.____.____.____.____.
-</span><span class="line">  |    |    |    |    |    |    |
-</span><span class="line"> 0|    |    |    | B *|    |    |
-</span><span class="line">  .____.____.____.____.____.____.
-</span><span class="line"> A  0     1        n/2       n-1
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<ul>
+  <li><strong>11coders</strong>
+    <ul>
+      <li>Anubhav Bindlish† (CSE 2nd year)</li>
+      <li>Aman Kumar Kedia† (CSE 2nd year)  	</li>
+      <li>Kshitij Bathla† (CSE 2nd year)</li>
+    </ul>
+  </li>
+  <li><strong>the-royal-flush</strong>
+    <ul>
+      <li>Jaspreet Singh (CSE 4th year)</li>
+      <li>Arpit Dua (MSP 5th year)	</li>
+      <li>Sukun Tarachandani (EPE 4th year)</li>
+    </ul>
+  </li>
+  <li><strong>frick-freak</strong>
+    <ul>
+      <li>Ch. S Pramod (ECE 3rd year)</li>
+      <li>R Shiva Tejesh (ECE 3rd year)</li>
+      <li>Revanth Reddy (EE 3rd year)</li>
+    </ul>
+  </li>
+  <li><strong>3Spades</strong>
+    <ul>
+      <li>Adury Surya Kiran† (ECE 3rd year)</li>
+      <li>Praneeth Reddy† (ECE 3rd year)</li>
+      <li>Harsh Jhamtani† (CSE 4th year)</li>
+    </ul>
+  </li>
+  <li><strong>tehloneclubs</strong>
+    <ul>
+      <li>Vaibhav Gupta		CSE 4th year</li>
+      <li>Gaurav Singh   		CSE 4th year
+ 	*   SUSHANT OJAL		CSE 4th year</li>
+    </ul>
+  </li>
+  <li><strong>bapcoders0</strong>
+    <ul>
+      <li>Pankaj Gudlani (CSE 2nd year)</li>
+      <li>Ankur Garg (CSE 2nd year)</li>
+      <li>Bharat Gaind (CSE 2nd year)</li>
+    </ul>
+  </li>
+  <li><strong>the-mathletes</strong>
+    <ul>
+      <li>Aman Tripathi (EE 3rd year)</li>
+      <li>Ankit Patel (CSE 3rd year)</li>
+      <li>Saurabh Suman (ECE 3rd year)</li>
+    </ul>
+  </li>
+  <li><strong>progenius</strong>
+    <ul>
+      <li>Rajat Jain† (CSE 2nd year)</li>
+      <li>Divij Bindlish (EE 2nd year)</li>
+      <li>Vibhor Goel (EE 2nd year)</li>
+    </ul>
+  </li>
+  <li><strong>hedylogos</strong>
+    <ul>
+      <li>Saurabh Paliwal (CSE 4th year)</li>
+      <li>Aayush Gupta (CSI 4th year)</li>
+      <li>Siddharth Maheshwari (CSE 4th year)</li>
+    </ul>
+  </li>
+  <li><strong>inquisitive</strong>
+    <ul>
+      <li>Abhishek Kandoi       	(CSE 2nd year)</li>
+      <li>Priyanshu Sheth        	(CSE 2nd year)</li>
+      <li>Satyam Vijay               	(CSE 2nd year)</li>
+    </ul>
+  </li>
+  <li><strong>codewarrior</strong>
+    <ul>
+      <li>Shubham Kansal†        	(CSE 3rd year)</li>
+      <li>Shubham Mittal                   (MSM 5th year)           	</li>
+      <li>Vishu Goyal                    	(CSE 3rd year)</li>
+    </ul>
+  </li>
+</ul>
 
-<p>* represents broken tiles.</p>
+<h3 id="iit-kanpur">IIT Kanpur</h3>
 
-<p>Now, employing the principle of inclusion and exclusion, we will first determine the total number of paths and then subtract the number of paths passing through the broken tiles. The total number of paths, therefore, is:</p>
+<ul>
+  <li><strong>3Spades</strong>
+    <ul>
+      <li>Adury Surya Kiran     	(ECE 3rd year)</li>
+      <li>Praneeth Reddy†    	(ECE 3rd year)</li>
+      <li>Harsh Jhamtani† (CSE 4th year)</li>
+    </ul>
+  </li>
+  <li><strong>inquisitive</strong>
+    <ul>
+      <li>Abhishek Kandoi†	(CSE 2nd year)</li>
+      <li>Priyanshu Sheth†        	(CSE 2nd year)</li>
+      <li>Satyam Vijay†               	(CSE 2nd year)</li>
+    </ul>
+  </li>
+</ul>
 
-<p>N(AG) - N(AB)*N(BG) - N(AC)*N(CG) - N(AD)*N(DG) - N(AE)*N(EG) - N(AF)*N(FG) + N(AB)*N(BD)*N(DG) + N(AB)*N(BE)*N(EG) + N(AC)*N(CD)*N(DG) + N(AC)*N(CF)*N(FG) + N(AD)*N(DE)*N(EG) + N(AD)*N(DF)*N(FG) - N(AB)*N(BD)*N(DF)*N(FG) - N(AC)*N(CD)*N(DE)*N(EG)</p>
+<h3 id="iit-kharagpur">IIT Kharagpur</h3>
 
-<p>where:</p>
+<ul>
+  <li><strong>the-royal-flush</strong>
+    <ul>
+      <li>Jaspreet Singh (CSE 4th year)</li>
+      <li>Arpit Dua (MSP 5th year)</li>
+      <li>Sukun Tarachandani (EPE 4th year)</li>
+    </ul>
+  </li>
+</ul>
 
-<p>N(AG)= <sup>(n - 1 + 4)</sup>C<sub>4</sub> = p</p>
+<p><em>People marked with † are members of Programming and Algorithms Group</em></p>
 
-<p>N(AF)= <sup>(n/2 + 4)</sup>C<sub>4</sub> = q</p>
-
-<p>N(AE)=N(CG)= <sup>(n-1+2)</sup>C<sub>2</sub> = r</p>
-
-<p>N(BG)= <sup>(n - 1 - n/2 + 4)</sup>C<sub>4</sub> = s</p>
-
-<p>N(AD)=N(CF)= <sup>(n/2 + 2)</sup>C<sub>2</sub> = t</p>
-
-<p>N(BE)=N(DG)= <sup>(n - 1 - n/2 + 2)</sup>C<sub>2</sub> = u</p>
-
-<p>N(AB)=N(AC)=N(BD)=N(CD)=N(DE)=N(DF)=N(EG)=N(FG)=1</p>
-
-<p>So, the final expression for number of unique paths, k is:</p>
-
-<p>k = p - 1*s - 1*r - t*u - r*1 - q*1 + 1*1*u + 1*u*1 + 1*1*u + 1*t*1 + t*1*1 + t*1*1 - 1 - 1</p>
-
-<p>=&gt;  k = p - s - 2*r - t*u -q + 3*u + 3*t -2</p>
-
-<p>According to the problem, we have to find out the dimension of the corridor i.e. n for a given k. For this we will make an array of the k values of all 1&lt;=n&lt;=10000 beforehand. Now for each k, we’ll carry out a binary search in the array to find out the value of n for which no. of paths is equal to or just larger than k.</p>
 </div>
 
 
@@ -198,12 +243,12 @@ i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
   
 
 
-<time datetime="2013-11-08T13:33:00+05:30" pubdate data-updated="true">Nov 8<span>th</span>, 2013</time>
+<time datetime="2013-11-25T22:20:00+05:30" pubdate data-updated="true">Nov 25<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/blog/categories/binary-search/'>Binary Search</a>, <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/principle-of-inclusion-and-exclusion/'>Principle of inclusion and exclusion</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the Week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a>
+    <a class='category' href='/blog/blog/categories/acm/'>ACM</a>, <a class='category' href='/blog/blog/categories/acm-2013/'>ACM-2013</a>, <a class='category' href='/blog/blog/categories/pag/'>PAG</a>
   
 </span>
 
@@ -212,7 +257,7 @@ i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/11/25/acm-qualifications-2013/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/11/25/acm-qualifications-2013/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -225,10 +270,8 @@ i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/10/19/first-year-recruitment-results/" title="Previous Post: First Year Recruitment Results">&laquo; First Year Recruitment Results</a>
+        <a class="basic-alignment left" href="/blog/2013/11/08/spoj-dcepc202/" title="Previous Post: SPOJ-DCEPC202">&laquo; SPOJ-DCEPC202</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/11/25/acm-qualifications-2013/" title="Next Post: ACM Qualifications 2013">ACM Qualifications 2013 &raquo;</a>
       
     </p>
   </footer>
@@ -293,8 +336,8 @@ i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/';
-        var disqus_url = 'http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/';
+        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/11/25/acm-qualifications-2013/';
+        var disqus_url = 'http://pag.sdslabs.co/blog//2013/11/25/acm-qualifications-2013/';
         var disqus_script = 'embed.js';
       
     (function () {
