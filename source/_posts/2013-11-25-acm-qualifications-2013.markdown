@@ -74,7 +74,7 @@ Here are the team and students from IIT Roorkee who have qualified for the ACM I
 ###IIT Kanpur
 
 *   **3Spades**
-    *   Adury Surya Kiran     	(ECE 3rd year)
+    *   Adury Surya Kiran†     	(ECE 3rd year)
     *   Praneeth Reddy†    	(ECE 3rd year)
     *   Harsh Jhamtani† (CSE 4th year)
 
