@@ -37,9 +37,9 @@ Here are the team and students from IIT Roorkee who have qualified for the ACM I
     *   Harsh Jhamtani† (CSE 4th year)
 
 *   **tehloneclubs**
-    *   Vaibhav Gupta		CSE 4th year
-	*   Gaurav Singh   		CSE 4th year
- 	*   SUSHANT OJAL		CSE 4th year
+    *   Vaibhav Gupta (CSE 4th year)
+	*   Gaurav Singh   (CSE 4th year)
+    *   SUSHANT OJAL (CSE 4th year)
 
 *   **bapcoders0**
     *   Pankaj Gudlani (CSE 2nd year)
