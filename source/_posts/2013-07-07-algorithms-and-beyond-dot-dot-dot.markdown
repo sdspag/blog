@@ -3,7 +3,7 @@ layout: post
 title: "Algorithms and Beyond..."
 date: 2013-07-07 15:03
 comments: true
-categories: [Hello World] 
+categories: [Hello World, PAG] 
 ---
 
 Here, we present the official blog of one of the recent but very promising student bodies of [IIT Roorkee](http://www.iitr.ac.in/) -  **Programming and Algorithms Group**, aka [**PAG**](http://facebook.com/sdspag).
