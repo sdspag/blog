@@ -62,9 +62,9 @@ Here are the team and students from IIT Roorkee who have qualified for the ACM I
     *   Siddharth Maheshwari (CSE 4th year)
 
 *   **inquisitive**
-    *   Abhishek Kandoi       	(CSE 2nd year)
-    *   Priyanshu Sheth        	(CSE 2nd year)
-    *   Satyam Vijay               	(CSE 2nd year)
+    *   Abhishek Kandoi†       	(CSE 2nd year)
+    *   Priyanshu Sheth†        	(CSE 2nd year)
+    *   Satyam Vijay†               	(CSE 2nd year)
 
 *   **codewarrior**
     *   Shubham Kansal†        	(CSE 3rd year)
