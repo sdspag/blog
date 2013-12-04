@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Question of the week | PAG, IIT Roorkee]]></title>
+  <title><![CDATA[Category: Question of the Week | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/question-of-the-week/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-11-26T19:33:26+05:30</updated>
+  <updated>2013-12-04T18:37:57+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -14,51 +14,383 @@
 
   
   <entry>
-    <title type="html"><![CDATA[SPOJ RPSSL]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl/"/>
-    <updated>2013-07-21T22:10:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl</id>
-    <content type="html"><![CDATA[<p>Problem Link : <a href="http://www.spoj.com/problems/RPSSL/">http://www.spoj.com/problems/RPSSL/</a></p>
+    <title type="html"><![CDATA[SPOJ-DCEPC202]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/"/>
+    <updated>2013-11-08T13:33:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202</id>
+    <content type="html"><![CDATA[<p><strong><a href="http://www.spoj.com/problems/DCEPC202/">Problem</a></strong> :
+Given the number of unique shortest paths across a rectangular grid with broken tiles, to find its dimensions.</p>
 
-<p>Prerequisites : <a href="http://en.wikipedia.org/wiki/Bayes'_theorem">Bayes Theorem</a></p>
+<p><strong>Pre-requisites</strong> : Principle of inclusion and exclusion, Binary Search</p>
 
-<p>Here comes the editorial for <a href="http://www.spoj.com/problems/RPSSL/">previous week’s question</a> as posted on <a href="https://www.facebook.com/groups/sdspag/">our group.</a></p>
+<p><strong>Explanation</strong> :</p>
 
-<p>Let the probability that Rajesh beats Sheldon in a single round be <script type="math/tex"> w </script> and let <script type="math/tex"> d </script> be the probability that a single round results in a draw and <script type="math/tex"> l </script> be the probability that Sheldon beats Rajesh in a single round. <script type="math/tex"> w ,\ d ,\ l </script> can be calculated simply as follows :</p>
+<p>First consider a corridor of dimension m*n, with no broken tiles. Now, for ‘shortest’ path, you can only move to tiles (x,y+1) or (x+1,y) if you’re currently on tile (x,y). So, to go from (0,0) to (m-1,n-1), you need to move m+n-2 steps with m-1 steps in x direction and n-1 steps in y direction. The number of unique paths will be the number of ways in which you can choose those m-1 (or n-1) steps out of the total m+n steps 
+i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
 
-<script type="math/tex; mode=display">
+<p>Now, lets take into account the broken tiles:</p>
 
-w = R_R*(S_L +S_{Sc}) + R_{Sc}*(S_P + S_L) + R_P*( S_R + S_{Sp}) + R_L*( S_{Sp}+ S_P) + R_{Sp}*( S_R + S_{Sc}) \\
+<p>```
+  .<strong>__.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.G
+  |    |    |    |    |    |    |
+ 4|    |    |    | F* |    |    |
+  .</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.
+  |    |    |    |    |    |    |
+ 3|    |    |    |    |    |    |
+  .</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.
+  |    |    |    |    |    |    |
+ 2| C <em>|    |    | D</em> |    | E* |
+  .</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>. 
+  |    |    |    |    |    |    |
+ 1|    |    |    |    |    |    |
+  .</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.
+  |    |    |    |    |    |    |
+ 0|    |    |    | B *|    |    |
+  .</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong>__.
+ A  0     1        n/2       n-1</p>
 
-d =  (R_R*S_R) + (R_{Sc}*S_{Sc}) + (R_P*S_P) + (R_L*S_L)+ (R_{Sp}*S_{Sp}) \\
-              
-l=1-d-w\\         
+<p>```</p>
 
-</script>
+<p>* represents broken tiles.</p>
 
-<p>Now Rajesh will win the game if he wins two rounds first.
-The following are the different cases : </p>
+<p>Now, employing the principle of inclusion and exclusion, we will first determine the total number of paths and then subtract the number of paths passing through the broken tiles. The total number of paths, therefore, is:</p>
 
-<script type="math/tex; mode=display">
+<p>N(AG) - N(AB)*N(BG) - N(AC)*N(CG) - N(AD)*N(DG) - N(AE)*N(EG) - N(AF)*N(FG) + N(AB)*N(BD)*N(DG) + N(AB)*N(BE)*N(EG) + N(AC)*N(CD)*N(DG) + N(AC)*N(CF)*N(FG) + N(AD)*N(DE)*N(EG) + N(AD)*N(DF)*N(FG) - N(AB)*N(BD)*N(DF)*N(FG) - N(AC)*N(CD)*N(DE)*N(EG)</p>
 
-ww \: or \: wdw \: or \: dww \: or \: ddww \: or \: dwdw \: or \: wddw \: ... \\
-OR\\
-lww \: or \: wlw \: or \: lwdw \: or \: wdlw \: or \: wldw \: ... \\
+<p>where:</p>
 
-</script>
+<p>N(AG)= <sup>(n - 1 + 4)</sup>C<sub>4</sub> = p</p>
 
-<p>Thus we need to sum up all the above cases which result in
-victory for rajesh. Both the above series  can be simplified by using some maths tricks. (Refer to <a href="http://en.wikipedia.org/wiki/Arithmetico-geometric_sequence">Arithmetico-geometric series</a>.)</p>
+<p>N(AF)= <sup>(n/2 + 4)</sup>C<sub>4</sub> = q</p>
 
-<p>The final expression is :</p>
+<p>N(AE)=N(CG)= <sup>(n-1+2)</sup>C<sub>2</sub> = r</p>
 
-<script type="math/tex; mode=display">
+<p>N(BG)= <sup>(n - 1 - n/2 + 4)</sup>C<sub>4</sub> = s</p>
 
-P = w*w*(1-d)^{-2} + 2*l*w*w*(1-d)^{-3}
+<p>N(AD)=N(CF)= <sup>(n/2 + 2)</sup>C<sub>2</sub> = t</p>
 
-</script>
+<p>N(BE)=N(DG)= <sup>(n - 1 - n/2 + 2)</sup>C<sub>2</sub> = u</p>
 
-<p><strong>Caution:</strong> Check for the cases where d=1.</p>
+<p>N(AB)=N(AC)=N(BD)=N(CD)=N(DE)=N(DF)=N(EG)=N(FG)=1</p>
+
+<p>So, the final expression for number of unique paths, k is:</p>
+
+<p>k = p - 1*s - 1*r - t*u - r*1 - q*1 + 1*1*u + 1*u*1 + 1*1*u + 1*t*1 + t*1*1 + t*1*1 - 1 - 1</p>
+
+<p>=&gt;  k = p - s - 2*r - t*u -q + 3*u + 3*t -2</p>
+
+<p>According to the problem, we have to find out the dimension of the corridor i.e. n for a given k. For this we will make an array of the k values of all 1&lt;=n&lt;=10000 beforehand. Now for each k, we’ll carry out a binary search in the array to find out the value of n for which no. of paths is equal to or just larger than k.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-DGAME]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame/"/>
+    <updated>2013-10-18T21:16:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame</id>
+    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> :  Game of Nim</p>
+
+<p><strong><a href="http://www.spoj.com/problems/DGAME/">Problem</a></strong> : Game of Nim with variations. (N piles with i<sup>th</sup> pile containing either 2<em>i or 2</em>i+1 stones where even number of stones may be removed from selected pile.)</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>At every index i, can have stones in two ways, so total no. of ways comes out to be 2 * 2 * . . . . * 2 (n times).</p>
+
+<p>Now whether an index have 2<em>i or 2</em>i+1 stones the game remains unaffected because if there are 2<em>i+1 stones in any pile there will be one stone left out anyways, and the game will be same as the one played with 2</em>i stones. We shall be considering only this case.</p>
+
+<p>At any point of the game i<sup>th</sup> pile contains 2*(i - k) stones (where k is any arbitrary constant). Now you can interpret the question as the ith pile had i stones in the beginning and you can take out any positive number of stones from it. This is the standard nim game containing N piles, where the ith pile contains i stones.</p>
+
+<p>Now our task is to find XOR of N numbers(1 to N). Every number can be represented 4*p+q where 0 &lt;= q &lt;= 3 and p is any arbitrary.</p>
+
+<p>For every N of type 4*p+3, it can be easily proved that XOR of 1 to N is 0. So the first person will always lose the game. The answer for such numbers is zero.</p>
+
+<p>For N of type 4*p+1 XOR of numbers from 1 to N is 1, so the first player can remove 1 stone from any pile containing odd number of stones so that the XOR becomes zero. There are (N+1)/2 piles containing odd number of stones, so the answer for this case is (N+1)/2.</p>
+
+<p>For numbers of type 4<em>p or 4</em>p+2 XOR is N and N+1 respectively So first player can make XOR zero by removing stones from any pile whose most significant bit is same as the most significant bit of N. Thus the answer for this case is the number of piles which has x stones, such that when x is represented in binary, it has the same number of bits as the binary representation of N. This can be obtained by subtracting from N the maximum power of 2 which is less than or equal to N.</p>
+
+<p><strong>Links</strong> : <a href="http://community.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=algorithmGames">Game of Nim</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-RRSCHED]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/10/03/spoj-rrsched/"/>
+    <updated>2013-10-03T18:38:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/10/03/spoj-rrsched</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/RRSCHED/">RRSCHED</a></p>
+
+<p><strong>Difficulty</strong> : Medium</p>
+
+<p><strong>Prerequisites</strong> : BIT</p>
+
+<p><strong>Explanation</strong> : </p>
+
+<p>A very naive approach would be to iterate over time and keep on decreasing the no of tasks to be performed and storing the task completion time in a separate array.This implementation would definitely give TLE  O(N*T) with the given constraints.</p>
+
+<p>In the above approach we can observe that we can do better by jumping times from t = completion of easiest task (w.r.t time) to t = completion of next easiest task . </p>
+
+<p>For this we need to sort the input array w.r.t time .But we would also want their original indices(because order matters).So you can use pair&lt;int,int&gt;  to store both the index and time  of a task.That way you would not lose your index’s by sorting the array.</p>
+
+<p>In the following discussion:</p>
+
+<p>Pair [i] denotes i th pair in sorted array
+Pair[i].Time denotes time needed for ‘Pir[i].Index’ th task to complete.</p>
+
+<p>Now for every iteration all we need to do is to keep track of  Current time and do as follows.</p>
+
+<ol>
+  <li>
+    <p>Time Taken for present task to be completed
+ = 	(no of remaining elements)*(Pair[i].Time-Pair[i-1].Time) +
+ 		1*no of Tasks before Pair[i].Index which are not completed</p>
+  </li>
+  <li>
+    <p>Extra Time to complete the  round
+ = 1*no of Tasks after Pair[i].Index which are not completed.</p>
+  </li>
+  <li>
+    <p>Update Pair[i].Index as completed</p>
+  </li>
+</ol>
+
+<p>Thus BIT comes in handy here where we have to query the no of tasks not completed and update a task as completed in O(logN). For this purpose initially keep a BIT array and update every element by ‘+1’ which means that the task is not completed yet.You can use Update(i,-1) to update the task as completed. You can find the no of tasks which are not completed  before an index i by Query(i).</p>
+
+<p>The <a href="http://code.hackerearth.com/d8db76J">pesudo code</a> is as follows:</p>
+
+<pre><code>//Initialize bit array to zero 
+
+BIT[MaxN] = 0
+
+// Update bit array 
+
+Upadte(i , x)
+	for(; i &lt;= n; i += i&amp;-i)
+    	BIT[i] += x
+
+//Query Cummulative Frequency in a bit array 
+
+Query(i)
+	s=0
+	for(; i&gt;0 ; i-=i&amp;-i)
+    	s += BIT[i]
+	return s
+
+//Take Input and Do the necessary initializations for BIT array
+
+TakeInput()
+for(i = 1; i &lt;= N; i++)
+	Update(i, 1)
+
+//Main Part
+
+CurrentTime = 0
+for(i = 1; i &lt;= N; i++)
+
+	//N-i+1 total uncompleted tasks
+	
+	CurrentTime += (Pair[i].Time - Pair[i-1].Time - 1)*(N-i+1)
+	
+	//query for uncompleted tasks before the present task
+	
+	CurrentTime +=  Query(Pair[i].Index)
+	
+	//Store the final anwer for the present task
+	
+	Answer[Pair[i].Index] = CurrentTime
+	
+	//Update current task as completed
+	
+	Update(Pair[i].Index, -1)
+	
+	//Increase by no of uncompleted tasks after the present task
+	
+	CurrentTime += (N-i) - Query(Pair[i].Index)
+
+//Note that the above psudo code also handles the case where two tasks have equal completion Time.
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ TIC-TAC-TOE 2]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2/"/>
+    <updated>2013-09-27T16:30:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/TOE2/">Tic Tac Toe 2</a></p>
+
+<p><strong>Difficulty</strong> : Easy</p>
+
+<p><strong>Prerequisites</strong> : Simple Maths</p>
+
+<p><strong>Explanation</strong> : </p>
+
+<p>For the given board configuration we have to check whether it is the final state of some possible tic-tac-toe game or not.
+Let numX, numO and numE represents the number of X’s, number of O’s
+and number of dots in given board configuration.
+Also let xWins and oWins denotes the number of x winning possible configuration and number of o winning possible configurations respectively.
+There will be total of 8 winning configurations:</p>
+
+<pre><code>  |    x   |       |        |
+  |        |   x   |        |
+  |        |       |   x    |
+
+
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
+
+
+  |    x   |   x   |   x    |
+  |        |       |        |
+  |        |       |        |
+
+
+  |        |       |        |
+  |        |       |        |
+  |    x   |   x   |   x    |
+
+
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
+
+
+  |        |       |   x    |
+  |        |       |   x    |
+  |        |       |   x    |
+
+
+  |        |   x   |        |
+  |        |   x   |        |
+  |        |   x   |        |
+
+
+  |        |       |        |
+  |    x   |   x   |   x    |
+  |        |       |        |
+</code></pre>
+
+<p><strong>Pseudocode</strong> :</p>
+
+<p><code>
+If |numX - numO|&lt;=1 # Since each player gets an alternative chance in tic tac toe game
+ 	If numE&gt;0 and xWins=0 and oWins=0  #Case when there is empty block and no player has win till now
+		then it is "invalid"
+	If xWins&gt;0 and oWins&gt;0 #Case when there is winning configuration of both players simultaneously
+		then it is "invalid"
+	If xWins&gt;0
+		If numX &gt; numO
+			then it is "valid"
+		Else 
+			then it is "invalid"
+	If oWins&gt;0
+		If numX &lt; numO
+			then it is "valid"
+		Else 
+			then it is "invalid"
+	rest all are "valid"
+Else
+	rest all are "invalid"
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ MORSE]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/09/16/spoj-morse/"/>
+    <updated>2013-09-16T18:30:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/09/16/spoj-morse</id>
+    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> : Dynamic Programming, Trie</p>
+
+<p><strong><a href="http://www.spoj.com/problems/MORSE/">Problem</a></strong> : </p>
+
+<p>Given the Morse code for English alphabet, a list of words(dictionary) and a Morse sequence, the task is to compute the number of distinct phrases that can be obtained from the sequence using words from the dictionary.</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>In this problem, we are given N words in a dictionary and a Morse string containing ‘.’ and ‘-’ of length L. Now we are asked to find how many strings from the dictionary words when converted to their Morse part will exactly map to the given Morse sequence.</p>
+
+<p>Say we have .-..–.-..-.-…- and the dictionary as a aa bc acm shuka etc., one naive way is to generate all possible strings using the given words of the dictionary and see if they map to the given Morse string or not. But this approach is too slow and can take centuries to calculate if number of letters in dictionary are large enough (O(L<sup>N</sup>)).</p>
+
+<p>So, one thing to observe here is there will be several sub-cases counted a lot more times than required as in sub part of Morse string ‘.-..-’ might map to one english string and the rest part of Morse string doesn’t, so for calculating that this isn’t a valid string will itself take order O(L^N) time. </p>
+
+<p>Such problems where only number of solutions are to be found are approached as given:</p>
+
+<ol>
+  <li>Start iterating Morse string either from left or right.</li>
+  <li>At each point,check if the current string covered using the iterator maps to any word in the dictionary(So this iteration is finding the last(or first) word that could be placed from dictionary to the position of the iterator).</li>
+  <li>When a word is found,use recursion on the remaining string.</li>
+</ol>
+
+<p>Here we were also given some constraints to help us out with our complexity analysis:</p>
+
+<ol>
+  <li>Length of Morse string : 10000</li>
+  <li>Length of a word : 20</li>
+  <li>Number of words in the dictionary : 10000 </li>
+</ol>
+
+<p>The pseudocode of the above idea looks something like :</p>
+
+<pre><code>    Function TotalStrings(int i) //the current position of the iterator
+	{
+
+		for(k from i to Morselength) // Morselength stores the length of the Morse string
+		{
+
+			if string[i…k] is valid and in dictionary
+			then answer = answer + TotalStrings(k)
+
+		}
+	   
+		return answer;
+
+	}
+</code></pre>
+
+<p>Disclaimer: The below arguments are assuming we can search a Morse in a dictionary in O(1) time.</p>
+
+<p>The above solution still doesn’t seem to ease our problem as we still have to face the worst case time complexity as O(L^N) but whenever we find some repeating subproblems we should always think of Dynamic Programming.</p>
+
+<p>Now the question is: What if in the above code, the value TotalStrings(k) was already known to us? In that case what would the time complexity be?</p>
+
+<p>It will be linear if all values of TotalStrings(k) are pre-known. Here comes the concept of Dynamic programming in which we can store the values of TotalStrings(k) whenever we calculate it. As we use linear time for calculating all the TotalStrings(k) with k in (0,Morselength),we use a total of O(L^2) time where L is the length of the Morse string.</p>
+
+<p>All we need to change in code is before returning answer, just store the answer calculated in some global array so that next time the same value is asked it could be returned immediately.</p>
+
+<p>Now,taking advantage of the constraints :</p>
+
+<p>Length of a word cannot exceed 20 as given in the question,hence the conclusions are :</p>
+
+<ol>
+  <li>Each alphabet can have maximum 4 ‘.’ or ’-‘ characters. So a word of length 20 can have maximum 80 Morse characters</li>
+  <li>Hence in the inner loop of the above pseudo code k varies from i to i+80</li>
+  <li>If the word searching is extremely fast, our complexity reduces to O(80*l)</li>
+</ol>
+
+<p>The problem left now is word searching. We can think of various methods and techniques to find a map from dictionary to the iterated part being used.</p>
+
+<ol>
+  <li>Hash maps</li>
+  <li>STL library map</li>
+  <li>Brute force</li>
+  <li>Trie implementation</li>
+</ol>
+
+<p>Of all the above methods,the most reliable for this problem is trie, given the constraints and the difficulty in using large length strings(~80).</p>
+
+<p>Trie implementation is simple and can be performed using arrays as well as link lists.</p>
+
+<p><strong>Links</strong> :</p>
+
+<p><a href="http://www.geeksforgeeks.org/trie-insert-and-search/">http://www.geeksforgeeks.org/trie-insert-and-search/</a></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Trie">http://en.wikipedia.org/wiki/Trie</a></p>
+
+<p><strong>Related problem on trie</strong> :</p>
+
+<p><a href="http://www.spoj.com/problems/REVFIB/">SPOJ-REVFIB</a> (Difficulty Level: Hard)</p>
 ]]></content>
   </entry>
   
