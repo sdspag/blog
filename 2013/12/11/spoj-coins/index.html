@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>SPOJ-PTIME - PAG, IIT Roorkee</title>
+  <title>SPOJ-COINS - PAG, IIT Roorkee</title>
   <meta name="author" content="Programming & Algorithms Group, Software Development Section, IIT Roorkee">
 
   
-  <meta name="description" content="Problem: To write the prime factorisation of N! (N factorial). Explanation : The prime factorisation of N! would only contain primes less than or &hellip;">
+  <meta name="description" content="Problem: Given, a gold coin in Byteland, find the maximum amount of American dollars you can get for it. EXPLANATION : Consider a golden coin with a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/12/11/spoj-ptime">
+  <link rel="canonical" href="http://pag.sdslabs.co/blog//2013/12/11/spoj-coins">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://feeds.feedburner.com/sdspag" rel="alternate" title="PAG, IIT Roorkee" type="application/atom+xml">
@@ -74,7 +74,7 @@
 <article class="hentry" role="article">
   
   <header>
-      <h1 class="entry-title"><a href="/blog/2013/12/11/spoj-ptime/">SPOJ-PTIME</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/12/11/spoj-coins/">SPOJ-COINS</a></h1>
     
       <p class="meta">
         
@@ -89,7 +89,7 @@
   
 
 
-<time datetime="2013-12-11T19:17:00+05:30" pubdate data-updated="true">Dec 11<span>th</span>, 2013</time>
+<time datetime="2013-12-11T19:39:00+05:30" pubdate data-updated="true">Dec 11<span>th</span>, 2013</time>
         <!-- 
          | <a href="#disqus_thread">Comments</a>
          -->
@@ -98,25 +98,42 @@
   </header>
 
 
-<div class="entry-content"><p><strong><a href="http://www.spoj.com/problems/PTIME/">Problem</a></strong>:  To write the prime factorisation of N! (N factorial).</p>
+<div class="entry-content"><p><strong><a href="http://www.spoj.com/problems/COINS/">Problem</a></strong>: Given, a gold coin in Byteland, find the maximum amount of American dollars you can get for it. </p>
 
-<p><strong>Explanation</strong> :</p>
+<p><strong>EXPLANATION</strong> :</p>
 
-<p>The prime factorisation of N! would only contain primes less than  or equal to N.  Our main job is to find out the power of each prime factor and then write the prime factorisation in the correct form.
-Since the given N is always greater than or equal to 2, its factorial (N!) would have 2 in its prim factorisation. Now let us start by finding the power of 2 in the prime factorisation of N!
-N!  =  1<em>2</em>3…….(N-2)<em>(N-1)</em>N
-The number of integers less than or equal to N having a factor of 2 is:
-Floor(N/2)
-Some of the integers would be having more than one 2 in their prime factorisations ( 4 = 2<em>2, 12 = 2</em>2*3)
-So the number of integers less than or equal to N having a factor of 4 ( 2^2) is :
-Floor(N/2^2)
-Similarly the process will continue till 2^i &gt; N. 
-So the power of 2 in the prime factorisation of N! would be:
- Floor(N/2) + Floor(N/2^2) + Floor(N/2^3) + …….. + Floor(N/2^i)                           <br />
-                                             where i is the highest number with 2^i &lt;= N
-Similarly doing the process for all the prime factors  less than or equal to N, prime factorisation of N! can be obtained where N can be as large as 10000.</p>
+<p>Consider a golden coin with a number ‘n’ on it. Now, the coin can be exchanged by n/2, n/3, n/4 coins only (all rounded down). Obviously, one would exchange the coins only if n/2+n/3+n/4 is greater than n. And similar holds for n/2, n/3, and n/4 and so on. Looking into the pattern carefully, all the numbers less than 12, if exchanged with coins, would return either lesser or equal to the number. So, it is better to exchange them directly by American dollars (1:1). Let’s try to solve it with a recursive function (a function in which we call our same function to solve it) :</p>
 
-<p><em>Pseudocode</em> :</p>
+<p><em>Pseudocode of the function</em> :</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Return type coin (variable type n)
+</span><span class="line">if(n&lt;12)
+</span><span class="line">	return n;
+</span><span class="line">else
+</span><span class="line">	return summation over i of (maximum of n/i and coin(n/i))
+</span><span class="line">	//here i is 2,3 and 4.</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Ok, now an example, say 40:
+If I would exchange 40 by coins:-40/2+40/3+40/4=20+13+10=43. But that’s not the correct answer.
+20=20/2+20/3+20/4=10+6+5=21
+Now, as all the numbers have been reduced to numbers less than 12, they would return the same value.
+13=13/2+13/3+13/4=6+4+3=13
+10 being lesser than 12 would return the same value. So, 21+13+10= (44) American dollars would be the maximum one can get.</p>
+
+<p>Considering 81:
+81/2+81/3+81/4 = 40+27+20
+40=20+13+10;
+27=13+9+6=28;
+20=10+6+5=21;
+Correct answer being 93.
+Notice that 20 is being tested again (resulting from 40). We thus try to solve this problem with memoization (technique of storing already-calculated values for a function in a cache) which optimizes the solution.
+It stores the value once calculated in the function and returns this value when called without performing those calculations again. So, the pseudo code of the function finally becomes:</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -130,20 +147,20 @@ Similarly doing the process for all the prime factors  less than or equal to N, 
 <span class="line-number">10</span>
 <span class="line-number">11</span>
 <span class="line-number">12</span>
-<span class="line-number">13</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">for i = 2 to N
-</span><span class="line">	k = 0
-</span><span class="line">	for a = 2 to sqrt(i)
-</span><span class="line">		if i % a = 0
-</span><span class="line">			k = 1
-</span><span class="line">			exit loop
-</span><span class="line">	if k = 0           // i is prime
-</span><span class="line">		s = 0
-</span><span class="line">		e = N/i
-</span><span class="line">		while e &gt; 0
-</span><span class="line">			s = s + e
-</span><span class="line">			e = e/i
-</span><span class="line">		// after loop completes s would be the power of i in prime factorisation of N!	</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class=""><span class="line">One must use the map library for using memoization.
+</span><span class="line">
+</span><span class="line">static map&lt;variable(n) type, function return type&gt; memo;
+</span><span class="line">if(n&lt;12)
+</span><span class="line">	{return n;}
+</span><span class="line">if(memo.count(n)&gt;0)
+</span><span class="line">	return memo[n];
+</span><span class="line">else
+</span><span class="line">	long long int ret;
+</span><span class="line">	ret= summation over i of (maximum of n/i and coin(n/i));  i=[2,3,4]
+</span><span class="line">	memo[n]=ret;
+</span><span class="line">	return ret;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>This makes the function well within the time-limit.</p>
 </div>
 
 
@@ -166,7 +183,7 @@ Similarly doing the process for all the prime factors  less than or equal to N, 
   
 
 
-<time datetime="2013-12-11T19:17:00+05:30" pubdate data-updated="true">Dec 11<span>th</span>, 2013</time>
+<time datetime="2013-12-11T19:39:00+05:30" pubdate data-updated="true">Dec 11<span>th</span>, 2013</time>
       
 
 <span class="categories">
@@ -180,7 +197,7 @@ Similarly doing the process for all the prime factors  less than or equal to N, 
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/12/11/spoj-ptime/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/12/11/spoj-ptime/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2013/12/11/spoj-coins/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2013/12/11/spoj-coins/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -193,10 +210,8 @@ Similarly doing the process for all the prime factors  less than or equal to N, 
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/10/19/first-year-recruitment-results/" title="Previous Post: First Year Recruitment Results">&laquo; First Year Recruitment Results</a>
+        <a class="basic-alignment left" href="/blog/2013/12/11/spoj-ptime/" title="Previous Post: SPOJ-PTIME">&laquo; SPOJ-PTIME</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/12/11/spoj-coins/" title="Next Post: SPOJ-COINS">SPOJ-COINS &raquo;</a>
       
     </p>
   </footer>
@@ -261,8 +276,8 @@ Similarly doing the process for all the prime factors  less than or equal to N, 
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/12/11/spoj-ptime/';
-        var disqus_url = 'http://pag.sdslabs.co/blog//2013/12/11/spoj-ptime/';
+        var disqus_identifier = 'http://pag.sdslabs.co/blog//2013/12/11/spoj-coins/';
+        var disqus_url = 'http://pag.sdslabs.co/blog//2013/12/11/spoj-coins/';
         var disqus_script = 'embed.js';
       
     (function () {
