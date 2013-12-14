@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to Programming"
 date: 2013-07-30 21:38
 comments: true
-categories: [Programming Advice]
+categories: [Programming Advice, PAG]
 ---
 
 **Algorithm**: *(Just)* A sequence of steps to get stuff done?

@@ -3,7 +3,7 @@ layout: post
 title: "SPOJ RPSSL"
 date: 2013-07-21 22:10
 comments: true
-categories: [Editorial, SPOJ, Question of the week, Probability] 
+categories: [Editorial, Probability, Question of the Week, SPOJ] 
 ---
 
 Problem Link : [http://www.spoj.com/problems/RPSSL/](http://www.spoj.com/problems/RPSSL/)

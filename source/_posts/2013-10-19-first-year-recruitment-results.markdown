@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "First Year Recruitment Results"
-date: 2013-10-19 23:00
+date: 2013-10-19 22:30
 comments: true
-categories: 
+categories: [Recruitments, First Year] 
 ---
-
 
 Congratulations to everyone who made it to the group. We were extremely happy to see the response by the first yearites. We got to interview some of the most talented first yearities in our campus and it was a wonderful experience for us and hopefully for them too. We had to reject people only because of limited vacancies even though they were all equally capable.
 
