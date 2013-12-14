@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: PAG | PAG, IIT Roorkee]]></title>
+  <link href="http://pag.sdslabs.co/blog//blog/categories/pag/atom.xml" rel="self"/>
+  <link href="http://pag.sdslabs.co/blog//"/>
+  <updated>2013-12-14T10:37:05+05:30</updated>
+  <id>http://pag.sdslabs.co/blog//</id>
+  <author>
+    <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ACM Qualifications 2013]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/11/25/acm-qualifications-2013/"/>
+    <updated>2013-11-25T22:20:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/11/25/acm-qualifications-2013</id>
+    <content type="html"><![CDATA[<p>As a long-awaited winter break comes closer catalyzing our recovery from the haunting memories of a badly screwed up end sem, it’s  good news for the geeks at IIT Roorkee coming after the online prelims of the ACM ICPC Indian Regionals. ACM ICPC is arguably the most reputed programming competition for college students across the world, and seeing Roorkee perform impressively at this huge scale makes us all really proud.</p>
+
+<p>In India there are three sites which play host to the ACM ICPC Regionals: IIT Kanpur, IIT Kharagpur and Amritapuri. There have been a total of 14 qualifications from IIT Roorkee across the three sites this year, a new record in itself for the institute. In the regionals, which will be held around mid December, a total of about 600 teams from the very best technical institutes of the country and abroad shall be competing for their shot at a glorious opportunity of participating in the World Finals of the ACM ICPC. Every year the World Finals are held early July in Russia. This is a great achievement for the programmers and geeks alike at IIT Roorkee; and a record that we should strive to improve every year.</p>
+
+<p>PAG congratulates all the teams that will be representing IIT Roorkee at the Regionals this year and wishes them the very best of luck as they gear up to take on the best in the business.</p>
+
+<p>Here are the team and students from IIT Roorkee who have qualified for the ACM ICPC  Regionals 2013:</p>
+
+<h3 id="amritapuri">Amritapuri</h3>
+
+<ul>
+  <li><strong>11coders</strong>
+    <ul>
+      <li>Anubhav Bindlish† (CSE 2nd year)</li>
+      <li>Aman Kumar Kedia† (CSE 2nd year)  	</li>
+      <li>Kshitij Bathla† (CSE 2nd year)</li>
+    </ul>
+  </li>
+  <li><strong>the-royal-flush</strong>
+    <ul>
+      <li>Jaspreet Singh (CSE 4th year)</li>
+      <li>Arpit Dua (MSP 5th year)	</li>
+      <li>Sukun Tarachandani (EPE 4th year)</li>
+    </ul>
+  </li>
+  <li><strong>frick-freak</strong>
+    <ul>
+      <li>Ch. S Pramod (ECE 3rd year)</li>
+      <li>R Shiva Tejesh (ECE 3rd year)</li>
+      <li>Revanth Reddy (EE 3rd year)</li>
+    </ul>
+  </li>
+  <li><strong>3Spades</strong>
+    <ul>
+      <li>Adury Surya Kiran† (ECE 3rd year)</li>
+      <li>Praneeth Reddy† (ECE 3rd year)</li>
+      <li>Harsh Jhamtani† (CSE 4th year)</li>
+    </ul>
+  </li>
+  <li><strong>tehloneclubs</strong>
+    <ul>
+      <li>Vaibhav Gupta (CSE 4th year)</li>
+      <li>Gaurav Singh   (CSE 4th year)</li>
+      <li>Sushant Ojal (CSE 4th year)</li>
+    </ul>
+  </li>
+  <li><strong>bapcoders</strong>
+    <ul>
+      <li>Pankaj Gudlani (CSE 2nd year)</li>
+      <li>Ankur Garg (CSE 2nd year)</li>
+      <li>Bharat Gaind (CSE 2nd year)</li>
+    </ul>
+  </li>
+  <li><strong>the-mathletes</strong>
+    <ul>
+      <li>Aman Tripathi (EE 3rd year)</li>
+      <li>Ankit Patel (CSE 3rd year)</li>
+      <li>Saurabh Suman (ECE 3rd year)</li>
+    </ul>
+  </li>
+  <li><strong>progenius</strong>
+    <ul>
+      <li>Rajat Jain† (CSE 2nd year)</li>
+      <li>Divij Bindlish (EE 2nd year)</li>
+      <li>Vibhor Goel (EE 2nd year)</li>
+    </ul>
+  </li>
+  <li><strong>hedylogos</strong>
+    <ul>
+      <li>Saurabh Paliwal (CSE 4th year)</li>
+      <li>Aayush Gupta (CSI 4th year)</li>
+      <li>Siddharth Maheshwari (CSE 4th year)</li>
+    </ul>
+  </li>
+  <li><strong>inquisitive</strong>
+    <ul>
+      <li>Abhishek Kandoi†       	(CSE 2nd year)</li>
+      <li>Priyanshu Sheth†        	(CSE 2nd year)</li>
+      <li>Satyam Vijay†               	(CSE 2nd year)</li>
+    </ul>
+  </li>
+  <li><strong>codewarrior</strong>
+    <ul>
+      <li>Shubham Kansal†        	(CSE 3rd year)</li>
+      <li>Shubham Mittal                   (MSM 5th year)           	</li>
+      <li>Vishu Goyal                    	(CSE 3rd year)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="iit-kanpur">IIT Kanpur</h3>
+
+<ul>
+  <li><strong>3Spades</strong>
+    <ul>
+      <li>Adury Surya Kiran†     	(ECE 3rd year)</li>
+      <li>Praneeth Reddy†    	(ECE 3rd year)</li>
+      <li>Harsh Jhamtani† (CSE 4th year)</li>
+    </ul>
+  </li>
+  <li><strong>inquisitive</strong>
+    <ul>
+      <li>Abhishek Kandoi†	(CSE 2nd year)</li>
+      <li>Priyanshu Sheth†        	(CSE 2nd year)</li>
+      <li>Satyam Vijay†               	(CSE 2nd year)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="iit-kharagpur">IIT Kharagpur</h3>
+
+<ul>
+  <li><strong>the-royal-flush</strong>
+    <ul>
+      <li>Jaspreet Singh (CSE 4th year)</li>
+      <li>Arpit Dua (MSP 5th year)</li>
+      <li>Sukun Tarachandani (EPE 4th year)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><em>People marked with † are members of Programming and Algorithms Group</em></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome to Programming]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/07/30/welcome-to-programming/"/>
+    <updated>2013-07-30T21:38:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/07/30/welcome-to-programming</id>
+    <content type="html"><![CDATA[<p><strong>Algorithm</strong>: <em>(Just)</em> A sequence of steps to get stuff done?</p>
+
+<p>Technically, yes. Many of us have in fact been using algorithms for most part of our lives even without realizing that we are. Take for instance, when you want to look up a particular word in the dictionary. How long would it take you if the words were all arranged randomly with absolutely no relation? It is an algorithm in itself when you search for a given word, matching the leftmost letter of the word and keep moving right. That instance when you choose a particular path over another when looking for the fastest way to reach a friend’s house, you are technically solving a classic example of the Shortest Path Problem, a problem which could trouble the best programmers for hours!</p>
+
+<p>However with the increasing dependence on computers and electronic gadgetry, you no longer need algorithms to get stuff done, but also need algorithms to guide machines do stuff for you. There is a mind-bogglingly huge amount of data present on the web and picking out a particular one is a task in itself. From the smallest chipsets to the multi-billion dollar spaceships circling the Earth to a random game of chess played on a summer afternoon, there are both complex and simple algorithms involved in everything.  </p>
+
+<p>The study of efficiency in algorithm design is of huge importance. You don’t just need to consider <em>how to get something done</em>, you need to find a way <em>to get something done quickly</em>. Imagine if your GPS were to look for all ways to get from A to B, total their distances and then return the best route. Or if in a game of chess with a computer, the program were to try all possibilities and all possibilities arising out of those possibilities and all possibilities arising out of those and so on before it were to make an optimal move. You need to design algorithms that not only solve a given problem, but do so in a reasonable amount of time.</p>
+
+<p>And the best part about algorithmic and logical problems is that once you start getting the hang of it, it becomes huge fun! You no longer need to take time out of your daily routine to practice (read: play) on online judges; it finds time for itself! So much so that it soon become a passion (and in some occasional cases an ‘addiction’) which you pursue not only because you want to end up with a high paying job at Facebook or Google, but because you enjoy doing it! </p>
+
+<p><strong>How to start Programming?</strong></p>
+
+<p>Am I good enough?</p>
+
+<p>Yes you are, if you think you are not, think again! We say you can be. All you need is good logical and reasoning skills. If you have been a mathematics enthusiast in your school time, you already have the instinct in you.</p>
+
+<p>Let’s introduce you to the amazing world of programming and algorithms.</p>
+
+<p>Getting Started:</p>
+
+<p>1.Pick any programming language(C, C++, Java, Python) whichever you feel 
+comfortable with. Or if you don’t know any, you can easily learn C or C++ in hardly two weeks’ time. Only basics concepts are to be grasped.</p>
+
+<p>Here are some useful references to help you:</p>
+
+<p><a href="https://www.facebook.com/groups/sdspag/549286215108068/">Schaum Programming with C++</a>: A very nice book to give you a quick introduction for C++</p>
+
+<p><a href="https://dl.dropboxusercontent.com/u/56860240/C%2B%2B%20How%20to%20Program%2C%208th%20Edition.pdf">C++ How to Program, Deitel, 8th Edition</a>: For those who want more than just an introduction.</p>
+
+<p><a href="http://ge.tt/9iw7sKn/v/0?c">Java How to Program, Deitel, 7th Edition</a>: For those who want to learn Java</p>
+
+<p>2.Now that you have the tool, let’s use it to explore the algorithmic world</p>
+
+<p>Here are some resources to make you familiar with the commonly used algorithms.</p>
+
+<p><a href="https://www.coursera.org/course/algo">Coursera</a></p>
+
+<p><a href="http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=IntroToAlgorithms">Stanford Open Class Room</a></p>
+
+<p><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm">MIT Open Courseware</a></p>
+
+<p><a href="https://www.facebook.com/groups/sdspag/files/">CLRS</a> : The Bible for Algorithms</p>
+
+<p>3.So here comes the most important phase of your coding journey. Practice. Practice more. Solve questions and keep exploring. And remember this:Frustration is normal. Don’t give up during this phase as your failure teaches you more than your success. Proceed gradually. The experience you gain here is worth your effort. Check these out</p>
+
+<p><a href="http://www.spoj.com/">SPOJ</a></p>
+
+<p><a href="http://www.codechef.com/">Codechef</a></p>
+
+<p><a href="http://projecteuler.net/about">Project Euler</a></p>
+
+<p>4.If you wish to evaluate your progress, there are plenty of contests to keep you going. Apart from that, group contests prove very beneficial in improving your skills. You get to know your teammate’s approach (which may be better) too. </p>
+
+<p>Participating in programming contests inculcates in you an urge to learn more and keeps you motivated.  You can find some ongoing contests here:</p>
+
+<p><a href="http://www.codechef.com/">Codechef</a></p>
+
+<p><a href="http://codeforces.com/">Codeforces</a></p>
+
+<p>Also check out this <a href="http://www.quora.com/What-are-the-best-websites-a-programmer-should-visit/answer/Ashish-Gaur">answer</a> on quora for a more elaborate list. on quora for a more elaborate list.</p>
+
+<p>Common <strong>Myths</strong> regarding Programming and Algorithms:</p>
+
+<p>1.Programming is only for CS students.</p>
+
+<p>Wrong! Here are the reasons:</p>
+
+<p>You love maths, like solving puzzles and have an aptitude to do this, so you do it.Most of the CS companies like Microsoft, Facebook, Yahoo etc. are open for other branches too. If you are good enough in programming and algos then they will take you.</p>
+
+<p>Even if you want to do higher studies, just try to explore what are the current research areas in your branch, you would find that most of them require programming - fields like Image processing, embedded systems, robotics, controls etc. Whichever field of engineering you are in , programming will help you somewhere.</p>
+
+<p>2.You need to be an expert in a programming language to start with algorithms.</p>
+
+<p>No, this opinion is completely wrong. You just need very basic knowledge of 
+any language. They are just a tool, solving problems will automatically give you enough exposure to the language. An inquisitive mind and eagerness to learn is all that counts.</p>
+
+<p><strong>Why PAG?</strong></p>
+
+<p>With the huge influx of data in the ‘shared’ world; big-data, data mining, data extraction, data analysis, optimizations- these are topics that the coming generation of computer scientists needs to address. </p>
+
+<p>Many of those computer scientists are now in college. Hopefully some of these world changers might be in India, and a few in IITR. PAG hopes to inculcate a feel for algorithms in these young engineers from the very beginning, get them acquainted with this field and help them realize why this fields bears importance in the real world. But then, why is solving problems on an online judge which thousands have already solved important?</p>
+
+<p>Because a journey of a thousand miles begins from a single step. You cannot have a school boy who has just entered college and ask him to solve real life problems which legends have scratched their heads at. We need to start at the base and work our way up. Not only does practicing these problems helps develop one’s interest in algorithms, but at some level concepts like Dynamic Programming, Depth First Search and Graph Theory are what are extrapolated and applied in complex algorithms that boost the cores at Google or Facebook. To put it poetically, unless you know your ABCs you have no hope of finishing a novel. </p>
+
+<p>And that is what PAG hopes to do. It hopes to help the students at R understand these concepts and why it is important for them to do so by bringing them together in a positive competitive environment.Coming together every week to share knowledge, we get to learn so much more than anyone of us individually ever could. Holding regular contests at R and annually on an international scale, keeps everyone motivated to keep doing better. It helps us to learn and strive harder to learn more. </p>
+
+<p><strong>But then, why should you join PAG?</strong></p>
+
+<p>You may be a Grade 2 coder at Topcoder or someone who had no clue about what programming is up till now. It doesn’t matter. As long as you are eager to learn and love working your way around logical and intellectually challenging problems, PAG is looking for you! Every year PAG recruits some of the finest and smartest individuals who come to R. It brings them together in a shared group. There are regular discussions on varied topics of interest, contests are organized and even participated in, and of 
+course chapos are given and not to forget the trips we have!!! </p>
+
+<p>Last year a team from PAG qualified for the ACM ICPC World Finals (which happens to be the BIGGEST contest of its kind with participation from over 120 countries) and stood first among all the Indian teams there (and 60th
+ overall). We also have several teams who compete in the Regionals of the same contest every year. </p>
+
+<p>And that is the best part about joining PAG! You get to meet so many awesome individuals who you otherwise might not. Bringing like-minded people together who share a common passion helps all of us to learn from each other and improve ourselves. </p>
+
+<p><strong>Recruitment</strong></p>
+
+<p>PAG will be recruiting soon. We are not expecting you to know programming as of now, so if you don’t, it isn’t really an issue. If you have a basic aptitude and the willingness to learn, you are good to go! To stay updated about out recruitment process and other activities, join our <a href="https://www.facebook.com/groups/sdspag/">Facebook group</a> and like our <a href="https://www.facebook.com/sdspag">facebook page</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Algorithms and Beyond...]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/07/07/algorithms-and-beyond-dot-dot-dot/"/>
+    <updated>2013-07-07T15:03:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/07/07/algorithms-and-beyond-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p>Here, we present the official blog of one of the recent but very promising student bodies of <a href="http://www.iitr.ac.in/">IIT Roorkee</a> -  <strong>Programming and Algorithms Group</strong>, aka <a href="http://facebook.com/sdspag"><strong>PAG</strong></a>.</p>
+
+<h1 id="about-us">About Us:</h1>
+
+<p>For those who are hearing about us for the first time - PAG is a group of enthusiastic and young programmers spanning across multiple departments, branches and years in IIT Roorkee operating under the aegis of Software Development Section with the aim of improving the algorithmic, mathematical and programatically problem solving capability of students of IIT Roorkee.</p>
+
+<h1 id="why-us">Why Us:</h1>
+
+<p>There is already SDSLabs and IMG in IIT Roorkee, then what is the need of another programming focused student body on campus?</p>
+
+<p>While IMG is mainly concerned with maintaining web applications for the administration, and SDSlabs is innovating and building applications for the web, mobile, network, and so on, there is a strong need of improving the algorithmic and competitive programming capability in the campus. How many people knew about ACM ICPC or TopCoder or CodeChef before PAG came around the corner?
+We cater to this very need. We are not just another programming group. The sole objective of this group is to develop a platform where passionate people can learn about algorithms/logic irrespective of their branch.</p>
+
+<h1 id="what-we-do">What We Do:</h1>
+
+<p>The name of the group says it all. Our activities revolve around Programming and Algorithms.</p>
+
+<p>We are people who love to code : A thrill that takes liberties with Logic. Competitive Coding is one of the things that keeps motivated (Damn! Did he solve it faster than me ?? There must be another, faster method!!!)</p>
+
+<p>We organize coding events, we participate in coding events and we win coding events!!! Oh yesss we do all the three things!!!</p>
+
+<p>We also maintain an active <a href="https://www.facebook.com/groups/sdspag/">Facebook group</a> where people can ask us any kind of programming/algorithm related doubt.
+ We believe that Programming is not a zero-sum game. Teaching something to a fellow programmer doesn’t take it away from us. We are happy to share what we can, because we are in it for the love of programming. </p>
+
+<p>This blog is another step in this direction where in we will be regularly posting about different algorithms and problems on various online judges. We are also coming up with the concept of <strong>Problem Of The Week</strong> where in we will post a problem every week on our Facebook group and allow people to discuss it and work on it for a week. One week later, before posting the next week’s problem, we will post an editorial about it on our blog. This way we can reach out to more people within and outside IITR.</p>
+
+<p>We are also launching a <a href="http://facebook.com/sdspag">Facebook</a> and a <a href="https://plus.google.com/117727978834269911101">Google+</a> page to share updates about various coding events, algorithms and programming techniques. Follow those pages so that you don’t miss out on anything.</p>
+
+<h1 id="events-by-us">Events by Us:</h1>
+
+<p>Every year we organize a variety of coding events which includes :  </p>
+
+<p><em>Insomnia</em>: Every year during <a href="http://www.cognizance.org.in/">Cognizance</a>, the exclusive Annual Technical Festival of IIT Roorkee, the second largest of its kind in Asia; we organize a fiercely contested online coding contest Insomnia. An overnight contest, which boasts of a huge competition from the world over, including some of the best known names in the field of sport programming, consists problems of ACM style, with varying difficulties covering various topics of algorithmic programming like graph-theory, dynamic programming, sorting, game theory, computational geometry, flows - almost everything. And for the stats, the best team in India could solve only 6 out of the total 14 problems (Insomnia - 2013).</p>
+
+<p>And the team works days and nights, for weeks to rigorously set and test the problems and solutions. We put our best efforts to generate an original and clean problem set, which our participants enjoy to solve. Take a look at last year’s <a href="http://ge.tt/5gEcv6l?c">problem set and editorial</a>.</p>
+
+<p>Here are some glimpses of the event night - those insomniac nights ensuring smooth run:</p>
+
+<p><em>Insomnia’11</em>: 
+<img src="/images/posts/Hello-World/11.JPG"></p>
+
+<p><em>Insomnia’12</em>:
+<img src="/images/posts/Hello-World/12.jpg"></p>
+
+<p><em>Insomnia’13</em>:
+<img src="/images/posts/Hello-World/13.JPG"></p>
+
+<p><em>Codematics</em>: For those who love solving mathematical problems and <strong>not just algorithms</strong> our team organizes Codematics. This event features problems just like Project Euler - Challenging mathematical/computer programming problems that  require more than just maths to solve. Along with maths one has to use his/her programming skills to win. And this too gets participation from all over the world.</p>
+
+<p><em>Bits and Bytes</em>: This event is more of a quiz and involves mathematical and logical puzzles and questions based on implementation details in C/C++/Java</p>
+
+<h1 id="on-campus-activities">On Campus Activities:</h1>
+
+<p>In fact, Insomnia and Codematics are not the only coding contests that PAG organizes. Along with SDSLabs, we are actively involved in organizing several coding contests on intranet at IITR. Known as CodeBlitz, these contests are anticipated by the students at Roorkee who reward us with their active participation. It is one of the several attempts by PAG to improve the coding culture in R-land, and it makes us extremely happy to see our little efforts bear fruit. </p>
+
+<p>We also hold lectures on algorithms for both our members and IITR junta (whose frequency will increase in the coming time). Several teams as well as individuals from PAG participate regularly in programming competitions on almost all popular online judges.</p>
+
+<p>Only few years back IITR was nowhere in the arena of ACM ICPC. There was a severe lack of competitive coding culture in the campus. Few seniors who saw the big picture around, and  with the ambition of improving the culture in campus started this group. </p>
+
+<p>The founders of the group had a dream - <em>To produce an ACM world finalist team from IIT Roorkee</em>. This dream soon became reality.</p>
+
+<p>Two years back we had a team in top 10, one year back we had a team in top 5 and this year for the first time we have the team “The 65th Bit” from IITR that not only qualified for World Finals, ACM ICPC but also scored <a href="http://ahmed-aly.com/ICPC.jsp">best rank</a> among all Indian teams and overall 60th rank, which is held in Russia this year. Only Bombay and Indore were the other IITs among the five Indian teams that qualified (IIIT-Hyderabad and Chennai Mathematical Institute being the other two).</p>
+
+<h1 id="how-we-manage-all-this-">How we manage all this :</h1>
+
+<p><em>CodeRunner</em></p>
+
+<p>We feel proud to host Insomnia as well as other coding events on an in-house developed open-source online judge <a href="https://github.com/shashankkumar/CodeRunner">CodeRunner</a>(developed by SDSLabs), which is similar to <a href="http://spoj.pl">Sphere Online Judge</a>. Currently it supports grading submissions in C, C++, Java, Python,  PHP and Perl with plans for adding more  languages in future.</p>
+
+<p><em>CodeVillage</em>:</p>
+
+<p>CodeVillage is the web application developed and maintained by SDSLabs for hosting the coding events. It is used in all internal coding events as well as in Insomnia 2013.</p>
+
+<p><em>Team</em> : </p>
+
+<p>Every year, PAG recruits some of the best and promising first yearites who enter IIT Roorkee. But this does not mean we lose touch with the graduating students! They stay in touch and guide our group as it takes on new endeavors, providing essential support at every step. To make sure we do not lose out on good talent, the recruitment is a two-step process: a written test followed by a personal interview.</p>
+
+<h1 id="what-else-we-do-">What else we do :</h1>
+
+<p>After working a lot, we enjoy a lot!!! Ohh ya we have our share of fun too. We go on trips and walks, we play football on holidays and we don’t miss out of any reason to have a chapo!!! “Awesome” is not sufficient to describe these. Take some glimpses here:</p>
+
+<p><img src="/images/posts/Hello-World/trip1.JPG">
+<img src="/images/posts/Hello-World/trip2.JPG">
+<img src="/images/posts/Hello-World/trip3.JPG"></p>
+
+<p>Thats all for now. We will be back soon with a new blog discussing some algorithm or some maths trick  or some coding problem or sharing our own experience with programming. </p>
+
+<p><img src="/images/posts/Hello-World/grp1.jpg"></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -2,11 +2,11 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://pag.sdslabs.co/blog//2013/07/07/algorithms-and-beyond-dot-dot-dot/</loc>
-        <lastmod>2013-07-30T18:19:31+05:30</lastmod>
+        <lastmod>2013-12-14T10:33:35+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//2013/07/21/spoj-rpssl/</loc>
-        <lastmod>2013-07-30T18:19:31+05:30</lastmod>
+        <lastmod>2013-12-14T10:33:35+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//2013/07/29/spoj-dquery/</loc>
@@ -14,7 +14,7 @@
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//2013/07/30/welcome-to-programming/</loc>
-        <lastmod>2013-09-16T18:09:26+05:30</lastmod>
+        <lastmod>2013-12-14T10:33:35+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//2013/08/05/spoj-mball/</loc>
@@ -50,7 +50,15 @@
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//2013/10/19/first-year-recruitment-results/</loc>
-        <lastmod>2013-10-19T23:01:49+05:30</lastmod>
+        <lastmod>2013-12-14T10:33:35+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/</loc>
+        <lastmod>2013-12-14T10:33:35+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://pag.sdslabs.co/blog//2013/11/25/acm-qualifications-2013/</loc>
+        <lastmod>2013-12-14T10:33:35+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//2013/12/11/spoj-ptime/</loc>
@@ -66,11 +74,11 @@
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//</loc>
-        <lastmod>2013-12-11T19:53:48+05:30</lastmod>
+        <lastmod>2013-12-14T10:33:35+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//blog/archives/</loc>
-        <lastmod>2013-12-11T19:53:48+05:30</lastmod>
+        <lastmod>2013-12-14T10:33:35+05:30</lastmod>
     </url>
     <url>
         <loc>http://pag.sdslabs.co/blog//about/</loc>

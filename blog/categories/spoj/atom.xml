@@ -4,7 +4,7 @@
   <title><![CDATA[Category: SPOJ | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/spoj/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-12-11T19:54:19+05:30</updated>
+  <updated>2013-12-14T10:37:05+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -110,6 +110,76 @@ for i = 2 to N
 			e = e/i
 		// after loop completes s would be the power of i in prime factorisation of N!	
 </code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-DCEPC202]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202/"/>
+    <updated>2013-11-08T13:33:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/11/08/spoj-dcepc202</id>
+    <content type="html"><![CDATA[<p><strong><a href="http://www.spoj.com/problems/DCEPC202/">Problem</a></strong> :
+Given the number of unique shortest paths across a rectangular grid with broken tiles, to find its dimensions.</p>
+
+<p><strong>Pre-requisites</strong> : Principle of inclusion and exclusion, Binary Search</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>First consider a corridor of dimension m*n, with no broken tiles. Now, for ‘shortest’ path, you can only move to tiles (x,y+1) or (x+1,y) if you’re currently on tile (x,y). So, to go from (0,0) to (m-1,n-1), you need to move m+n-2 steps with m-1 steps in x direction and n-1 steps in y direction. The number of unique paths will be the number of ways in which you can choose those m-1 (or n-1) steps out of the total m+n steps 
+i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
+
+<p>Now, lets take into account the broken tiles:</p>
+
+<p>```
+  .<strong>__.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.G
+  |    |    |    |    |    |    |
+ 4|    |    |    | F* |    |    |
+  .</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.
+  |    |    |    |    |    |    |
+ 3|    |    |    |    |    |    |
+  .</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.
+  |    |    |    |    |    |    |
+ 2| C <em>|    |    | D</em> |    | E* |
+  .</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>. 
+  |    |    |    |    |    |    |
+ 1|    |    |    |    |    |    |
+  .</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.
+  |    |    |    |    |    |    |
+ 0|    |    |    | B *|    |    |
+  .</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong><strong>.</strong>__.
+ A  0     1        n/2       n-1</p>
+
+<p>```</p>
+
+<p>* represents broken tiles.</p>
+
+<p>Now, employing the principle of inclusion and exclusion, we will first determine the total number of paths and then subtract the number of paths passing through the broken tiles. The total number of paths, therefore, is:</p>
+
+<p>N(AG) - N(AB)*N(BG) - N(AC)*N(CG) - N(AD)*N(DG) - N(AE)*N(EG) - N(AF)*N(FG) + N(AB)*N(BD)*N(DG) + N(AB)*N(BE)*N(EG) + N(AC)*N(CD)*N(DG) + N(AC)*N(CF)*N(FG) + N(AD)*N(DE)*N(EG) + N(AD)*N(DF)*N(FG) - N(AB)*N(BD)*N(DF)*N(FG) - N(AC)*N(CD)*N(DE)*N(EG)</p>
+
+<p>where:</p>
+
+<p>N(AG)= <sup>(n - 1 + 4)</sup>C<sub>4</sub> = p</p>
+
+<p>N(AF)= <sup>(n/2 + 4)</sup>C<sub>4</sub> = q</p>
+
+<p>N(AE)=N(CG)= <sup>(n-1+2)</sup>C<sub>2</sub> = r</p>
+
+<p>N(BG)= <sup>(n - 1 - n/2 + 4)</sup>C<sub>4</sub> = s</p>
+
+<p>N(AD)=N(CF)= <sup>(n/2 + 2)</sup>C<sub>2</sub> = t</p>
+
+<p>N(BE)=N(DG)= <sup>(n - 1 - n/2 + 2)</sup>C<sub>2</sub> = u</p>
+
+<p>N(AB)=N(AC)=N(BD)=N(CD)=N(DE)=N(DF)=N(EG)=N(FG)=1</p>
+
+<p>So, the final expression for number of unique paths, k is:</p>
+
+<p>k = p - 1*s - 1*r - t*u - r*1 - q*1 + 1*1*u + 1*u*1 + 1*1*u + 1*t*1 + t*1*1 + t*1*1 - 1 - 1</p>
+
+<p>=&gt;  k = p - s - 2*r - t*u -q + 3*u + 3*t -2</p>
+
+<p>According to the problem, we have to find out the dimension of the corridor i.e. n for a given k. For this we will make an array of the k values of all 1&lt;=n&lt;=10000 beforehand. Now for each k, we’ll carry out a binary search in the array to find out the value of n for which no. of paths is equal to or just larger than k.</p>
 ]]></content>
   </entry>
   
@@ -239,90 +309,6 @@ for(i = 1; i &lt;= N; i++)
 //Note that the above psudo code also handles the case where two tasks have equal completion Time.
 </code></pre>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SPOJ TIC-TAC-TOE 2]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2/"/>
-    <updated>2013-09-27T16:30:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/09/27/tic-tac-toe-2</id>
-    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/TOE2/">Tic Tac Toe 2</a></p>
-
-<p><strong>Difficulty</strong> : Easy</p>
-
-<p><strong>Prerequisites</strong> : Simple Maths</p>
-
-<p><strong>Explanation</strong> : </p>
-
-<p>For the given board configuration we have to check whether it is the final state of some possible tic-tac-toe game or not.
-Let numX, numO and numE represents the number of X’s, number of O’s
-and number of dots in given board configuration.
-Also let xWins and oWins denotes the number of x winning possible configuration and number of o winning possible configurations respectively.
-There will be total of 8 winning configurations:</p>
-
-<pre><code>  |    x   |       |        |
-  |        |   x   |        |
-  |        |       |   x    |
-
-
-  |    x   |       |        |
-  |    x   |       |        |
-  |    x   |       |        |
-
-
-  |    x   |   x   |   x    |
-  |        |       |        |
-  |        |       |        |
-
-
-  |        |       |        |
-  |        |       |        |
-  |    x   |   x   |   x    |
-
-
-  |    x   |       |        |
-  |    x   |       |        |
-  |    x   |       |        |
-
-
-  |        |       |   x    |
-  |        |       |   x    |
-  |        |       |   x    |
-
-
-  |        |   x   |        |
-  |        |   x   |        |
-  |        |   x   |        |
-
-
-  |        |       |        |
-  |    x   |   x   |   x    |
-  |        |       |        |
-</code></pre>
-
-<p><strong>Pseudocode</strong> :</p>
-
-<p><code>
-If |numX - numO|&lt;=1 # Since each player gets an alternative chance in tic tac toe game
- 	If numE&gt;0 and xWins=0 and oWins=0  #Case when there is empty block and no player has win till now
-		then it is "invalid"
-	If xWins&gt;0 and oWins&gt;0 #Case when there is winning configuration of both players simultaneously
-		then it is "invalid"
-	If xWins&gt;0
-		If numX &gt; numO
-			then it is "valid"
-		Else 
-			then it is "invalid"
-	If oWins&gt;0
-		If numX &lt; numO
-			then it is "valid"
-		Else 
-			then it is "invalid"
-	rest all are "valid"
-Else
-	rest all are "invalid"
-</code></p>
 ]]></content>
   </entry>
   
