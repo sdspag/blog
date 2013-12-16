@@ -19,12 +19,12 @@ N!  =  1\*2\*3…….(N-2)\*(N-1)\*N
 The number of integers less than or equal to N having a factor of 2 is : Floor(N/2)
 
 Some of the integers would be having more than one 2 in their prime factorisations ( 4 = 2\*2, 12 = 2\*2\*3)
-So the number of integers less than or equal to N having a factor of 4 ( 2^2) is : Floor( (N/2) ^ 2 )
+So the number of integers less than or equal to N having a factor of 4 ( 2^2) is : Floor( N/(2^2) )
 
 Similarly the process will continue till 2^i > N.
 
 So the power of 2 in the prime factorisation of N! would be:
- Floor( N/2 ) + Floor( (N/2) ^ 2) + Floor( (N/2) ^ 3) + …….. + Floor( (N/2) ^ i)                             
+ Floor( N/2 ) + Floor( N/(2^2) ) + Floor( N/(2^3)  ) + …….. + Floor( N/(2^i) )                             
                                              where i is the highest number with 2^i <= N
 
 Similarly doing the process for all the prime factors  less than or equal to N, prime factorisation of N! can be obtained where N can be as large as 10000. 
