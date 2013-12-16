@@ -4,7 +4,7 @@
   <title><![CDATA[PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2013-12-16T12:37:51+05:30</updated>
+  <updated>2013-12-16T17:48:55+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -102,12 +102,12 @@ It stores the value once calculated in the function and returns this value when 
 <p>The number of integers less than or equal to N having a factor of 2 is : Floor(N/2)</p>
 
 <p>Some of the integers would be having more than one 2 in their prime factorisations ( 4 = 2*2, 12 = 2*2*3)
-So the number of integers less than or equal to N having a factor of 4 ( 2^2) is : Floor( (N/2) ^ 2 )</p>
+So the number of integers less than or equal to N having a factor of 4 ( 2^2) is : Floor( N/(2^2) )</p>
 
 <p>Similarly the process will continue till 2^i &gt; N.</p>
 
 <p>So the power of 2 in the prime factorisation of N! would be:
- Floor( N/2 ) + Floor( (N/2) ^ 2) + Floor( (N/2) ^ 3) + …….. + Floor( (N/2) ^ i)                           <br />
+ Floor( N/2 ) + Floor( N/(2^2) ) + Floor( N/(2^3)  ) + …….. + Floor( N/(2^i) )                           <br />
                                              where i is the highest number with 2^i &lt;= N</p>
 
 <p>Similarly doing the process for all the prime factors  less than or equal to N, prime factorisation of N! can be obtained where N can be as large as 10000. </p>
