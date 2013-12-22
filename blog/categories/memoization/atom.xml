@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Dynamic Programming | PAG, IIT Roorkee]]></title>
-  <link href="http://pag.sdslabs.co/blog//blog/categories/dynamic-programming/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Memoization | PAG, IIT Roorkee]]></title>
+  <link href="http://pag.sdslabs.co/blog//blog/categories/memoization/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
   <updated>2013-12-22T14:25:53+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
