@@ -3,7 +3,7 @@ layout: post
 title: "SPOJ-PTIME"
 date: 2013-12-11 19:17
 comments: true
-categories: [Editorial, SPOJ, Question of the Week]
+categories: [Editorial, SPOJ, Question of the Week, Factorials, Primes]
 ---
 
 **[Problem](http://www.spoj.com/problems/PTIME/)**:  To write the prime factorisation of N! (N factorial).

@@ -3,7 +3,7 @@ layout: post
 title: "SPOJ MBALL"
 date: 2013-08-05 15:26
 comments: true
-categories: [Editorial, SPOJ, Question of the Week, Dynamic Programming, DP]
+categories: [Editorial, SPOJ, Question of the Week, Dynamic Programming, DP, Memoization]
 ---
 **[Problem](http://www.spoj.com/problems/MBALL/)** :
 Given the possible ways of scoring in a game, you neeed to find in how many ways can a given score be achieved.

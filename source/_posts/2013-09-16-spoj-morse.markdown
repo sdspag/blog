@@ -3,7 +3,7 @@ layout: post
 title: "SPOJ MORSE"
 date: 2013-09-16 18:30
 comments: true
-categories: [Editorial, SPOJ, Question of the Week, Dynamic Programming, DP, Trie, Digital Tree]
+categories: [Editorial, SPOJ, Question of the Week, Dynamic Programming, DP, Trie, Digital Tree, Memoization]
 ---
 
 **Prerequisites** : Dynamic Programming, Trie

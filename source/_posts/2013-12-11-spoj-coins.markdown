@@ -3,7 +3,7 @@ layout: post
 title: "SPOJ-COINS"
 date: 2013-12-11 19:39
 comments: true
-categories: [Editorial, SPOJ, Question of the Week]
+categories: [Editorial, SPOJ, Question of the Week, Dynamic Programming, DP, Memoization]
 ---
 
 **[Problem](http://www.spoj.com/problems/COINS/)**: Given, a gold coin in Byteland, find the maximum amount of American dollars you can get for it. 
@@ -36,11 +36,13 @@ Considering 81:
 27=13+9+6=28;
 20=10+6+5=21;
 Correct answer being 93.
-Notice that 20 is being tested again (resulting from 40). We thus try to solve this problem with memoization (technique of storing already-calculated values for a function in a cache) which optimizes the solution.
-It stores the value once calculated in the function and returns this value when called without performing those calculations again. So, the pseudo code of the function finally becomes:
+
+Notice that 20 is being tested again (resulting from 40). We thus try to avoid solving a problem (which we have already solved once) again and again. For this we use dynamic programming (or memoization) which is the technique of storing already-calculated values for a fuction in  an array (or vector or some other way) so that we can read those values directly instead of having to solve them again and again.
+
+So, the pseudo code of the function finally becomes:
 
 ```
-One must use the map library for using memoization.
+//Here we have used maps. One can use arrays or vectors as well.
 
 static map<variable(n) type, function return type> memo;
 if(n<12)
@@ -54,4 +56,4 @@ else
 	return ret;
 ```
 
-This makes the function well within the time-limit.
+This makes our solution pass well within the time-limit.
