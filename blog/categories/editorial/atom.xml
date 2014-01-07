@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Editorial | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/editorial/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2014-01-07T11:56:03+05:30</updated>
+  <updated>2014-01-07T12:57:35+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -12,55 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[SPOJ-GEEKOUNT]]></title>
-    <link href="http://pag.sdslabs.co/blog//2014/01/07/spoj-geekount/"/>
-    <updated>2014-01-07T11:39:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2014/01/07/spoj-geekount</id>
-    <content type="html"><![CDATA[<p><a href="www.spoj.com/problems/GEEKOUNT">Problem</a>: Let f(x) be the product of digits of a number. Given L and R, find the number of values of ‘i’ such that L &lt;= i &lt;= R and f(i) is even.  </p>
-
-<p>Pre-Requisites : None</p>
-
-<p>Explanation :</p>
-
-<p>We have to find the count of such numbers, between 2 given numbers, whose product of digits is even. Any number, in which any one digit is even, will come in this category. We will find all those numbers whose product of digits is odd and subtract them from total numbers between two given numbers. We will calculate required numbers from 1 to first number and lets call it num1, then from 1 to second number and lets call it num2 , then num2-num1 will be the answer.</p>
-
-<p>Suppose we consider any n digit number. Then the number of numbers with exactly n digits and all digits odd will be 5 raised to power n. So, the number of numbers from 1 digit to n digits with all digits odd will be sum of all powers of 5 raised to power 1 upto n 
-ie. 5^1 + 5^2 + 5^3 +…….+ 5^n.</p>
-
-<p>The above formula of 5 gives the ans as 999..9(n times). But what about the case when the number is neither the smallest, nor the largest n digit number.</p>
-
-<p>So if we are a general n digit number, then we will use formula to calculate the required number of numbers upto n-1 digits and use the following approach to calculate the number of n digits numbers, smaller than given number, for which product of digits is odd.</p>
-
-<p>The number of such numbers will be equal to sum of the numbers of product of half of corresponding digit and 5^ [length-position-1] and  this digit will be from left digit to right digit. However, this process will stop when we encounter an even digit because from there we will not get any number where all digits will be odd.</p>
-
-<p>Pseudocode : </p>
-
-<pre><code>sum[0] = power[0] = 0
-for i = 1 to 10 :
-    power[i] = power[i-1] * 5 
-    sum[i] = sum[i-1] + power[i]
-//dig1 is string form of first number.
-//dig2 is string form of second number.
-//n1 stores the number of numbers whose product of digits is odd.
-//length1 is length of first string.
-//length2 is length of second string.
-n1 = sum[length1-1] 
-//Calculating upto length1-1 digits
-for j = 0 to length1:
-    n1 = n1 + dig1[j]/2 * power[length1-j-1]
-// n1 gives the number of numbers with all digits odd from 1 to dig1.
-</code></pre>
-
-<p>Do the same for second number.</p>
-
-<p>Subtract n1 from n2 and subtract this result from the difference between the 
-given 2 numbers to obtain the required answer.</p>
-
-<p>Let us take an example. Suppose we have to calculate till 57981. So, from 10000 to 50000, our counting will be only from 10000 to 19999 and 30000 to 39999, so and the number will be equal to same which we found for 4-digit numbers. Then we will shift our counter from 5 to 7 in our number 57981. Now, our target will be from 1000 to 1999, 3000 to 3999, 5000 to 5999, and our answer will be same as we found for 3 digit numbers. Process terminates as we encounter 8 as after it, no more numbers with all digits odd.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[SPOJ-COINS]]></title>
@@ -265,6 +216,106 @@ i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
 <p>For numbers of type 4<em>p or 4</em>p+2 XOR is N and N+1 respectively So first player can make XOR zero by removing stones from any pile whose most significant bit is same as the most significant bit of N. Thus the answer for this case is the number of piles which has x stones, such that when x is represented in binary, it has the same number of bits as the binary representation of N. This can be obtained by subtracting from N the maximum power of 2 which is less than or equal to N.</p>
 
 <p><strong>Links</strong> : <a href="http://community.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=algorithmGames">Game of Nim</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-RRSCHED]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/10/03/spoj-rrsched/"/>
+    <updated>2013-10-03T18:38:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/10/03/spoj-rrsched</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/RRSCHED/">RRSCHED</a></p>
+
+<p><strong>Difficulty</strong> : Medium</p>
+
+<p><strong>Prerequisites</strong> : BIT</p>
+
+<p><strong>Explanation</strong> : </p>
+
+<p>A very naive approach would be to iterate over time and keep on decreasing the no of tasks to be performed and storing the task completion time in a separate array.This implementation would definitely give TLE  O(N*T) with the given constraints.</p>
+
+<p>In the above approach we can observe that we can do better by jumping times from t = completion of easiest task (w.r.t time) to t = completion of next easiest task . </p>
+
+<p>For this we need to sort the input array w.r.t time .But we would also want their original indices(because order matters).So you can use pair&lt;int,int&gt;  to store both the index and time  of a task.That way you would not lose your index’s by sorting the array.</p>
+
+<p>In the following discussion:</p>
+
+<p>Pair [i] denotes i th pair in sorted array
+Pair[i].Time denotes time needed for ‘Pir[i].Index’ th task to complete.</p>
+
+<p>Now for every iteration all we need to do is to keep track of  Current time and do as follows.</p>
+
+<ol>
+  <li>
+    <p>Time Taken for present task to be completed
+ = 	(no of remaining elements)*(Pair[i].Time-Pair[i-1].Time) +
+ 		1*no of Tasks before Pair[i].Index which are not completed</p>
+  </li>
+  <li>
+    <p>Extra Time to complete the  round
+ = 1*no of Tasks after Pair[i].Index which are not completed.</p>
+  </li>
+  <li>
+    <p>Update Pair[i].Index as completed</p>
+  </li>
+</ol>
+
+<p>Thus BIT comes in handy here where we have to query the no of tasks not completed and update a task as completed in O(logN). For this purpose initially keep a BIT array and update every element by ‘+1’ which means that the task is not completed yet.You can use Update(i,-1) to update the task as completed. You can find the no of tasks which are not completed  before an index i by Query(i).</p>
+
+<p>The <a href="http://code.hackerearth.com/d8db76J">pesudo code</a> is as follows:</p>
+
+<pre><code>//Initialize bit array to zero 
+
+BIT[MaxN] = 0
+
+// Update bit array 
+
+Upadte(i , x)
+	for(; i &lt;= n; i += i&amp;-i)
+    	BIT[i] += x
+
+//Query Cummulative Frequency in a bit array 
+
+Query(i)
+	s=0
+	for(; i&gt;0 ; i-=i&amp;-i)
+    	s += BIT[i]
+	return s
+
+//Take Input and Do the necessary initializations for BIT array
+
+TakeInput()
+for(i = 1; i &lt;= N; i++)
+	Update(i, 1)
+
+//Main Part
+
+CurrentTime = 0
+for(i = 1; i &lt;= N; i++)
+
+	//N-i+1 total uncompleted tasks
+	
+	CurrentTime += (Pair[i].Time - Pair[i-1].Time - 1)*(N-i+1)
+	
+	//query for uncompleted tasks before the present task
+	
+	CurrentTime +=  Query(Pair[i].Index)
+	
+	//Store the final anwer for the present task
+	
+	Answer[Pair[i].Index] = CurrentTime
+	
+	//Update current task as completed
+	
+	Update(Pair[i].Index, -1)
+	
+	//Increase by no of uncompleted tasks after the present task
+	
+	CurrentTime += (N-i) - Query(Pair[i].Index)
+
+//Note that the above psudo code also handles the case where two tasks have equal completion Time.
+</code></pre>
+
 ]]></content>
   </entry>
   
