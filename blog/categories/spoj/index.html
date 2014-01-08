@@ -48,31 +48,26 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/blog/">PAG, IIT Roorkee</a></h1>
-  
+  <div id="header-inner">
+  <span class="first"><a href="/blog/">Programming & Algorithms Group, SDS, IIT Roorkee</a></span>
+    <!--<span><a href="//pag.sdslabs.co">About</a></span><br><br>-->
+    <span class="icon"><a target="_blank" href="//github.com/sdspag"><img src="/blog/images/social/gh-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="//facebook.com/sdspag"><img src="/blog/images/social/fb-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="//plus.google.com/117727978834269911101"><img src="/blog/images/social/gp-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="http://feeds.feedburner.com/sdspag" title="Subscribe via RSS"><img src="/blog/images/social/rss-icon.png" alt=""></a></span>
+  </div>
 </hgroup>
+<div id="fb-root"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=487490921336262";
+              fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 </header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
-  <li><a href="http://feeds.feedburner.com/sdspag" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-    <li><a href="pagiitr@gmail.com" rel="subscribe-email" title="subscribe via email">Email</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:pag.sdslabs.co/blog/" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/blog/">Blog</a></li>
-  <li><a href="/blog/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
   <div id="main">
     <div id="content">
       <div>
@@ -263,80 +258,17 @@
 
 </div>
 
-<aside class="sidebar">
-  
-    Included file 'asides/facebook.html' not found in _includes directory
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
-  </ul>
-  
-  <a href="https://github.com/sdspag">@sdspag</a> on GitHub
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'sdspag',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/blog/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/117727978834269911101?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
-  
-</aside>
-
-
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Programming & Algorithms Group, Software Development Section, IIT Roorkee -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+<div class="fb-like" data-href="http://facebook.com/sdspag" data-send="true" data-width="1000" data-show-faces="true"></div>
+</p>
+<p>
+  Copyright &copy; 2014 - Programming & Algorithms Group, Software Development Section, IIT Roorkee
 </p>
 
 </footer>
   
-
-<script type="text/javascript">
-      var disqus_shortname = 'pagblog';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -372,5 +304,35 @@
 
 
 
+
+<script type="text/javascript">
+      var disqus_shortname = 'pagblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
 </body>
 </html>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
