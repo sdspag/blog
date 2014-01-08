@@ -4,7 +4,7 @@
   <title><![CDATA[Category: SPOJ | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/spoj/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2014-01-07T17:39:43+05:30</updated>
+  <updated>2014-01-08T13:11:24+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -47,12 +47,14 @@ Now, as all the numbers have been reduced to numbers less than 12, they would re
 40=20+13+10;
 27=13+9+6=28;
 20=10+6+5=21;
-Correct answer being 93.
-Notice that 20 is being tested again (resulting from 40). We thus try to solve this problem with memoization (technique of storing already-calculated values for a function in a cache) which optimizes the solution.
-It stores the value once calculated in the function and returns this value when called without performing those calculations again. So, the pseudo code of the function finally becomes:</p>
+Correct answer being 93.</p>
+
+<p>Notice that 20 is being tested again (resulting from 40). We thus try to avoid solving a problem (which we have already solved once) again and again. For this we use dynamic programming (or memoization) which is the technique of storing already-calculated values for a fuction in  an array (or vector or some other way) so that we can read those values directly instead of having to solve them again and again.</p>
+
+<p>So, the pseudo code of the function finally becomes:</p>
 
 <p>```
-One must use the map library for using memoization.</p>
+//Here we have used maps. One can use arrays or vectors as well.</p>
 
 <p>static map&lt;variable(n) type, function return type&gt; memo;
 if(n&lt;12)
@@ -66,7 +68,7 @@ else
 	return ret;
 ```</p>
 
-<p>This makes the function well within the time-limit.</p>
+<p>This makes our solution pass well within the time-limit.</p>
 ]]></content>
   </entry>
   
