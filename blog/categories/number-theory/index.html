@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>SPOJ-GEEKOUNT - PAG, IIT Roorkee</title>
+  <title>Category: Number Theory - PAG, IIT Roorkee</title>
   <meta name="author" content="Programming & Algorithms Group, Software Development Section, IIT Roorkee">
 
   
-  <meta name="description" content="Problem: Let f(x) be the product of digits of a number. Given L and R, find the number of values of ‘i’ such that L &lt;= i &lt;= R and f(i) is even &hellip;">
+  <meta name="description" content="Category: Number Theory">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://pag.sdslabs.co/blog//2014/01/08/spoj-geekount">
+  <link rel="canonical" href="http://pag.sdslabs.co/blog/blog/categories/number-theory">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://feeds.feedburner.com/sdspag" rel="alternate" title="PAG, IIT Roorkee" type="application/atom+xml">
@@ -71,139 +71,39 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-      <h1 class="entry-title"><a href="/blog/2014/01/08/spoj-geekount/">SPOJ-GEEKOUNT</a></h1>
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-08T15:54:00+05:30" pubdate data-updated="true">Jan 8<span>th</span>, 2014</time>
-        <!-- 
-         | <a href="#disqus_thread">Comments</a>
-         -->
-      </p>
+    <h1 class="entry-title">Category: Number Theory</h1>
     
   </header>
-
-
-<div class="entry-content"><p><a href="www.spoj.com/problems/GEEKOUNT">Problem</a>: Let f(x) be the product of digits of a number. Given L and R, find the number of values of ‘i’ such that L &lt;= i &lt;= R and f(i) is even.  </p>
-
-<p>Pre-Requisites : None</p>
-
-<p>Explanation :</p>
-
-<p>We have to find the count of such numbers, between 2 given numbers, whose product of digits is even. Any number, in which any one digit is even, will come in this category. We will find all those numbers whose product of digits is odd and subtract them from total numbers between two given numbers. We will calculate required numbers from 1 to first number and lets call it num1, then from 1 to second number and lets call it num2 , then num2-num1 will be the answer.</p>
-
-<p>Suppose we consider any n digit number. Then the number of numbers with exactly n digits and all digits odd will be 5 raised to power n. So, the number of numbers from 1 digit to n digits with all digits odd will be sum of all powers of 5 raised to power 1 upto n 
-ie. 5^1 + 5^2 + 5^3 +…….+ 5^n.</p>
-
-<p>The above formula of 5 gives the ans as 999..9(n times). But what about the case when the number is neither the smallest, nor the largest n digit number.</p>
-
-<p>So if we are a general n digit number, then we will use formula to calculate the required number of numbers upto n-1 digits and use the following approach to calculate the number of n digits numbers, smaller than given number, for which product of digits is odd.</p>
-
-<p>The number of such numbers will be equal to sum of the numbers of product of half of corresponding digit and 5^ [length-position-1] and  this digit will be from left digit to right digit. However, this process will stop when we encounter an even digit because from there we will not get any number where all digits will be odd.</p>
-
-<p>Pseudocode : </p>
-
-<pre><code>sum[0] = power[0] = 0
-for i = 1 to 10 :
-    power[i] = power[i-1] * 5 
-    sum[i] = sum[i-1] + power[i]
-//dig1 is string form of first number.
-//dig2 is string form of second number.
-//n1 stores the number of numbers whose product of digits is odd.
-//length1 is length of first string.
-//length2 is length of second string.
-n1 = sum[length1-1] 
-//Calculating upto length1-1 digits
-for j = 0 to length1:
-    n1 = n1 + dig1[j]/2 * power[length1-j-1]
-// n1 gives the number of numbers with all digits odd from 1 to dig1.
-</code></pre>
-
-<p>Do the same for second number.</p>
-
-<p>Subtract n1 from n2 and subtract this result from the difference between the 
-given 2 numbers to obtain the required answer.</p>
-
-<p>Let us take an example. Suppose we have to calculate till 57981. So, from 10000 to 50000, our counting will be only from 10000 to 19999 and 30000 to 39999, so and the number will be equal to same which we found for 4-digit numbers. Then we will shift our counter from 5 to 7 in our number 57981. Now, our target will be from 1000 to 1999, 3000 to 3999, 5000 to 5999, and our answer will be same as we found for 3 digit numbers. Process terminates as we encounter 8 as after it, no more numbers with all digits odd.</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Programming & Algorithms Group, Software Development Section, IIT Roorkee</span></span>
-
-      
-
-
-
-
-
+  <div id="blog-archives" class="category">
 
 
 
   
+  <h2>2014</h2>
+
+<article>
+  
+<h1><a href="/blog/2014/01/31/spoj-twosqrs/">SPOJ-TWOSQRS</a></h1>
+<time datetime="2014-01-31T17:02:00+05:30" pubdate><span class='month'>Jan</span> <span class='day'>31</span> <span class='year'>2014</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/blog/categories/ad-hoc/'>Ad-Hoc</a>, <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/number-theory/'>Number Theory</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the Week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a></span>
+</footer>
 
 
-<time datetime="2014-01-08T15:54:00+05:30" pubdate data-updated="true">Jan 8<span>th</span>, 2014</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/blog/categories/ad-hoc/'>Ad-Hoc</a>, <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the Week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pag.sdslabs.co/blog//2014/01/08/spoj-geekount/" data-via="" data-counturl="http://pag.sdslabs.co/blog//2014/01/08/spoj-geekount/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2013/12/11/spoj-coins/" title="Previous Post: SPOJ-COINS">&laquo; SPOJ-COINS</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2014/01/31/spoj-twosqrs/" title="Next Post: SPOJ-TWOSQRS">SPOJ-TWOSQRS &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  </section>
+
+  
+</article>
 
 </div>
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -255,10 +155,7 @@ given 2 numbers to obtain the required answer.</p>
       var disqus_shortname = 'pagblog';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://pag.sdslabs.co/blog//2014/01/08/spoj-geekount/';
-        var disqus_url = 'http://pag.sdslabs.co/blog//2014/01/08/spoj-geekount/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

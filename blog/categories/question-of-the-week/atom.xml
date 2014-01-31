@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Question of the Week | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/question-of-the-week/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2014-01-08T15:56:24+05:30</updated>
+  <updated>2014-01-31T17:08:29+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-TWOSQRS]]></title>
+    <link href="http://pag.sdslabs.co/blog//2014/01/31/spoj-twosqrs/"/>
+    <updated>2014-01-31T17:02:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2014/01/31/spoj-twosqrs</id>
+    <content type="html"><![CDATA[<p><a href="http://www.spoj.com/problems/TWOSQRS/">Problem</a> : Given a number (N) and you need to find whether it can be represented as sum of two squares or not.</p>
+
+<p>Pre-Requisites : None</p>
+
+<p>Explanation :</p>
+
+<p>Any number (lets say A) can be represented in form 4*k+r  (where r can 0 , 1 , 2 , 3). Thus possible values for A^2 is 4*k and 4*k+1 , so sum of two squares can never be of the form  4*k +3 .</p>
+
+<p>N = p1 ^ x1 * p2 ^ x2 * ……  pm ^ xm (prime factorisation of N) can be represented as the sum of two squares if every prime of the form 4*k +3 have even degree (or power) .</p>
+
+<p>This can be proved using following 5 statements :-</p>
+
+<ol>
+  <li>The product of two numbers, each of which is a sum of two squares, is itself a sum of	 	two squares.</li>
+  <li>If a number which is a sum of two squares is divisible by a prime which is a sum of two 	squares, then the quotient is a sum of two squares.</li>
+  <li>If a number which can be written as a sum of two squares is divisible by a number 	which is not a sum of two squares, then the quotient has a factor which is not a sum of 	two squares.</li>
+  <li>If a and b are relatively prime then every factor of a^2 + b^2 is a sum of two squares. </li>
+  <li>Every prime of the form 4n+1 is a sum of two squares.	</li>
+</ol>
+
+<p>For proof of these statements refer <a href="http://en.wikipedia.org/wiki/Proofs_of_Fermat's_theorem_on_sums_of_two_squares">here</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SPOJ-GEEKOUNT]]></title>
@@ -236,35 +265,6 @@ i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
 <p>=&gt;  k = p - s - 2*r - t*u -q + 3*u + 3*t -2</p>
 
 <p>According to the problem, we have to find out the dimension of the corridor i.e. n for a given k. For this we will make an array of the k values of all 1&lt;=n&lt;=10000 beforehand. Now for each k, we’ll carry out a binary search in the array to find out the value of n for which no. of paths is equal to or just larger than k.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SPOJ-DGAME]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame/"/>
-    <updated>2013-10-18T21:16:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/10/18/spoj-dgame</id>
-    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> :  Game of Nim</p>
-
-<p><strong><a href="http://www.spoj.com/problems/DGAME/">Problem</a></strong> : Game of Nim with variations. (N piles with i<sup>th</sup> pile containing either 2<em>i or 2</em>i+1 stones where even number of stones may be removed from selected pile.)</p>
-
-<p><strong>Explanation</strong> :</p>
-
-<p>At every index i, can have stones in two ways, so total no. of ways comes out to be 2 * 2 * . . . . * 2 (n times).</p>
-
-<p>Now whether an index have 2<em>i or 2</em>i+1 stones the game remains unaffected because if there are 2<em>i+1 stones in any pile there will be one stone left out anyways, and the game will be same as the one played with 2</em>i stones. We shall be considering only this case.</p>
-
-<p>At any point of the game i<sup>th</sup> pile contains 2*(i - k) stones (where k is any arbitrary constant). Now you can interpret the question as the ith pile had i stones in the beginning and you can take out any positive number of stones from it. This is the standard nim game containing N piles, where the ith pile contains i stones.</p>
-
-<p>Now our task is to find XOR of N numbers(1 to N). Every number can be represented 4*p+q where 0 &lt;= q &lt;= 3 and p is any arbitrary.</p>
-
-<p>For every N of type 4*p+3, it can be easily proved that XOR of 1 to N is 0. So the first person will always lose the game. The answer for such numbers is zero.</p>
-
-<p>For N of type 4*p+1 XOR of numbers from 1 to N is 1, so the first player can remove 1 stone from any pile containing odd number of stones so that the XOR becomes zero. There are (N+1)/2 piles containing odd number of stones, so the answer for this case is (N+1)/2.</p>
-
-<p>For numbers of type 4<em>p or 4</em>p+2 XOR is N and N+1 respectively So first player can make XOR zero by removing stones from any pile whose most significant bit is same as the most significant bit of N. Thus the answer for this case is the number of piles which has x stones, such that when x is represented in binary, it has the same number of bits as the binary representation of N. This can be obtained by subtracting from N the maximum power of 2 which is less than or equal to N.</p>
-
-<p><strong>Links</strong> : <a href="http://community.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=algorithmGames">Game of Nim</a></p>
 ]]></content>
   </entry>
   
