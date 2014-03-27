@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Insomnia 2k14"
+date: 2014-03-27 14:44
+comments: true
+categories: [Insomnia, PAG]
+---
+It has been a busy month for PAG. We have been organizing several contests on the IIT Roorkee (intranet as well as online) related to programming and general aptitude prowess. But it was the 15th of March that saw the occurrence of most awaited event organized by the group- Insomnia! This was the 5th edition of the annual international programming contest organized by PAG and yes- it lived up to its hype! Organized as part of the annual tech fest of IIT Roorkee, Cognizance, the event was hosted on CodeVillage, an online coding portal maintained jointly by [SDSLabs](https://www.facebook.com/SDSLabs) and [PAG](https://www.facebook.com/sdspag). 
+
+For the ones reading about it for the first time, Insomnia is an overnight programming contest held over 12 hours (9 pm IST - 9 am IST) . There are several questions of varying difficulty and each question carries one point (irrespective of difficulty). Ties are broken by the total time taken. Standard ACM-ICPC Rules. This year's edition saw participation from over 170 teams from around the globe and over 1000 submissions made. If you compare these figures to an average contest hosted on codechef or spoj, they might not sound much to you, but considering the fact that the event was hosted on an independent platform (independent portal and independent grader) with less than half the publicity- we are ecstatic with the results! There were a few glitches we faced (mainly with the leaderboard), but the contest was smooth otherwise. Nevertheless we promise you that we'll work them out before next year's edition. 
+
+The overall winner of [Insomnia 2k14](http://insomnia.cognizance.org.in/user/view_rank/1/10/27) was Mikhail Mayorov, a Russian guy(so no real surprises here!) who contested alone with the team name 'SADBOYS'. Team 'good_piggies' stood second. Kudos to the members Manu Kashyap, Rishav Pati and Sandeep Mohanty! From IIT Roorkee, 4 teams managed a draw with 7 accepted solutions. Sorted on the basis of time, team 'Invincibles' came out at the top! Kudos to the members Rishabh Mor, Varun Syal and Yashpal Choudhary!
+
+All the problems have been added on spoj for practice. The editorials for each have also been published and are available [here](http://ge.tt/3FdSdNS1/v/0?c).
+
+*Team Insomnia*: 
+{% img /images/posts/Insomnia/2k14.jpg %}
+
+As this post comes to an end, we'd like to say that we hope you guys enjoyed solving the problems as much as we enjoyed putting them up and we hope you'll be back next year! For those of you who did not compete this year, we hope you'll turn up next year and tell us what you think about it! We love to hear from you so if you have anything that you'd like to tell us- either about the contest problems, or about codevillage or about Putin taking over Crimea- we are all ears! For any sort of feedback, mail us at <pagiitr@gmail.com>.
+
+Cheers!
