@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Codematics | PAG, IIT Roorkee]]></title>
+  <link href="http://pag.sdslabs.co/blog//blog/categories/codematics/atom.xml" rel="self"/>
+  <link href="http://pag.sdslabs.co/blog//"/>
+  <updated>2014-04-05T19:28:26+05:30</updated>
+  <id>http://pag.sdslabs.co/blog//</id>
+  <author>
+    <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Codematics 2k14]]></title>
+    <link href="http://pag.sdslabs.co/blog//2014/04/05/codematics-2k14/"/>
+    <updated>2014-04-05T19:23:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2014/04/05/codematics-2k14</id>
+    <content type="html"><![CDATA[<p>On the 8th of March 2014, PAG organised an online Maths contest along the lines of Project Euler, <a href="http://erdos.sdslabs.co/">Codematics</a>, as part of the annual Hobbies club fest of IIT Roorkee, Shrishti. It was a 24 hour long competition (March 8 21:00 to March 9 21:00 IST) and was targeted at all the Maths enthusiasts of the IITR campus and the world. The contest had 24 questions - ranging from cakewalk to tricky - that challenged the participants. There was no negative scoring and everyone could make unlimited attempts for each question.</p>
+
+<p>The questions in the contest were based on a variety of concepts from number theory, combinatorics, geometry and some general aptitude and puzzles. And what’s more, we had an overwhelming response. There were more than 100 participants and over 1600 submissions. It was a close contest with three of the participants, Sukun Tarachandani, Priyanshu Seth and Yashpal Choudhary (all from IITR) solving as many as 16 questions, the highest. But the first one to solve them, Sukun Tarachandani was declared the winner of Codematics 2014.</p>
+
+<p>This year the special thing about Codematics was that it was hosted on a new platform, <a href="http://erdos.sdslabs.co/">Erdős</a>. It is an application for math geeks to try out new mathematical problems and keep track of who solves what. The design of Erdős is clean and card-based, with a focus on user-interaction above everything else. This web portal is maintained by <a href="https://www.facebook.com/SDSLabs">SDSLabs</a>.</p>
+
+<p>We tried our best to make the contest perfect for you guys, however there were small glitches or misunderstandings in some questions, which were soon fixed. We are sorry for that. Hope you enjoyed giving this competition and we would like to say that we enjoyed even more, putting it up for you. We’ll be back next year with another Codematics and in the meantime we will host more contests on Erdos. </p>
+
+<p>You can still attempt the codematics problems <a href="http://erdos.sdslabs.co/">here</a>. We would love to hear from you. Just drop us a mail at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>.</p>
+
+<p><em>Team Codematics</em>: 
+<img src="/images/posts/Codematics/2k14.jpg"></p>
+]]></content>
+  </entry>
+  
+</feed>
