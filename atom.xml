@@ -4,7 +4,7 @@
   <title><![CDATA[PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2014-04-05T19:28:26+05:30</updated>
+  <updated>2014-05-17T00:22:31+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -14,122 +14,49 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Codematics 2k14]]></title>
-    <link href="http://pag.sdslabs.co/blog//2014/04/05/codematics-2k14/"/>
-    <updated>2014-04-05T19:23:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2014/04/05/codematics-2k14</id>
-    <content type="html"><![CDATA[<p>On the 8th of March 2014, PAG organised an online Maths contest along the lines of Project Euler, <a href="http://erdos.sdslabs.co/">Codematics</a>, as part of the annual Hobbies club fest of IIT Roorkee, Shrishti. It was a 24 hour long competition (March 8 21:00 to March 9 21:00 IST) and was targeted at all the Maths enthusiasts of the IITR campus and the world. The contest had 24 questions - ranging from cakewalk to tricky - that challenged the participants. There was no negative scoring and everyone could make unlimited attempts for each question.</p>
+    <title type="html"><![CDATA[Interview: ACM ICPC World Finalist]]></title>
+    <link href="http://pag.sdslabs.co/blog//2014/05/17/interview-acm-icpc-world-finalist/"/>
+    <updated>2014-05-17T00:15:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2014/05/17/interview-acm-icpc-world-finalist</id>
+    <content type="html"><![CDATA[<p>This year we have our team 3Spades contesting in the ACM ICPC World Finals’ 14. Last year, IIT Roorkee was proud to having been represented by the team 65th bit comprising of Sharat Ibrahimpur, Tarun Goyal and Dipit Grover. Their team eventually finished 60th, and the first among all Indian teams for that year. We present to you an interview of Sharat Ibrahimpur as he speaks to PAG about what got him interested in competitive programming, where did he get his motivation from, what does it take to become a good programmer and about what students in general should focus on in college. </p>
 
-<p>The questions in the contest were based on a variety of concepts from number theory, combinatorics, geometry and some general aptitude and puzzles. And what’s more, we had an overwhelming response. There were more than 100 participants and over 1600 submissions. It was a close contest with three of the participants, Sukun Tarachandani, Priyanshu Seth and Yashpal Choudhary (all from IITR) solving as many as 16 questions, the highest. But the first one to solve them, Sukun Tarachandani was declared the winner of Codematics 2014.</p>
+<h3 id="when-and-how-were-you-introduced-to-programming">When and how were you introduced to programming?</h3>
 
-<p>This year the special thing about Codematics was that it was hosted on a new platform, <a href="http://erdos.sdslabs.co/">Erdős</a>. It is an application for math geeks to try out new mathematical problems and keep track of who solves what. The design of Erdős is clean and card-based, with a focus on user-interaction above everything else. This web portal is maintained by <a href="https://www.facebook.com/SDSLabs">SDSLabs</a>.</p>
+<p>I was introduced to competitive programming during the end of my third year at Roorkee. Before that for almost an year I was actively solving problems posted on projecteuler.net which gave me a stronghold on math based problems. I was introduced to Project Euler by one of my department seniors while CodeChef was a random accident on the internet. </p>
 
-<p>We tried our best to make the contest perfect for you guys, however there were small glitches or misunderstandings in some questions, which were soon fixed. We are sorry for that. Hope you enjoyed giving this competition and we would like to say that we enjoyed even more, putting it up for you. We’ll be back next year with another Codematics and in the meantime we will host more contests on Erdos. </p>
+<h3 id="what-is-the-secret-to-becoming-a-good-programmer">What is the secret to becoming a good programmer?</h3>
 
-<p>You can still attempt the codematics problems <a href="http://erdos.sdslabs.co/">here</a>. We would love to hear from you. Just drop us a mail at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>.</p>
+<p>The secret to becoming a good programmer is to have a basic understanding of algorithms in almost all the areas. Have a good understanding of few and try to be a master in one. This is pretty feasible. </p>
 
-<p><em>Team Codematics</em>: 
-<img src="http://pag.sdslabs.co/blog//images/posts/Codematics/2k14.jpg" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Insomnia 2k14]]></title>
-    <link href="http://pag.sdslabs.co/blog//2014/03/27/insomnia-2k14/"/>
-    <updated>2014-03-27T14:44:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2014/03/27/insomnia-2k14</id>
-    <content type="html"><![CDATA[<p>It has been a busy month for PAG. We have been organizing several contests on the IIT Roorkee intranet as well as online related to programming and general aptitude prowess. But it was the 15th of March that saw the occurrence of most awaited event organized by the group- Insomnia! This was the 5th edition of the annual international programming contest organized by PAG and yes- it lived up to its hype! Organized as part of the annual tech fest of IIT Roorkee, Cognizance, the event was hosted on CodeVillage, an online coding portal maintained jointly by <a href="https://www.facebook.com/SDSLabs">SDSLabs</a> and <a href="https://www.facebook.com/sdspag">PAG</a>. </p>
+<h3 id="how-did-you-guys-come-together">How did you guys come together?</h3>
 
-<p>For the ones reading about it for the first time, Insomnia is an overnight programming contest held over 12 hours (9 pm IST - 9 am IST) . There are several questions of varying difficulty and each question carries one point (irrespective of difficulty). Ties are broken by the total time taken. Standard ACM-ICPC Rules. This year’s edition saw participation from over 170 teams from around the globe and over 1000 submissions made. If you compare these figures to an average contest hosted on codechef or spoj, they might not sound much to you, but considering the fact that the event was hosted on an independent platform (independent portal and independent grader) with less than half the publicity- we are ecstatic with the results! There were a few glitches we faced (mainly with the leaderboard), but the contest was smooth otherwise. Nevertheless we promise you that we’ll work them out before next year’s edition. </p>
+<p>All three of us competed from different teams during 2011-12. Tarun’s team had performed exceptionally well and I heard from many people about Dipit’s problem solving skills. All that was left on my part was to convince these guys to team up with me. They said yes and rest as you know is history :P</p>
 
-<p>The overall winner of <a href="http://insomnia.cognizance.org.in/user/view_rank/1/10/27">Insomnia 2k14</a> was Mikhail Mayorov, a Russian guy(so no real surprises here!) who contested alone with the team name ‘SADBOYS’. Team ‘good_piggies’ stood second. Kudos to the members Manu Kashyap, Rishav Pati and Sandeep Mohanty! From IIT Roorkee, 4 teams managed a draw with 7 accepted solutions. Sorted on the basis of time, team ‘Invincibles’ came out at the top! Kudos to the members Rishabh Mor, Varun Syal and Yashpal Choudhary!</p>
+<h3 id="when-did-you-start-taking-it-seriously-to-the-extent-of-preparing-for-icpc">When did you start taking it seriously to the extent of preparing for ICPC?</h3>
 
-<p>All the problems have been added on spoj for practice. The editorials for each have also been published and are available <a href="http://ge.tt/3FdSdNS1/v/0?c">here</a>.</p>
+<p>I started aspiring to perform well in ICPC at the beginning of my fourth year. Though serious preparations began when I failed to perform well in the Kanpur online round during my first attempt. Its good to take failures to your heart when you know you have another attempt left. </p>
 
-<p><em>Team Insomnia</em>: 
-<img src="http://pag.sdslabs.co/blog//images/posts/Insomnia/2k14.jpg" /></p>
+<h3 id="who-is-your-inspirationmotivationrole-model">Who is your Inspiration/Motivation/role-model?</h3>
 
-<p>As this post comes to an end, we’d like to say that we hope you guys enjoyed solving the problems as much as we enjoyed putting them up and we hope you’ll be back next year! For those of you who did not compete this year, we hope you’ll turn up next year and tell us what you think about it! We love to hear from you so if you have anything that you’d like to tell us- either about the contest problems, or about codevillage or about Putin taking over Crimea- we are all ears! For any sort of feedback, mail us at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>.</p>
+<p>Inspiration? No one in particular. I was motivated by the fact that the best minds across the world will be taking part in this contest. What better way than this to challenge your problem solving skills. 
+I have always looked up to the performance of team proof from IIT Delhi. Their team has been a role model to me. </p>
 
-<p>Cheers!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SPOJ-TWOSQRS]]></title>
-    <link href="http://pag.sdslabs.co/blog//2014/01/31/spoj-twosqrs/"/>
-    <updated>2014-01-31T17:02:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2014/01/31/spoj-twosqrs</id>
-    <content type="html"><![CDATA[<p><a href="http://www.spoj.com/problems/TWOSQRS/">Problem</a> : Given a number (N) and you need to find whether it can be represented as sum of two squares or not.</p>
+<h3 id="how-much-does-software-engineering-involves-algorithmic-problem-solving">How much does software engineering involves algorithmic problem-solving?</h3>
 
-<p>Pre-Requisites : None</p>
+<p>If you ask me how many problems, that we solve on a day to day basis, are as fancy as the problems you see in the contests then the answer is none. But, if you ask me if algorithmic problem solving skills help in delivering better solutions in your job then the answer is yes.</p>
 
-<p>Explanation :</p>
+<h3 id="did-your-deep-interest-in-algorithms-have-any-side-effects-too-like-maybe-affecting-your-cgpa">Did your deep interest in algorithms have any side effects too? Like maybe affecting your CGPA?</h3>
 
-<p>Any number (lets say A) can be represented in form 4*k+r  (where r can 0 , 1 , 2 , 3). Thus possible values for A^2 is 4*k and 4*k+1 , so sum of two squares can never be of the form  4*k +3 .</p>
+<p>Yup it does have many side effects. CGPA is the one thing that took the hardest blow in my case. During my final exams I had on one hand the choice of studying courses that I didn’t like and on the other I had the option of solving interesting problems. My brain would always convince me to pick the latter. Other things that got affected is the amount of time I spent on arbit things like watching TV series or bakar with friends. You can’t really help it. Everyone gets 24 hours a day. Neither a minute less nor a minute more.</p>
 
-<p>N = p1 ^ x1 * p2 ^ x2 * ……  pm ^ xm (prime factorisation of N) can be represented as the sum of two squares if every prime of the form 4*k +3 have even degree (or power) .</p>
+<h3 id="what-are-your-plans-for-the-future">What are your plans for the future?</h3>
 
-<p>This can be proved using following 5 statements :-</p>
+<p>The learning curve at Goldman has been a steep one till now. Hoping to gain more work experience from this job. </p>
 
-<ol>
-  <li>The product of two numbers, each of which is a sum of two squares, is itself a sum of	 	two squares.</li>
-  <li>If a number which is a sum of two squares is divisible by a prime which is a sum of two 	squares, then the quotient is a sum of two squares.</li>
-  <li>If a number which can be written as a sum of two squares is divisible by a number 	which is not a sum of two squares, then the quotient has a factor which is not a sum of 	two squares.</li>
-  <li>If a and b are relatively prime then every factor of a^2 + b^2 is a sum of two squares. </li>
-  <li>Every prime of the form 4n+1 is a sum of two squares.	</li>
-</ol>
+<h3 id="any-piece-of-advice-for-the-students">Any piece of advice for the students?</h3>
 
-<p>For proof of these statements refer <a href="http://en.wikipedia.org/wiki/Proofs_of_Fermat's_theorem_on_sums_of_two_squares">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SPOJ-GEEKOUNT]]></title>
-    <link href="http://pag.sdslabs.co/blog//2014/01/08/spoj-geekount/"/>
-    <updated>2014-01-08T15:54:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2014/01/08/spoj-geekount</id>
-    <content type="html"><![CDATA[<p><a href="www.spoj.com/problems/GEEKOUNT">Problem</a>: Let f(x) be the product of digits of a number. Given L and R, find the number of values of ‘i’ such that L &lt;= i &lt;= R and f(i) is even.  </p>
-
-<p>Pre-Requisites : None</p>
-
-<p>Explanation :</p>
-
-<p>We have to find the count of such numbers, between 2 given numbers, whose product of digits is even. Any number, in which any one digit is even, will come in this category. We will find all those numbers whose product of digits is odd and subtract them from total numbers between two given numbers. We will calculate required numbers from 1 to first number and lets call it num1, then from 1 to second number and lets call it num2 , then num2-num1 will be the answer.</p>
-
-<p>Suppose we consider any n digit number. Then the number of numbers with exactly n digits and all digits odd will be 5 raised to power n. So, the number of numbers from 1 digit to n digits with all digits odd will be sum of all powers of 5 raised to power 1 upto n 
-ie. 5^1 + 5^2 + 5^3 +…….+ 5^n.</p>
-
-<p>The above formula of 5 gives the ans as 999..9(n times). But what about the case when the number is neither the smallest, nor the largest n digit number.</p>
-
-<p>So if we are a general n digit number, then we will use formula to calculate the required number of numbers upto n-1 digits and use the following approach to calculate the number of n digits numbers, smaller than given number, for which product of digits is odd.</p>
-
-<p>The number of such numbers will be equal to sum of the numbers of product of half of corresponding digit and 5^ [length-position-1] and  this digit will be from left digit to right digit. However, this process will stop when we encounter an even digit because from there we will not get any number where all digits will be odd.</p>
-
-<p>Pseudocode : </p>
-
-<pre><code>sum[0] = power[0] = 0
-for i = 1 to 10 :
-    power[i] = power[i-1] * 5 
-    sum[i] = sum[i-1] + power[i]
-//dig1 is string form of first number.
-//dig2 is string form of second number.
-//n1 stores the number of numbers whose product of digits is odd.
-//length1 is length of first string.
-//length2 is length of second string.
-n1 = sum[length1-1] 
-//Calculating upto length1-1 digits
-for j = 0 to length1:
-    n1 = n1 + dig1[j]/2 * power[length1-j-1]
-// n1 gives the number of numbers with all digits odd from 1 to dig1.
-</code></pre>
-
-<p>Do the same for second number.</p>
-
-<p>Subtract n1 from n2 and subtract this result from the difference between the 
-given 2 numbers to obtain the required answer.</p>
-
-<p>Let us take an example. Suppose we have to calculate till 57981. So, from 10000 to 50000, our counting will be only from 10000 to 19999 and 30000 to 39999, so and the number will be equal to same which we found for 4-digit numbers. Then we will shift our counter from 5 to 7 in our number 57981. Now, our target will be from 1000 to 1999, 3000 to 3999, 5000 to 5999, and our answer will be same as we found for 3 digit numbers. Process terminates as we encounter 8 as after it, no more numbers with all digits odd.</p>
+<p>Learn as many skills as you can now. This is the time when the day is all yours as you are not being paid to deliver something. Challenge yourself by doing something productive for long hours every day and then take a break from it to relax. The satisfaction is immense. 
+On a side note, many of you might think spending time on quora or reading blogs is better than Facebook as it gives you a feeling that you have gained some precious knowledge. But let me tell you, any piece of knowledge that has not been put to good use is garbage. So don’t acquire knowledge at a pace faster than at which you use it.</p>
 ]]></content>
   </entry>
   
@@ -171,11 +98,9 @@ Now, as all the numbers have been reduced to numbers less than 12, they would re
 40=20+13+10;
 27=13+9+6=28;
 20=10+6+5=21;
-Correct answer being 93.</p>
-
-<p>Notice that 20 is being tested again (resulting from 40). We thus try to avoid solving a problem (which we have already solved once) again and again. For this we use dynamic programming (or memoization) which is the technique of storing already-calculated values for a fuction in  an array (or vector or some other way) so that we can read those values directly instead of having to solve them again and again.</p>
-
-<p>So, the pseudo code of the function finally becomes:</p>
+Correct answer being 93.
+Notice that 20 is being tested again (resulting from 40). We thus try to solve this problem with memoization (technique of storing already-calculated values for a function in a cache) which optimizes the solution.
+It stores the value once calculated in the function and returns this value when called without performing those calculations again. So, the pseudo code of the function finally becomes:</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -189,7 +114,7 @@ Correct answer being 93.</p>
 <span class="line-number">10</span>
 <span class="line-number">11</span>
 <span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">//Here we have used maps. One can use arrays or vectors as well.
+</pre></td><td class="code"><pre><code class=""><span class="line">One must use the map library for using memoization.
 </span><span class="line">
 </span><span class="line">static map&lt;variable(n) type, function return type&gt; memo;
 </span><span class="line">if(n&lt;12)
@@ -202,7 +127,7 @@ Correct answer being 93.</p>
 </span><span class="line">	memo[n]=ret;
 </span><span class="line">	return ret;</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>This makes our solution pass well within the time-limit.</p>
+<p>This makes the function well within the time-limit.</p>
 ]]></content>
   </entry>
   
@@ -215,24 +140,19 @@ Correct answer being 93.</p>
 
 <p><strong>Explanation</strong> :</p>
 
-<p>The prime factorisation of N! would only contain primes less than  or equal to N.  Our main job is to find out the power of each prime factor and then write the prime factorisation in the correct form.</p>
-
-<p>Since the given N is always greater than or equal to 2, its factorial (N!) would have 2 in its prime factorisation. Now let us start by finding the power of 2 in the prime factorisation of N!</p>
-
-<p>N!  =  1*2*3…….(N-2)*(N-1)*N</p>
-
-<p>The number of integers less than or equal to N having a factor of 2 is : Floor(N/2)</p>
-
-<p>Some of the integers would be having more than one 2 in their prime factorisations ( 4 = 2*2, 12 = 2*2*3)
-So the number of integers less than or equal to N having a factor of 4 ( 2^2) is : Floor( N/(2^2) )</p>
-
-<p>Similarly the process will continue till 2^i &gt; N.</p>
-
-<p>So the power of 2 in the prime factorisation of N! would be:
- Floor( N/2 ) + Floor( N/(2^2) ) + Floor( N/(2^3)  ) + …….. + Floor( N/(2^i) )                           <br />
-                                             where i is the highest number with 2^i &lt;= N</p>
-
-<p>Similarly doing the process for all the prime factors  less than or equal to N, prime factorisation of N! can be obtained where N can be as large as 10000. </p>
+<p>The prime factorisation of N! would only contain primes less than  or equal to N.  Our main job is to find out the power of each prime factor and then write the prime factorisation in the correct form.
+Since the given N is always greater than or equal to 2, its factorial (N!) would have 2 in its prim factorisation. Now let us start by finding the power of 2 in the prime factorisation of N!
+N!  =  1<em>2</em>3…….(N-2)<em>(N-1)</em>N
+The number of integers less than or equal to N having a factor of 2 is:
+Floor(N/2)
+Some of the integers would be having more than one 2 in their prime factorisations ( 4 = 2<em>2, 12 = 2</em>2*3)
+So the number of integers less than or equal to N having a factor of 4 ( 2^2) is :
+Floor(N/2^2)
+Similarly the process will continue till 2^i &gt; N. 
+So the power of 2 in the prime factorisation of N! would be:
+ Floor(N/2) + Floor(N/2^2) + Floor(N/2^3) + …….. + Floor(N/2^i)                           <br />
+                                             where i is the highest number with 2^i &lt;= N
+Similarly doing the process for all the prime factors  less than or equal to N, prime factorisation of N! can be obtained where N can be as large as 10000.</p>
 
 <p><em>Pseudocode</em> :</p>
 
@@ -1375,6 +1295,102 @@ P = w*w*(1-d)^{-2} + 2*l*w*w*(1-d)^{-3}
 </script>
 
 <p><strong>Caution:</strong> Check for the cases where d=1.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Algorithms and Beyond...]]></title>
+    <link href="http://pag.sdslabs.co/blog//2013/07/07/algorithms-and-beyond-dot-dot-dot/"/>
+    <updated>2013-07-07T15:03:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2013/07/07/algorithms-and-beyond-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p>Here, we present the official blog of one of the recent but very promising student bodies of <a href="http://www.iitr.ac.in/">IIT Roorkee</a> -  <strong>Programming and Algorithms Group</strong>, aka <a href="http://facebook.com/sdspag"><strong>PAG</strong></a>.</p>
+
+<h1 id="about-us">About Us:</h1>
+
+<p>For those who are hearing about us for the first time - PAG is a group of enthusiastic and young programmers spanning across multiple departments, branches and years in IIT Roorkee operating under the aegis of Software Development Section with the aim of improving the algorithmic, mathematical and programatically problem solving capability of students of IIT Roorkee.</p>
+
+<h1 id="why-us">Why Us:</h1>
+
+<p>There is already SDSLabs and IMG in IIT Roorkee, then what is the need of another programming focused student body on campus?</p>
+
+<p>While IMG is mainly concerned with maintaining web applications for the administration, and SDSlabs is innovating and building applications for the web, mobile, network, and so on, there is a strong need of improving the algorithmic and competitive programming capability in the campus. How many people knew about ACM ICPC or TopCoder or CodeChef before PAG came around the corner?
+We cater to this very need. We are not just another programming group. The sole objective of this group is to develop a platform where passionate people can learn about algorithms/logic irrespective of their branch.</p>
+
+<h1 id="what-we-do">What We Do:</h1>
+
+<p>The name of the group says it all. Our activities revolve around Programming and Algorithms.</p>
+
+<p>We are people who love to code : A thrill that takes liberties with Logic. Competitive Coding is one of the things that keeps motivated (Damn! Did he solve it faster than me ?? There must be another, faster method!!!)</p>
+
+<p>We organize coding events, we participate in coding events and we win coding events!!! Oh yesss we do all the three things!!!</p>
+
+<p>We also maintain an active <a href="https://www.facebook.com/groups/sdspag/">Facebook group</a> where people can ask us any kind of programming/algorithm related doubt.
+ We believe that Programming is not a zero-sum game. Teaching something to a fellow programmer doesn’t take it away from us. We are happy to share what we can, because we are in it for the love of programming. </p>
+
+<p>This blog is another step in this direction where in we will be regularly posting about different algorithms and problems on various online judges. We are also coming up with the concept of <strong>Problem Of The Week</strong> where in we will post a problem every week on our Facebook group and allow people to discuss it and work on it for a week. One week later, before posting the next week’s problem, we will post an editorial about it on our blog. This way we can reach out to more people within and outside IITR.</p>
+
+<p>We are also launching a <a href="http://facebook.com/sdspag">Facebook</a> and a <a href="https://plus.google.com/117727978834269911101">Google+</a> page to share updates about various coding events, algorithms and programming techniques. Follow those pages so that you don’t miss out on anything.</p>
+
+<h1 id="events-by-us">Events by Us:</h1>
+
+<p>Every year we organize a variety of coding events which includes :  </p>
+
+<p><em>Insomnia</em>: Every year during <a href="http://www.cognizance.org.in/">Cognizance</a>, the exclusive Annual Technical Festival of IIT Roorkee, the second largest of its kind in Asia; we organize a fiercely contested online coding contest Insomnia. An overnight contest, which boasts of a huge competition from the world over, including some of the best known names in the field of sport programming, consists problems of ACM style, with varying difficulties covering various topics of algorithmic programming like graph-theory, dynamic programming, sorting, game theory, computational geometry, flows - almost everything. And for the stats, the best team in India could solve only 6 out of the total 14 problems (Insomnia - 2013).</p>
+
+<p>And the team works days and nights, for weeks to rigorously set and test the problems and solutions. We put our best efforts to generate an original and clean problem set, which our participants enjoy to solve. Take a look at last year’s <a href="http://ge.tt/5gEcv6l?c">problem set and editorial</a>.</p>
+
+<p>Here are some glimpses of the event night - those insomniac nights ensuring smooth run:</p>
+
+<p><em>Insomnia’11</em>: 
+<img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/11.JPG" /></p>
+
+<p><em>Insomnia’12</em>:
+<img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/12.jpg" /></p>
+
+<p><em>Insomnia’13</em>:
+<img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/13.JPG" /></p>
+
+<p><em>Codematics</em>: For those who love solving mathematical problems and <strong>not just algorithms</strong> our team organizes Codematics. This event features problems just like Project Euler - Challenging mathematical/computer programming problems that  require more than just maths to solve. Along with maths one has to use his/her programming skills to win. And this too gets participation from all over the world.</p>
+
+<p><em>Bits and Bytes</em>: This event is more of a quiz and involves mathematical and logical puzzles and questions based on implementation details in C/C++/Java</p>
+
+<h1 id="on-campus-activities">On Campus Activities:</h1>
+
+<p>In fact, Insomnia and Codematics are not the only coding contests that PAG organizes. Along with SDSLabs, we are actively involved in organizing several coding contests on intranet at IITR. Known as CodeBlitz, these contests are anticipated by the students at Roorkee who reward us with their active participation. It is one of the several attempts by PAG to improve the coding culture in R-land, and it makes us extremely happy to see our little efforts bear fruit. </p>
+
+<p>We also hold lectures on algorithms for both our members and IITR junta (whose frequency will increase in the coming time). Several teams as well as individuals from PAG participate regularly in programming competitions on almost all popular online judges.</p>
+
+<p>Only few years back IITR was nowhere in the arena of ACM ICPC. There was a severe lack of competitive coding culture in the campus. Few seniors who saw the big picture around, and  with the ambition of improving the culture in campus started this group. </p>
+
+<p>The founders of the group had a dream - <em>To produce an ACM world finalist team from IIT Roorkee</em>. This dream soon became reality.</p>
+
+<p>Two years back we had a team in top 10, one year back we had a team in top 5 and this year for the first time we have the team “The 65th Bit” from IITR that not only qualified for World Finals, ACM ICPC but also scored <a href="http://ahmed-aly.com/ICPC.jsp">best rank</a> among all Indian teams and overall 60th rank, which is held in Russia this year. Only Bombay and Indore were the other IITs among the five Indian teams that qualified (IIIT-Hyderabad and Chennai Mathematical Institute being the other two).</p>
+
+<h1 id="how-we-manage-all-this-">How we manage all this :</h1>
+
+<p><em>CodeRunner</em></p>
+
+<p>We feel proud to host Insomnia as well as other coding events on an in-house developed open-source online judge <a href="https://github.com/shashankkumar/CodeRunner">CodeRunner</a>(developed by SDSLabs), which is similar to <a href="http://spoj.pl">Sphere Online Judge</a>. Currently it supports grading submissions in C, C++, Java, Python,  PHP and Perl with plans for adding more  languages in future.</p>
+
+<p><em>CodeVillage</em>:</p>
+
+<p>CodeVillage is the web application developed and maintained by SDSLabs for hosting the coding events. It is used in all internal coding events as well as in Insomnia 2013.</p>
+
+<p><em>Team</em> : </p>
+
+<p>Every year, PAG recruits some of the best and promising first yearites who enter IIT Roorkee. But this does not mean we lose touch with the graduating students! They stay in touch and guide our group as it takes on new endeavors, providing essential support at every step. To make sure we do not lose out on good talent, the recruitment is a two-step process: a written test followed by a personal interview.</p>
+
+<h1 id="what-else-we-do-">What else we do :</h1>
+
+<p>After working a lot, we enjoy a lot!!! Ohh ya we have our share of fun too. We go on trips and walks, we play football on holidays and we don’t miss out of any reason to have a chapo!!! “Awesome” is not sufficient to describe these. Take some glimpses here:</p>
+
+<p><img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/trip1.JPG" />
+<img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/trip2.JPG" />
+<img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/trip3.JPG" /></p>
+
+<p>Thats all for now. We will be back soon with a new blog discussing some algorithm or some maths trick  or some coding problem or sharing our own experience with programming. </p>
+
+<p><img src="http://pag.sdslabs.co/blog//images/posts/Hello-World/grp1.jpg" /></p>
 ]]></content>
   </entry>
   

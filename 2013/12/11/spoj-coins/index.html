@@ -131,11 +131,9 @@ Now, as all the numbers have been reduced to numbers less than 12, they would re
 40=20+13+10;
 27=13+9+6=28;
 20=10+6+5=21;
-Correct answer being 93.</p>
-
-<p>Notice that 20 is being tested again (resulting from 40). We thus try to avoid solving a problem (which we have already solved once) again and again. For this we use dynamic programming (or memoization) which is the technique of storing already-calculated values for a fuction in  an array (or vector or some other way) so that we can read those values directly instead of having to solve them again and again.</p>
-
-<p>So, the pseudo code of the function finally becomes:</p>
+Correct answer being 93.
+Notice that 20 is being tested again (resulting from 40). We thus try to solve this problem with memoization (technique of storing already-calculated values for a function in a cache) which optimizes the solution.
+It stores the value once calculated in the function and returns this value when called without performing those calculations again. So, the pseudo code of the function finally becomes:</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -149,7 +147,7 @@ Correct answer being 93.</p>
 <span class="line-number">10</span>
 <span class="line-number">11</span>
 <span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">//Here we have used maps. One can use arrays or vectors as well.
+</pre></td><td class="code"><pre><code class=""><span class="line">One must use the map library for using memoization.
 </span><span class="line">
 </span><span class="line">static map&lt;variable(n) type, function return type&gt; memo;
 </span><span class="line">if(n&lt;12)
@@ -162,7 +160,7 @@ Correct answer being 93.</p>
 </span><span class="line">	memo[n]=ret;
 </span><span class="line">	return ret;</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>This makes our solution pass well within the time-limit.</p>
+<p>This makes the function well within the time-limit.</p>
 </div>
 
 
@@ -190,7 +188,7 @@ Correct answer being 93.</p>
 
 <span class="categories">
   
-    <a class='category' href='/blog/blog/categories/dp/'>DP</a>, <a class='category' href='/blog/blog/categories/dynamic-programming/'>Dynamic Programming</a>, <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/memoization/'>Memoization</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the Week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a>
+    <a class='category' href='/blog/blog/categories/editorial/'>Editorial</a>, <a class='category' href='/blog/blog/categories/question-of-the-week/'>Question of the Week</a>, <a class='category' href='/blog/blog/categories/spoj/'>SPOJ</a>
   
 </span>
 
@@ -215,7 +213,7 @@ Correct answer being 93.</p>
         <a class="basic-alignment left" href="/blog/2013/12/11/spoj-ptime/" title="Previous Post: SPOJ-PTIME">&laquo; SPOJ-PTIME</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/01/08/spoj-geekount/" title="Next Post: SPOJ-GEEKOUNT">SPOJ-GEEKOUNT &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/05/17/interview-acm-icpc-world-finalist/" title="Next Post: Interview: ACM ICPC World Finalist">Interview: ACM ICPC World Finalist &raquo;</a>
       
     </p>
   </footer>
