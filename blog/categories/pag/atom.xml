@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PAG | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/pag/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2014-05-17T09:34:02+05:30</updated>
+  <updated>2014-05-17T10:03:53+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -57,6 +57,48 @@ I have always looked up to the performance of team proof from IIT Delhi. Their t
 
 <p>Learn as many skills as you can now. This is the time when the day is all yours as you are not being paid to deliver something. Challenge yourself by doing something productive for long hours every day and then take a break from it to relax. The satisfaction is immense. 
 On a side note, many of you might think spending time on quora or reading blogs is better than Facebook as it gives you a feeling that you have gained some precious knowledge. But let me tell you, any piece of knowledge that has not been put to good use is garbage. So don’t acquire knowledge at a pace faster than at which you use it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Codematics 2k14]]></title>
+    <link href="http://pag.sdslabs.co/blog//2014/04/05/codematics-2k14/"/>
+    <updated>2014-04-05T19:23:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2014/04/05/codematics-2k14</id>
+    <content type="html"><![CDATA[<p>On the 8th of March 2014, PAG organised an online Maths contest along the lines of Project Euler, <a href="http://erdos.sdslabs.co/">Codematics</a>, as part of the annual Hobbies club fest of IIT Roorkee, Shrishti. It was a 24 hour long competition (March 8 21:00 to March 9 21:00 IST) and was targeted at all the Maths enthusiasts of the IITR campus and the world. The contest had 24 questions - ranging from cakewalk to tricky - that challenged the participants. There was no negative scoring and everyone could make unlimited attempts for each question.</p>
+
+<p>The questions in the contest were based on a variety of concepts from number theory, combinatorics, geometry and some general aptitude and puzzles. And what’s more, we had an overwhelming response. There were more than 100 participants and over 1600 submissions. It was a close contest with three of the participants, Sukun Tarachandani, Priyanshu Seth and Yashpal Choudhary (all from IITR) solving as many as 16 questions, the highest. But the first one to solve them, Sukun Tarachandani was declared the winner of Codematics 2014.</p>
+
+<p>This year the special thing about Codematics was that it was hosted on a new platform, <a href="http://erdos.sdslabs.co/">Erdős</a>. It is an application for math geeks to try out new mathematical problems and keep track of who solves what. The design of Erdős is clean and card-based, with a focus on user-interaction above everything else. This web portal is maintained by <a href="https://www.facebook.com/SDSLabs">SDSLabs</a>.</p>
+
+<p>We tried our best to make the contest perfect for you guys, however there were small glitches or misunderstandings in some questions, which were soon fixed. We are sorry for that. Hope you enjoyed giving this competition and we would like to say that we enjoyed even more, putting it up for you. We’ll be back next year with another Codematics and in the meantime we will host more contests on Erdos. </p>
+
+<p>You can still attempt the codematics problems <a href="http://erdos.sdslabs.co/">here</a>. We would love to hear from you. Just drop us a mail at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>.</p>
+
+<p><em>Team Codematics</em>: 
+<img src="/images/posts/Codematics/2k14.jpg"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Insomnia 2k14]]></title>
+    <link href="http://pag.sdslabs.co/blog//2014/03/27/insomnia-2k14/"/>
+    <updated>2014-03-27T14:44:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2014/03/27/insomnia-2k14</id>
+    <content type="html"><![CDATA[<p>It has been a busy month for PAG. We have been organizing several contests on the IIT Roorkee intranet as well as online related to programming and general aptitude prowess. But it was the 15th of March that saw the occurrence of most awaited event organized by the group- Insomnia! This was the 5th edition of the annual international programming contest organized by PAG and yes- it lived up to its hype! Organized as part of the annual tech fest of IIT Roorkee, Cognizance, the event was hosted on CodeVillage, an online coding portal maintained jointly by <a href="https://www.facebook.com/SDSLabs">SDSLabs</a> and <a href="https://www.facebook.com/sdspag">PAG</a>. </p>
+
+<p>For the ones reading about it for the first time, Insomnia is an overnight programming contest held over 12 hours (9 pm IST - 9 am IST) . There are several questions of varying difficulty and each question carries one point (irrespective of difficulty). Ties are broken by the total time taken. Standard ACM-ICPC Rules. This year’s edition saw participation from over 170 teams from around the globe and over 1000 submissions made. If you compare these figures to an average contest hosted on codechef or spoj, they might not sound much to you, but considering the fact that the event was hosted on an independent platform (independent portal and independent grader) with less than half the publicity- we are ecstatic with the results! There were a few glitches we faced (mainly with the leaderboard), but the contest was smooth otherwise. Nevertheless we promise you that we’ll work them out before next year’s edition. </p>
+
+<p>The overall winner of <a href="http://insomnia.cognizance.org.in/user/view_rank/1/10/27">Insomnia 2k14</a> was Mikhail Mayorov, a Russian guy(so no real surprises here!) who contested alone with the team name ‘SADBOYS’. Team ‘good_piggies’ stood second. Kudos to the members Manu Kashyap, Rishav Pati and Sandeep Mohanty! From IIT Roorkee, 4 teams managed a draw with 7 accepted solutions. Sorted on the basis of time, team ‘Invincibles’ came out at the top! Kudos to the members Rishabh Mor, Varun Syal and Yashpal Choudhary!</p>
+
+<p>All the problems have been added on spoj for practice. The editorials for each have also been published and are available <a href="http://ge.tt/3FdSdNS1/v/0?c">here</a>.</p>
+
+<p><em>Team Insomnia</em>: 
+<img src="/images/posts/Insomnia/2k14.jpg"></p>
+
+<p>As this post comes to an end, we’d like to say that we hope you guys enjoyed solving the problems as much as we enjoyed putting them up and we hope you’ll be back next year! For those of you who did not compete this year, we hope you’ll turn up next year and tell us what you think about it! We love to hear from you so if you have anything that you’d like to tell us- either about the contest problems, or about codevillage or about Putin taking over Crimea- we are all ears! For any sort of feedback, mail us at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>.</p>
+
+<p>Cheers!</p>
 ]]></content>
   </entry>
   
@@ -295,102 +337,6 @@ course chapos are given and not to forget the trips we have!!! </p>
 <p><strong>Recruitment</strong></p>
 
 <p>PAG will be recruiting soon. We are not expecting you to know programming as of now, so if you don’t, it isn’t really an issue. If you have a basic aptitude and the willingness to learn, you are good to go! To stay updated about out recruitment process and other activities, join our <a href="https://www.facebook.com/groups/sdspag/">Facebook group</a> and like our <a href="https://www.facebook.com/sdspag">facebook page</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Algorithms and Beyond...]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/07/07/algorithms-and-beyond-dot-dot-dot/"/>
-    <updated>2013-07-07T15:03:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/07/07/algorithms-and-beyond-dot-dot-dot</id>
-    <content type="html"><![CDATA[<p>Here, we present the official blog of one of the recent but very promising student bodies of <a href="http://www.iitr.ac.in/">IIT Roorkee</a> -  <strong>Programming and Algorithms Group</strong>, aka <a href="http://facebook.com/sdspag"><strong>PAG</strong></a>.</p>
-
-<h1 id="about-us">About Us:</h1>
-
-<p>For those who are hearing about us for the first time - PAG is a group of enthusiastic and young programmers spanning across multiple departments, branches and years in IIT Roorkee operating under the aegis of Software Development Section with the aim of improving the algorithmic, mathematical and programatically problem solving capability of students of IIT Roorkee.</p>
-
-<h1 id="why-us">Why Us:</h1>
-
-<p>There is already SDSLabs and IMG in IIT Roorkee, then what is the need of another programming focused student body on campus?</p>
-
-<p>While IMG is mainly concerned with maintaining web applications for the administration, and SDSlabs is innovating and building applications for the web, mobile, network, and so on, there is a strong need of improving the algorithmic and competitive programming capability in the campus. How many people knew about ACM ICPC or TopCoder or CodeChef before PAG came around the corner?
-We cater to this very need. We are not just another programming group. The sole objective of this group is to develop a platform where passionate people can learn about algorithms/logic irrespective of their branch.</p>
-
-<h1 id="what-we-do">What We Do:</h1>
-
-<p>The name of the group says it all. Our activities revolve around Programming and Algorithms.</p>
-
-<p>We are people who love to code : A thrill that takes liberties with Logic. Competitive Coding is one of the things that keeps motivated (Damn! Did he solve it faster than me ?? There must be another, faster method!!!)</p>
-
-<p>We organize coding events, we participate in coding events and we win coding events!!! Oh yesss we do all the three things!!!</p>
-
-<p>We also maintain an active <a href="https://www.facebook.com/groups/sdspag/">Facebook group</a> where people can ask us any kind of programming/algorithm related doubt.
- We believe that Programming is not a zero-sum game. Teaching something to a fellow programmer doesn’t take it away from us. We are happy to share what we can, because we are in it for the love of programming. </p>
-
-<p>This blog is another step in this direction where in we will be regularly posting about different algorithms and problems on various online judges. We are also coming up with the concept of <strong>Problem Of The Week</strong> where in we will post a problem every week on our Facebook group and allow people to discuss it and work on it for a week. One week later, before posting the next week’s problem, we will post an editorial about it on our blog. This way we can reach out to more people within and outside IITR.</p>
-
-<p>We are also launching a <a href="http://facebook.com/sdspag">Facebook</a> and a <a href="https://plus.google.com/117727978834269911101">Google+</a> page to share updates about various coding events, algorithms and programming techniques. Follow those pages so that you don’t miss out on anything.</p>
-
-<h1 id="events-by-us">Events by Us:</h1>
-
-<p>Every year we organize a variety of coding events which includes :  </p>
-
-<p><em>Insomnia</em>: Every year during <a href="http://www.cognizance.org.in/">Cognizance</a>, the exclusive Annual Technical Festival of IIT Roorkee, the second largest of its kind in Asia; we organize a fiercely contested online coding contest Insomnia. An overnight contest, which boasts of a huge competition from the world over, including some of the best known names in the field of sport programming, consists problems of ACM style, with varying difficulties covering various topics of algorithmic programming like graph-theory, dynamic programming, sorting, game theory, computational geometry, flows - almost everything. And for the stats, the best team in India could solve only 6 out of the total 14 problems (Insomnia - 2013).</p>
-
-<p>And the team works days and nights, for weeks to rigorously set and test the problems and solutions. We put our best efforts to generate an original and clean problem set, which our participants enjoy to solve. Take a look at last year’s <a href="http://ge.tt/5gEcv6l?c">problem set and editorial</a>.</p>
-
-<p>Here are some glimpses of the event night - those insomniac nights ensuring smooth run:</p>
-
-<p><em>Insomnia’11</em>: 
-<img src="/images/posts/Hello-World/11.JPG"></p>
-
-<p><em>Insomnia’12</em>:
-<img src="/images/posts/Hello-World/12.jpg"></p>
-
-<p><em>Insomnia’13</em>:
-<img src="/images/posts/Hello-World/13.JPG"></p>
-
-<p><em>Codematics</em>: For those who love solving mathematical problems and <strong>not just algorithms</strong> our team organizes Codematics. This event features problems just like Project Euler - Challenging mathematical/computer programming problems that  require more than just maths to solve. Along with maths one has to use his/her programming skills to win. And this too gets participation from all over the world.</p>
-
-<p><em>Bits and Bytes</em>: This event is more of a quiz and involves mathematical and logical puzzles and questions based on implementation details in C/C++/Java</p>
-
-<h1 id="on-campus-activities">On Campus Activities:</h1>
-
-<p>In fact, Insomnia and Codematics are not the only coding contests that PAG organizes. Along with SDSLabs, we are actively involved in organizing several coding contests on intranet at IITR. Known as CodeBlitz, these contests are anticipated by the students at Roorkee who reward us with their active participation. It is one of the several attempts by PAG to improve the coding culture in R-land, and it makes us extremely happy to see our little efforts bear fruit. </p>
-
-<p>We also hold lectures on algorithms for both our members and IITR junta (whose frequency will increase in the coming time). Several teams as well as individuals from PAG participate regularly in programming competitions on almost all popular online judges.</p>
-
-<p>Only few years back IITR was nowhere in the arena of ACM ICPC. There was a severe lack of competitive coding culture in the campus. Few seniors who saw the big picture around, and  with the ambition of improving the culture in campus started this group. </p>
-
-<p>The founders of the group had a dream - <em>To produce an ACM world finalist team from IIT Roorkee</em>. This dream soon became reality.</p>
-
-<p>Two years back we had a team in top 10, one year back we had a team in top 5 and this year for the first time we have the team “The 65th Bit” from IITR that not only qualified for World Finals, ACM ICPC but also scored <a href="http://ahmed-aly.com/ICPC.jsp">best rank</a> among all Indian teams and overall 60th rank, which is held in Russia this year. Only Bombay and Indore were the other IITs among the five Indian teams that qualified (IIIT-Hyderabad and Chennai Mathematical Institute being the other two).</p>
-
-<h1 id="how-we-manage-all-this-">How we manage all this :</h1>
-
-<p><em>CodeRunner</em></p>
-
-<p>We feel proud to host Insomnia as well as other coding events on an in-house developed open-source online judge <a href="https://github.com/shashankkumar/CodeRunner">CodeRunner</a>(developed by SDSLabs), which is similar to <a href="http://spoj.pl">Sphere Online Judge</a>. Currently it supports grading submissions in C, C++, Java, Python,  PHP and Perl with plans for adding more  languages in future.</p>
-
-<p><em>CodeVillage</em>:</p>
-
-<p>CodeVillage is the web application developed and maintained by SDSLabs for hosting the coding events. It is used in all internal coding events as well as in Insomnia 2013.</p>
-
-<p><em>Team</em> : </p>
-
-<p>Every year, PAG recruits some of the best and promising first yearites who enter IIT Roorkee. But this does not mean we lose touch with the graduating students! They stay in touch and guide our group as it takes on new endeavors, providing essential support at every step. To make sure we do not lose out on good talent, the recruitment is a two-step process: a written test followed by a personal interview.</p>
-
-<h1 id="what-else-we-do-">What else we do :</h1>
-
-<p>After working a lot, we enjoy a lot!!! Ohh ya we have our share of fun too. We go on trips and walks, we play football on holidays and we don’t miss out of any reason to have a chapo!!! “Awesome” is not sufficient to describe these. Take some glimpses here:</p>
-
-<p><img src="/images/posts/Hello-World/trip1.JPG">
-<img src="/images/posts/Hello-World/trip2.JPG">
-<img src="/images/posts/Hello-World/trip3.JPG"></p>
-
-<p>Thats all for now. We will be back soon with a new blog discussing some algorithm or some maths trick  or some coding problem or sharing our own experience with programming. </p>
-
-<p><img src="/images/posts/Hello-World/grp1.jpg"></p>
 ]]></content>
   </entry>
   

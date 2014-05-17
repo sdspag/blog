@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Insomnia | PAG, IIT Roorkee]]></title>
+  <link href="http://pag.sdslabs.co/blog//blog/categories/insomnia/atom.xml" rel="self"/>
+  <link href="http://pag.sdslabs.co/blog//"/>
+  <updated>2014-05-17T10:03:53+05:30</updated>
+  <id>http://pag.sdslabs.co/blog//</id>
+  <author>
+    <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Insomnia 2k14]]></title>
+    <link href="http://pag.sdslabs.co/blog//2014/03/27/insomnia-2k14/"/>
+    <updated>2014-03-27T14:44:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2014/03/27/insomnia-2k14</id>
+    <content type="html"><![CDATA[<p>It has been a busy month for PAG. We have been organizing several contests on the IIT Roorkee intranet as well as online related to programming and general aptitude prowess. But it was the 15th of March that saw the occurrence of most awaited event organized by the group- Insomnia! This was the 5th edition of the annual international programming contest organized by PAG and yes- it lived up to its hype! Organized as part of the annual tech fest of IIT Roorkee, Cognizance, the event was hosted on CodeVillage, an online coding portal maintained jointly by <a href="https://www.facebook.com/SDSLabs">SDSLabs</a> and <a href="https://www.facebook.com/sdspag">PAG</a>. </p>
+
+<p>For the ones reading about it for the first time, Insomnia is an overnight programming contest held over 12 hours (9 pm IST - 9 am IST) . There are several questions of varying difficulty and each question carries one point (irrespective of difficulty). Ties are broken by the total time taken. Standard ACM-ICPC Rules. This year’s edition saw participation from over 170 teams from around the globe and over 1000 submissions made. If you compare these figures to an average contest hosted on codechef or spoj, they might not sound much to you, but considering the fact that the event was hosted on an independent platform (independent portal and independent grader) with less than half the publicity- we are ecstatic with the results! There were a few glitches we faced (mainly with the leaderboard), but the contest was smooth otherwise. Nevertheless we promise you that we’ll work them out before next year’s edition. </p>
+
+<p>The overall winner of <a href="http://insomnia.cognizance.org.in/user/view_rank/1/10/27">Insomnia 2k14</a> was Mikhail Mayorov, a Russian guy(so no real surprises here!) who contested alone with the team name ‘SADBOYS’. Team ‘good_piggies’ stood second. Kudos to the members Manu Kashyap, Rishav Pati and Sandeep Mohanty! From IIT Roorkee, 4 teams managed a draw with 7 accepted solutions. Sorted on the basis of time, team ‘Invincibles’ came out at the top! Kudos to the members Rishabh Mor, Varun Syal and Yashpal Choudhary!</p>
+
+<p>All the problems have been added on spoj for practice. The editorials for each have also been published and are available <a href="http://ge.tt/3FdSdNS1/v/0?c">here</a>.</p>
+
+<p><em>Team Insomnia</em>: 
+<img src="/images/posts/Insomnia/2k14.jpg"></p>
+
+<p>As this post comes to an end, we’d like to say that we hope you guys enjoyed solving the problems as much as we enjoyed putting them up and we hope you’ll be back next year! For those of you who did not compete this year, we hope you’ll turn up next year and tell us what you think about it! We love to hear from you so if you have anything that you’d like to tell us- either about the contest problems, or about codevillage or about Putin taking over Crimea- we are all ears! For any sort of feedback, mail us at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#112;&#097;&#103;&#105;&#105;&#116;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>.</p>
+
+<p>Cheers!</p>
+]]></content>
+  </entry>
+  
+</feed>
