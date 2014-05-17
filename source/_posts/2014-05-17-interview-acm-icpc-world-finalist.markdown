@@ -47,3 +47,5 @@ The learning curve at Goldman has been a steep one till now. Hoping to gain more
 
 Learn as many skills as you can now. This is the time when the day is all yours as you are not being paid to deliver something. Challenge yourself by doing something productive for long hours every day and then take a break from it to relax. The satisfaction is immense. 
 On a side note, many of you might think spending time on quora or reading blogs is better than Facebook as it gives you a feeling that you have gained some precious knowledge. But let me tell you, any piece of knowledge that has not been put to good use is garbage. So don't acquire knowledge at a pace faster than at which you use it.
+
+{% img /images/posts/Interview/WF.jpg %}
