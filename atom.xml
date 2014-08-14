@@ -4,7 +4,7 @@
   <title><![CDATA[PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2014-05-17T12:51:47+05:30</updated>
+  <updated>2014-08-14T19:21:59+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Second Year Recruitment Results]]></title>
+    <link href="http://pag.sdslabs.co/blog//2014/08/14/second-year-recruitment-results/"/>
+    <updated>2014-08-14T19:19:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2014/08/14/second-year-recruitment-results</id>
+    <content type="html"><![CDATA[<p>Congratulations to everyone who made it to the group. We were extremely happy to see the response by second yearites. We got to interview some of the most talented coders in our campus and it was a wonderful experience for us and hopefully for them too. We had to reject people only because of limited vacancies even though they were all equally capable.</p>
+
+<p>Here comes the result of Programming and Algorithms Group’s second year recruitment test : </p>
+
+<ul>
+  <li>Abhishek Uppal</li>
+  <li>Akhil Gupta</li>
+  <li>Analkumar Shahi</li>
+  <li>Dhaval Kapil</li>
+  <li>Harsh Sahu</li>
+  <li>Jay Bosamiya</li>
+  <li>Sai Varun Reddy</li>
+  <li>Saurabh Verma</li>
+  <li>Sopan Khosla</li>
+  <li>Vikas Yadav</li>
+  <li>Vaibhav Daga</li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Interview: ACM ICPC World Finalist]]></title>
@@ -1282,99 +1307,6 @@ course chapos are given and not to forget the trips we have!!! </p>
 <p><strong>Recruitment</strong></p>
 
 <p>PAG will be recruiting soon. We are not expecting you to know programming as of now, so if you don’t, it isn’t really an issue. If you have a basic aptitude and the willingness to learn, you are good to go! To stay updated about out recruitment process and other activities, join our <a href="https://www.facebook.com/groups/sdspag/">Facebook group</a> and like our <a href="https://www.facebook.com/sdspag">facebook page</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SPOJ DQUERY]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/07/29/spoj-dquery/"/>
-    <updated>2013-07-29T15:40:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/07/29/spoj-dquery</id>
-    <content type="html"><![CDATA[<p><strong><a href="http://www.spoj.com/problems/DQUERY/">Problem</a></strong> :
-Given a list of integers, and you need to answer <em>Q</em> queries, in each of which given two indices <em>i</em> and <em>j</em> and you need to answer how many distinct integers are present whose index lies between <em>i</em> and <em>j</em>.</p>
-
-<p><strong>Pre-requisites</strong> : Binary Indexed Trees (For Range Sum Queries), Sorting, Offline Programming</p>
-
-<p><strong>Explanation</strong> :
-Let us try to understand the solution for a simpler problem where <em>i</em> = 1 for all queries. Now for every integer if we just mark the first position in the list, for every query the answer will be just the number of integers marked among the first <em>j</em> places.</p>
-
-<p>If we use a boolean array to store the marked integers and run a loop for every query through all the starting j numbers the complexity of the algorithm will be O(N) for each query.</p>
-
-<p>But if we use some advanced data-structure like Binary Indexed Trees, we can acheive this in O(logN) time for every query.
-So our final complexity for this simpler problem is O(QlogN).</p>
-
-<p>For our main problem, we need to know a style of programming called <em>Offline Programming</em>.</p>
-
-<p>There are two types of such classification, 
-1) Online programming
-2) Offline Programming</p>
-
-<p>In online programming we answer each query as soon as we take it as input.</p>
-
-<p>In offline programming we take all the input at once and try to make some changes to the order of input and solve all queries and then print the output for each input in the original order.</p>
-
-<p>For this question we will need to use Offline Programming, where we take all the queries at once and sort them in the ascending order of the left indices <em>i</em>.</p>
-
-<p>Now starting from left i.e, i = 1, we already had the solution of O(Qlog(N)) given above and we will be moving right one by one. Now for solution to all the queries with left index greater than <em>i</em> we just have to ignore the integer at index <em>i</em>. So we will unmark the integer at index <em>i</em>, and mark the left most index to the right of index <em>i</em> whose value is equal to arr[i]. Then we repeat this for index <em>i+1</em>.</p>
-
-<p>This marking and unmarking of the indexes can be acheived in O(log(N)) time using binary indexed trees.</p>
-
-<p>We need the left most index of the integer at index <em>i</em> to mark in the above solution, to acheive this for every index we can check all the integers to the right and store the left most value , but rather we can move from right to left and store present left most index of every integer at every step.(See pseudocode for this) and maintain an array for left most index to the right.</p>
-
-<p>After we get ouput for every input, we will rearrange the input as the original order.</p>
-
-<p><strong>Pseudocode</strong> :</p>
-
-<p>arr[] is the input array</p>
-
-<p>BIT[] stores the marked array.</p>
-
-<p>BIT[i] stores 1 if element is marked or 0 if it is not marked</p>
-
-<p>LMITR[i] stores Left Most Index To Right such that arr[ LMITR[i] ] == arr[i]</p>
-
-<p>PI[] stores the present index of an integer.</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">Take input
-</span><span class="line">
-</span><span class="line">loop for i = 1 to 1000000 
-</span><span class="line">    PI[i] = INF
-</span><span class="line">end loop
-</span><span class="line">
-</span><span class="line">loop for i = n to 1
-</span><span class="line">	LMITR[i] = PI[ arr[i] ]
-</span><span class="line">	PI[ arr[i] ] = i
-</span><span class="line">end loop
-</span><span class="line">
-</span><span class="line">loop for i = 1 to n
-</span><span class="line">	loop for all queries starting with i
-</span><span class="line">		find the sum of first j elements of BIT and store it.
-</span><span class="line">	end loop
-</span><span class="line">	ummark index i
-</span><span class="line">	mark LMITR[i]
-</span><span class="line">end loop
-</span><span class="line">
-</span><span class="line">print output</span></code></pre></td></tr></table></div></figure></notextile></div>
 ]]></content>
   </entry>
   
