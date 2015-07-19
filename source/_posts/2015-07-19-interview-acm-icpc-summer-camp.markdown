@@ -3,10 +3,10 @@ layout: post
 title: "Interview: ACM ICPC Summer Camp 2015"
 date: 2015-07-19 00:15
 comments: true
-categories: [PAG, interview]
+categories: [interview, ACM, Camp, Training]
 ---
 
-This year 3 members from PAG were invited to attend the ACM ICPC Summer Camp 2015 at Amrita School of Engineering. ACM-ICPC World Finalist 2014,2015 and an alumni of PAG, Surya Kiran was a trainer at the camp. Hear each of the attendees speak about his experience.
+This year 3 members from PAG were invited to attend the ACM ICPC Summer Camp 2015 at Amrita School of Engineering. ACM-ICPC World Finalist 2014,2015 and an alumnus of PAG, Surya Kiran was a trainer at the camp. Hear each of the attendees speak about his experience.
 
 ![](/images/posts/ACM-ICPC-Camp-Interview/camp1.jpg){: class="image-float-right"}
 ![](/images/posts/ACM-ICPC-Camp-Interview/surya.jpg)
