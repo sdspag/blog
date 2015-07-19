@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PAG | PAG, IIT Roorkee]]></title>
   <link href="http://pag.sdslabs.co/blog//blog/categories/pag/atom.xml" rel="self"/>
   <link href="http://pag.sdslabs.co/blog//"/>
-  <updated>2014-12-26T21:54:44+05:30</updated>
+  <updated>2015-07-19T15:09:00+05:30</updated>
   <id>http://pag.sdslabs.co/blog//</id>
   <author>
     <name><![CDATA[Programming & Algorithms Group, Software Development Section, IIT Roorkee]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Interview: ACM ICPC Summer Camp 2015]]></title>
+    <link href="http://pag.sdslabs.co/blog//2015/07/19/interview-acm-icpc-summer-camp/"/>
+    <updated>2015-07-19T00:15:00+05:30</updated>
+    <id>http://pag.sdslabs.co/blog//2015/07/19/interview-acm-icpc-summer-camp</id>
+    <content type="html"><![CDATA[<p>This year 3 members from PAG were invited to attend the ACM ICPC Summer Camp 2015 at Amrita School of Engineering. ACM-ICPC World Finalist 2014,2015 and an alumni of PAG, Surya Kiran was a trainer at the camp. Hear each of the attendees speak about his experience.</p>
+
+<p><img src="/images/posts/ACM-ICPC-Camp-Interview/camp1.jpg" alt="" class="image-float-right" />
+<img src="/images/posts/ACM-ICPC-Camp-Interview/surya.jpg" alt="" /></p>
+
+<h3 id="vikas-yadav">Vikas Yadav</h3>
+
+<p><img src="/images/posts/ACM-ICPC-Camp-Interview/vikas.jpg"></p>
+
+<p>As I had never been to any such training camp before, this surely was a new experience for me. The camp covered pretty advanced stuff like Treaps , FFT , Suffix arrays , Mobius function and some advanced graph theory topics and many other topics. Everyday we learned some new topics and solved hard problems on those topics. It was great to see how our trainers approached the hard problems (Div1 D,E) and solved problems that required really tricky concepts. This gave me some confidence to try hard problems. After a week long of learning new topics and trying hard problems, CodeChef served us a final contest. The problems were prepared by our trainers who had worked hard all night. And results pretty much showed that the camp was successful. </p>
+
+<p>These kind of camps would be a great experience for anyone who likes algorithms and coding. Personally I feel it was great to see many school students attending camps like these and preparing for IOI. But all this was possible due to the hard work of our trainers. Overall I would recommend going to any such camp, if the opportunity is available.</p>
+
+<h3 id="saurabh-verma">Saurabh Verma</h3>
+
+<p><img src="/images/posts/ACM-ICPC-Camp-Interview/verma.jpg"></p>
+
+<p>Picture yourself in a room with a proficient group of people doing what you love to do. Well, that is exactly what I experienced. Being a part of ACM ICPC summer camp at Amrita School of Engineering, Bangalore was a highly motivating and stimulating experience. Getting to solve many medium and hard problems certainly pushed the limits and brimmed the confidence. With just few months left for ICPC, this was essentially the best I could get after missing the winter camp opportunity. Learning many new topics from past World Finalists broadened the vision immensely. A competition concluded the camp with the hope and desire to perform better at the international level. With the awesome campus of Amrita and the city of Bangalore, the camp could not get better. An awesome week full of challenges, inspirations and amazements.</p>
+
+<h3 id="vaibhav-gosain">Vaibhav Gosain</h3>
+
+<p><img src="/images/posts/ACM-ICPC-Camp-Interview/gosain.jpg"></p>
+
+<p>This was a new and interesting experience for me, as I had never attended any kind of training camp before this.The main motive behind the camp was to cover topics which most of Indian competitive programmers are not fluent at, and which do not have very good tutorials on the internet. Some advanced topics were taught, and a number of difficult problems (~ div1 C,D,E) were solved during classes.</p>
+
+<p>The camp was very informative, and it was inspiring to see ACM ICPC world finalists solve tricky problems in front of us, giving us insights on what should be the thinking process while tackling such problems.</p>
+
+<p><img src="/images/posts/ACM-ICPC-Camp-Interview/camp3.jpg" alt="" class="image-float-right" />
+<img src="/images/posts/ACM-ICPC-Camp-Interview/camp2.jpg" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Interview: ACM ICPC World Finalist]]></title>
@@ -232,113 +269,6 @@ On a side note, many of you might think spending time on quora or reading blogs 
 
 <p><em>People marked with † are members of Programming and Algorithms Group</em></p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Welcome to Programming]]></title>
-    <link href="http://pag.sdslabs.co/blog//2013/07/30/welcome-to-programming/"/>
-    <updated>2013-07-30T21:38:00+05:30</updated>
-    <id>http://pag.sdslabs.co/blog//2013/07/30/welcome-to-programming</id>
-    <content type="html"><![CDATA[<p><strong>Algorithm</strong>: <em>(Just)</em> A sequence of steps to get stuff done?</p>
-
-<p>Technically, yes. Many of us have in fact been using algorithms for most part of our lives even without realizing that we are. Take for instance, when you want to look up a particular word in the dictionary. How long would it take you if the words were all arranged randomly with absolutely no relation? It is an algorithm in itself when you search for a given word, matching the leftmost letter of the word and keep moving right. That instance when you choose a particular path over another when looking for the fastest way to reach a friend’s house, you are technically solving a classic example of the Shortest Path Problem, a problem which could trouble the best programmers for hours!</p>
-
-<p>However with the increasing dependence on computers and electronic gadgetry, you no longer need algorithms to get stuff done, but also need algorithms to guide machines do stuff for you. There is a mind-bogglingly huge amount of data present on the web and picking out a particular one is a task in itself. From the smallest chipsets to the multi-billion dollar spaceships circling the Earth to a random game of chess played on a summer afternoon, there are both complex and simple algorithms involved in everything.  </p>
-
-<p>The study of efficiency in algorithm design is of huge importance. You don’t just need to consider <em>how to get something done</em>, you need to find a way <em>to get something done quickly</em>. Imagine if your GPS were to look for all ways to get from A to B, total their distances and then return the best route. Or if in a game of chess with a computer, the program were to try all possibilities and all possibilities arising out of those possibilities and all possibilities arising out of those and so on before it were to make an optimal move. You need to design algorithms that not only solve a given problem, but do so in a reasonable amount of time.</p>
-
-<p>And the best part about algorithmic and logical problems is that once you start getting the hang of it, it becomes huge fun! You no longer need to take time out of your daily routine to practice (read: play) on online judges; it finds time for itself! So much so that it soon become a passion (and in some occasional cases an ‘addiction’) which you pursue not only because you want to end up with a high paying job at Facebook or Google, but because you enjoy doing it! </p>
-
-<p><strong>How to start Programming?</strong></p>
-
-<p>Am I good enough?</p>
-
-<p>Yes you are, if you think you are not, think again! We say you can be. All you need is good logical and reasoning skills. If you have been a mathematics enthusiast in your school time, you already have the instinct in you.</p>
-
-<p>Let’s introduce you to the amazing world of programming and algorithms.</p>
-
-<p>Getting Started:</p>
-
-<p>1.Pick any programming language(C, C++, Java, Python) whichever you feel 
-comfortable with. Or if you don’t know any, you can easily learn C or C++ in hardly two weeks’ time. Only basics concepts are to be grasped.</p>
-
-<p>Here are some useful references to help you:</p>
-
-<p><a href="https://www.facebook.com/groups/sdspag/549286215108068/">Schaum Programming with C++</a>: A very nice book to give you a quick introduction for C++</p>
-
-<p><a href="https://dl.dropboxusercontent.com/u/56860240/C%2B%2B%20How%20to%20Program%2C%208th%20Edition.pdf">C++ How to Program, Deitel, 8th Edition</a>: For those who want more than just an introduction.</p>
-
-<p><a href="http://ge.tt/9iw7sKn/v/0?c">Java How to Program, Deitel, 7th Edition</a>: For those who want to learn Java</p>
-
-<p>2.Now that you have the tool, let’s use it to explore the algorithmic world</p>
-
-<p>Here are some resources to make you familiar with the commonly used algorithms.</p>
-
-<p><a href="https://www.coursera.org/course/algo">Coursera</a></p>
-
-<p><a href="http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=IntroToAlgorithms">Stanford Open Class Room</a></p>
-
-<p><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm">MIT Open Courseware</a></p>
-
-<p><a href="https://www.facebook.com/groups/sdspag/files/">CLRS</a> : The Bible for Algorithms</p>
-
-<p>3.So here comes the most important phase of your coding journey. Practice. Practice more. Solve questions and keep exploring. And remember this:Frustration is normal. Don’t give up during this phase as your failure teaches you more than your success. Proceed gradually. The experience you gain here is worth your effort. Check these out</p>
-
-<p><a href="http://www.spoj.com/">SPOJ</a></p>
-
-<p><a href="http://www.codechef.com/">Codechef</a></p>
-
-<p><a href="http://projecteuler.net/about">Project Euler</a></p>
-
-<p>4.If you wish to evaluate your progress, there are plenty of contests to keep you going. Apart from that, group contests prove very beneficial in improving your skills. You get to know your teammate’s approach (which may be better) too. </p>
-
-<p>Participating in programming contests inculcates in you an urge to learn more and keeps you motivated.  You can find some ongoing contests here:</p>
-
-<p><a href="http://www.codechef.com/">Codechef</a></p>
-
-<p><a href="http://codeforces.com/">Codeforces</a></p>
-
-<p>Also check out this <a href="http://www.quora.com/What-are-the-best-websites-a-programmer-should-visit/answer/Ashish-Gaur">answer</a> on quora for a more elaborate list. on quora for a more elaborate list.</p>
-
-<p>Common <strong>Myths</strong> regarding Programming and Algorithms:</p>
-
-<p>1.Programming is only for CS students.</p>
-
-<p>Wrong! Here are the reasons:</p>
-
-<p>You love maths, like solving puzzles and have an aptitude to do this, so you do it.Most of the CS companies like Microsoft, Facebook, Yahoo etc. are open for other branches too. If you are good enough in programming and algos then they will take you.</p>
-
-<p>Even if you want to do higher studies, just try to explore what are the current research areas in your branch, you would find that most of them require programming - fields like Image processing, embedded systems, robotics, controls etc. Whichever field of engineering you are in , programming will help you somewhere.</p>
-
-<p>2.You need to be an expert in a programming language to start with algorithms.</p>
-
-<p>No, this opinion is completely wrong. You just need very basic knowledge of 
-any language. They are just a tool, solving problems will automatically give you enough exposure to the language. An inquisitive mind and eagerness to learn is all that counts.</p>
-
-<p><strong>Why PAG?</strong></p>
-
-<p>With the huge influx of data in the ‘shared’ world; big-data, data mining, data extraction, data analysis, optimizations- these are topics that the coming generation of computer scientists needs to address. </p>
-
-<p>Many of those computer scientists are now in college. Hopefully some of these world changers might be in India, and a few in IITR. PAG hopes to inculcate a feel for algorithms in these young engineers from the very beginning, get them acquainted with this field and help them realize why this fields bears importance in the real world. But then, why is solving problems on an online judge which thousands have already solved important?</p>
-
-<p>Because a journey of a thousand miles begins from a single step. You cannot have a school boy who has just entered college and ask him to solve real life problems which legends have scratched their heads at. We need to start at the base and work our way up. Not only does practicing these problems helps develop one’s interest in algorithms, but at some level concepts like Dynamic Programming, Depth First Search and Graph Theory are what are extrapolated and applied in complex algorithms that boost the cores at Google or Facebook. To put it poetically, unless you know your ABCs you have no hope of finishing a novel. </p>
-
-<p>And that is what PAG hopes to do. It hopes to help the students at R understand these concepts and why it is important for them to do so by bringing them together in a positive competitive environment.Coming together every week to share knowledge, we get to learn so much more than anyone of us individually ever could. Holding regular contests at R and annually on an international scale, keeps everyone motivated to keep doing better. It helps us to learn and strive harder to learn more. </p>
-
-<p><strong>But then, why should you join PAG?</strong></p>
-
-<p>You may be a Grade 2 coder at Topcoder or someone who had no clue about what programming is up till now. It doesn’t matter. As long as you are eager to learn and love working your way around logical and intellectually challenging problems, PAG is looking for you! Every year PAG recruits some of the finest and smartest individuals who come to R. It brings them together in a shared group. There are regular discussions on varied topics of interest, contests are organized and even participated in, and of 
-course chapos are given and not to forget the trips we have!!! </p>
-
-<p>Last year a team from PAG qualified for the ACM ICPC World Finals (which happens to be the BIGGEST contest of its kind with participation from over 120 countries) and stood first among all the Indian teams there (and 60th
- overall). We also have several teams who compete in the Regionals of the same contest every year. </p>
-
-<p>And that is the best part about joining PAG! You get to meet so many awesome individuals who you otherwise might not. Bringing like-minded people together who share a common passion helps all of us to learn from each other and improve ourselves. </p>
-
-<p><strong>Recruitment</strong></p>
-
-<p>PAG will be recruiting soon. We are not expecting you to know programming as of now, so if you don’t, it isn’t really an issue. If you have a basic aptitude and the willingness to learn, you are good to go! To stay updated about out recruitment process and other activities, join our <a href="https://www.facebook.com/groups/sdspag/">Facebook group</a> and like our <a href="https://www.facebook.com/sdspag">facebook page</a></p>
 ]]></content>
   </entry>
   
