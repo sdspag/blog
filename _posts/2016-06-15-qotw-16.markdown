@@ -12,88 +12,88 @@ This blog post contain topic wise question of the week prepared by the members o
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/997062917024266)
 
-### [Questions](https://www.facebook.com/sdspag/posts/999466136783944)
+### [Editorials](https://www.facebook.com/sdspag/posts/999466136783944)
 
 # 2. Game Theory
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1000717543325470)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1002680459795845)
+### [Editorials](https://www.facebook.com/sdspag/posts/1002680459795845)
 
 # 3. Knapsack DP
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1004839869579904)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1006618979401993)
+### [Editorials](https://www.facebook.com/sdspag/posts/1006618979401993)
 
 # 4. String algorithms
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1012644175466140)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1015117598552131)	
+### [Editorials](https://www.facebook.com/sdspag/posts/1015117598552131)	
 
 # 5. Mobius Inversion and Fast Summation
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1016790915051466)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1019375804792977)
+### [Editorials](https://www.facebook.com/sdspag/posts/1019375804792977)
 
 # 6. Segment Trees
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1021207021276522)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1024691390928085)
+### [Editorials](https://www.facebook.com/sdspag/posts/1024691390928085)
 
 # 7. Basic Graph Theory
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1024691970928027)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1027190957344795)
+### [Editorials](https://www.facebook.com/sdspag/posts/1027190957344795)
 
 # 8. DP on tree
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1028997683830789)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1038507119546512)
+### [Editorials](https://www.facebook.com/sdspag/posts/1038507119546512)
 
 # 9. Intermediate Graphs
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1033236496740241)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1036387673091790)
+### [Editorials](https://www.facebook.com/sdspag/posts/1036387673091790)
 
 # 10. Binary Numbers and Bitwise Operations
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1036388869758337)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1041939805869910)
+### [Editorials](https://www.facebook.com/sdspag/posts/1041939805869910)
 
 # 11. Persistent Segment Tree
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1049500875113803)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1053788711351686)
+### [Editorials](https://www.facebook.com/sdspag/posts/1053788711351686)
 
 # 12. DP optimizations
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1058315734232317)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1062703480460209)
+### [Editorials](https://www.facebook.com/sdspag/posts/1062703480460209)
 
 # 13. Disjoint Set Union (Union Find)
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1063774490353108)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1067801279950429)
+### [Editorials](https://www.facebook.com/sdspag/posts/1067801279950429)
 
 # 14. Probability and Expected Value
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1071398092924081)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1077004705696753)
+### [Editorials](https://www.facebook.com/sdspag/posts/1077004705696753)
 
 # 15. Treap
 
 ### [Tutorials and Problems](https://www.facebook.com/sdspag/posts/1084686398261917)
 
-### [Questions](https://www.facebook.com/sdspag/posts/1087646731299217)
+### [Editorials](https://www.facebook.com/sdspag/posts/1087646731299217)
