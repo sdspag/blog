@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: pag.sdslabs.co/blog/sitemap.xml 
