@@ -8,8 +8,8 @@ categories: [interview, ACM, Camp, Training]
 
 This year 3 members from PAG were invited to attend the ACM ICPC Summer Camp 2015 at Amrita School of Engineering. ACM-ICPC World Finalist 2014,2015 and an alumnus of PAG, Surya Kiran was a trainer at the camp. Hear each of the attendees speak about his experience.
 
-![](../../../../images/posts/ACM-ICPC-Camp-Interview/camp1.jpg)
-![](../../../../images/posts/ACM-ICPC-Camp-Interview/surya.jpg)
+![](./images/posts/ACM-ICPC-Camp-Interview/camp1.jpg)
+![](./images/posts/ACM-ICPC-Camp-Interview/surya.jpg)
 
 ### Vikas Yadav
 
@@ -33,5 +33,5 @@ This was a new and interesting experience for me, as I had never attended any ki
 
 The camp was very informative, and it was inspiring to see ACM ICPC world finalists solve tricky problems in front of us, giving us insights on what should be the thinking process while tackling such problems.
 
-![](../images/posts/ACM-ICPC-Camp-Interview/camp3.jpg)
-![](../images/posts/ACM-ICPC-Camp-Interview/camp2.jpg)
+![](./images/posts/ACM-ICPC-Camp-Interview/camp3.jpg)
+![](./images/posts/ACM-ICPC-Camp-Interview/camp2.jpg)

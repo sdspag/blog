@@ -50,15 +50,15 @@ Here are some glimpses of the event night - those insomniac nights ensuring smoo
 
 
 *Insomnia’11*: 
-<img src = "../images/posts/Hello-World/11.JPG">
+<img src = "./images/posts/Hello-World/11.JPG">
 
 
 *Insomnia’12*:
-<img src = "../images/posts/Hello-World/12.jpg">
+<img src = "./images/posts/Hello-World/12.jpg">
 		
 
 *Insomnia’13*:
-<img src = "../images/posts/Hello-World/13.JPG">
+<img src = "./images/posts/Hello-World/13.JPG">
 
 
 *Codematics*: For those who love solving mathematical problems and **not just algorithms** our team organizes Codematics. This event features problems just like Project Euler - Challenging mathematical/computer programming problems that  require more than just maths to solve. Along with maths one has to use his/her programming skills to win. And this too gets participation from all over the world.
@@ -101,10 +101,10 @@ Every year, PAG recruits some of the best and promising first yearites who enter
 
 After working a lot, we enjoy a lot!!! Ohh ya we have our share of fun too. We go on trips and walks, we play football on holidays and we don't miss out of any reason to have a chapo!!! “Awesome” is not sufficient to describe these. Take some glimpses here:
 
-<img src = "../images/posts/Hello-World/trip1.JPG">
-<img src = "../images/posts/Hello-World/trip2.JPG">
-<img src = "../images/posts/Hello-World/trip3.JPG">
+<img src = "./images/posts/Hello-World/trip1.JPG">
+<img src = "./images/posts/Hello-World/trip2.JPG">
+<img src = "./images/posts/Hello-World/trip3.JPG">
 
 Thats all for now. We will be back soon with a new blog discussing some algorithm or some maths trick  or some coding problem or sharing our own experience with programming. 
 
-<img src = "../images/posts/Hello-World/grp1.jpg">
+<img src = "./images/posts/Hello-World/grp1.jpg">
