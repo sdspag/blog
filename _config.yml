@@ -1,0 +1,9 @@
+markdown: rdiscount
+pygments: true
+permalink: /:title
+rdiscount:
+  extensions: [smart]
+
+name: PAG
+url: pag.sdslabs.co/blog
+description: Programming and Algorithms Group

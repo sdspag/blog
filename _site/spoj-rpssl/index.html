@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>SPOJ RPSSL - </title>
+  <meta name="author" content="">
+
+  
+  <meta name="description" content="
+
+  
+  
+      SPOJ RPSSL
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+        
+      
+    
+  
+
+
+Problem Link : http://www.spoj.com/problems/RPSSL/
+
+Prerequis...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="pag.sdslabs.co/blog/spoj-rpssl">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="" rel="alternate" title="" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <div id="header-inner">
+  <span class="first"><a href="/">Programming & Algorithms Group, SDS, IIT Roorkee</a></span>
+    <!--<span><a href="//pag.sdslabs.co">About</a></span><br><br>-->
+    <span class="icon"><a target="_blank" href="//github.com/"><img src="/images/social/gh-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="//facebook.com/"><img src="/images/social/fb-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="//plus.google.com/"><img src="/images/social/gp-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="" title="Subscribe via RSS"><img src="/images/social/rss-icon.png" alt=""></a></span>
+  </div>
+</hgroup>
+<div id="fb-root"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=487490921336262";
+              fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</header>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+      <h1 class="entry-title"><a href="/spoj-rpssl">SPOJ RPSSL</a></h1>
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-21T22:10:00+05:30" pubdate data-updated="true"></time>
+        <!--  -->
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Problem Link : <a href="http://www.spoj.com/problems/RPSSL/">http://www.spoj.com/problems/RPSSL/</a></p>
+
+<p>Prerequisites : <a href="http://en.wikipedia.org/wiki/Bayes'_theorem">Bayes Theorem</a></p>
+
+<p>Here comes the editorial for <a href="http://www.spoj.com/problems/RPSSL/">previous week&rsquo;s question</a> as posted on <a href="https://www.facebook.com/groups/sdspag/">our group.</a></p>
+
+<p>Let the probability that Rajesh beats Sheldon in a single round be $$ w $$ and let $$ d $$ be the probability that a single round results in a draw and $$ l $$ be the probability that Sheldon beats Rajesh in a single round. $$ w ,\ d ,\ l $$ can be calculated simply as follows :</p>
+
+<p>$$</p>
+
+<p>w = R_R<em>(S_L +S<em>{Sc}) + R</em>{Sc}</em>(S_P + S_L) + R_P<em>( S_R + S_{Sp}) + R_L</em>( S<em>{Sp}+ S_P) + R</em>{Sp}*( S_R + S_{Sc}) \</p>
+
+<p>d =  (R_R<em>S_R) + (R_{Sc}</em>S<em>{Sc}) + (R_P<em>S_P) + (R_L</em>S_L)+ (R</em>{Sp}*S_{Sp}) \</p>
+
+<p>l=1-d-w\</p>
+
+<p>$$</p>
+
+<p>Now Rajesh will win the game if he wins two rounds first.
+The following are the different cases :</p>
+
+<p>$$</p>
+
+<p>ww : or : wdw : or : dww : or : ddww : or : dwdw : or : wddw : &hellip; \
+OR\
+lww : or : wlw : or : lwdw : or : wdlw : or : wldw : &hellip; \</p>
+
+<p>$$</p>
+
+<p>Thus we need to sum up all the above cases which result in
+victory for rajesh. Both the above series  can be simplified by using some maths tricks. (Refer to <a href="http://en.wikipedia.org/wiki/Arithmetico-geometric_sequence">Arithmetico-geometric series</a>.)</p>
+
+<p>The final expression is :</p>
+
+<p>$$</p>
+
+<p>P = w<em>w</em>(1-d)^{-2} + 2<em>l</em>w<em>w</em>(1-d)^{-3}</p>
+
+<p>$$</p>
+
+<p><strong>Caution:</strong> Check for the cases where d=1.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-21T22:10:00+05:30" pubdate data-updated="true"></time>
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/algorithms-and-beyond-dot-dot-dot" title="Previous Post: Algorithms and Beyond...">&laquo; Algorithms and Beyond...</a>
+      
+      
+        <a class="basic-alignment right" href="/spoj-dquery" title="Next Post: SPOJ DQUERY">SPOJ DQUERY &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+<div class="fb-like" data-href="http://facebook.com/sdspag" data-send="true" data-width="1000" data-show-faces="true"></div>
+</p>
+<p>
+  Copyright &copy; 2016 - 
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>

@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>SPOJ DQUERY - </title>
+  <meta name="author" content="">
+
+  
+  <meta name="description" content="
+
+  
+  
+      SPOJ DQUERY
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+        
+      
+    
+  
+
+
+Problem :
+Given a list of integers, and you need to answer Q...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="pag.sdslabs.co/blog/spoj-dquery">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="" rel="alternate" title="" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <div id="header-inner">
+  <span class="first"><a href="/">Programming & Algorithms Group, SDS, IIT Roorkee</a></span>
+    <!--<span><a href="//pag.sdslabs.co">About</a></span><br><br>-->
+    <span class="icon"><a target="_blank" href="//github.com/"><img src="/images/social/gh-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="//facebook.com/"><img src="/images/social/fb-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="//plus.google.com/"><img src="/images/social/gp-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="" title="Subscribe via RSS"><img src="/images/social/rss-icon.png" alt=""></a></span>
+  </div>
+</hgroup>
+<div id="fb-root"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=487490921336262";
+              fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</header>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+      <h1 class="entry-title"><a href="/spoj-dquery">SPOJ DQUERY</a></h1>
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-29T15:40:00+05:30" pubdate data-updated="true"></time>
+        <!--  -->
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><strong><a href="http://www.spoj.com/problems/DQUERY/">Problem</a></strong> :
+Given a list of integers, and you need to answer <em>Q</em> queries, in each of which given two indices <em>i</em> and <em>j</em> and you need to answer how many distinct integers are present whose index lies between <em>i</em> and <em>j</em>.</p>
+
+<p><strong>Pre-requisites</strong> : Binary Indexed Trees (For Range Sum Queries), Sorting, Offline Programming</p>
+
+<p><strong>Explanation</strong> :
+Let us try to understand the solution for a simpler problem where <em>i</em> = 1 for all queries. Now for every integer if we just mark the first position in the list, for every query the answer will be just the number of integers marked among the first <em>j</em> places.</p>
+
+<p>If we use a boolean array to store the marked integers and run a loop for every query through all the starting j numbers the complexity of the algorithm will be O(N) for each query.</p>
+
+<p>But if we use some advanced data-structure like Binary Indexed Trees, we can acheive this in O(logN) time for every query.
+So our final complexity for this simpler problem is O(QlogN).</p>
+
+<p>For our main problem, we need to know a style of programming called <em>Offline Programming</em>.</p>
+
+<p>There are two types of such classification,
+1) Online programming
+2) Offline Programming</p>
+
+<p>In online programming we answer each query as soon as we take it as input.</p>
+
+<p>In offline programming we take all the input at once and try to make some changes to the order of input and solve all queries and then print the output for each input in the original order.</p>
+
+<p>For this question we will need to use Offline Programming, where we take all the queries at once and sort them in the ascending order of the left indices <em>i</em>.</p>
+
+<p>Now starting from left i.e, i = 1, we already had the solution of O(Qlog(N)) given above and we will be moving right one by one. Now for solution to all the queries with left index greater than <em>i</em> we just have to ignore the integer at index <em>i</em>. So we will unmark the integer at index <em>i</em>, and mark the left most index to the right of index <em>i</em> whose value is equal to arr[i]. Then we repeat this for index <em>i+1</em>.</p>
+
+<p>This marking and unmarking of the indexes can be acheived in O(log(N)) time using binary indexed trees.</p>
+
+<p>We need the left most index of the integer at index <em>i</em> to mark in the above solution, to acheive this for every index we can check all the integers to the right and store the left most value , but rather we can move from right to left and store present left most index of every integer at every step.(See pseudocode for this) and maintain an array for left most index to the right.</p>
+
+<p>After we get ouput for every input, we will rearrange the input as the original order.</p>
+
+<p><strong>Pseudocode</strong> :</p>
+
+<p>arr[] is the input array</p>
+
+<p>BIT[] stores the marked array.</p>
+
+<p>BIT[i] stores 1 if element is marked or 0 if it is not marked</p>
+
+<p>LMITR[i] stores Left Most Index To Right such that arr[ LMITR[i] ] == arr[i]</p>
+
+<p>PI[] stores the present index of an integer.</p>
+
+<pre><code>Take input
+
+loop for i = 1 to 1000000 
+    PI[i] = INF
+end loop
+
+loop for i = n to 1
+    LMITR[i] = PI[ arr[i] ]
+    PI[ arr[i] ] = i
+end loop
+
+loop for i = 1 to n
+    loop for all queries starting with i
+        find the sum of first j elements of BIT and store it.
+    end loop
+    ummark index i
+    mark LMITR[i]
+end loop
+
+print output
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-29T15:40:00+05:30" pubdate data-updated="true"></time>
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/spoj-rpssl" title="Previous Post: SPOJ RPSSL">&laquo; SPOJ RPSSL</a>
+      
+      
+        <a class="basic-alignment right" href="/welcome-to-programming" title="Next Post: Welcome to Programming">Welcome to Programming &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+<div class="fb-like" data-href="http://facebook.com/sdspag" data-send="true" data-width="1000" data-show-faces="true"></div>
+</p>
+<p>
+  Copyright &copy; 2016 - 
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>

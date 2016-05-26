@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[]]></title>
+  <link href="pag.sdslabs.co/blog/atom.xml" rel="self"/>
+  <link href="pag.sdslabs.co/blog/"/>
+  <updated>2016-05-26T17:46:06+05:30</updated>
+  <id>pag.sdslabs.co/blog/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Question of the Week : 2016]]></title>
+    <link href="pag.sdslabs.co/blog/qotw-16"/>
+    <updated>2016-05-15T00:15:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/qotw-16</id>
+    <content type="html"><![CDATA[<p>This blog post contain topic wise question of the week prepared by the members of Programming and Algorithms Group round the year.</p>
+
+<p><br></p>
+
+<h1>1. Matrix Exponentiation</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/997062917024266">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/999466136783944">Questions</a></h3>
+
+<h1>2. Game Theory</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1000717543325470">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1002680459795845">Questions</a></h3>
+
+<h1>3. Knapsack DP</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1004839869579904">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1006618979401993">Questions</a></h3>
+
+<h1>4. String algorithms</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1012644175466140">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1015117598552131">Questions</a></h3>
+
+<h1>5. Mobius Inversion and Fast Summation</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1016790915051466">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1019375804792977">Questions</a></h3>
+
+<h1>6. Segment Trees</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1021207021276522">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1024691390928085">Questions</a></h3>
+
+<h1>7. Basic Graph Theory</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1024691970928027">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1027190957344795">Questions</a></h3>
+
+<h1>8. DP on tree</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1028997683830789">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1038507119546512">Questions</a></h3>
+
+<h1>9. Intermediate Graphs</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1033236496740241">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1036387673091790">Questions</a></h3>
+
+<h1>10. Binary Numbers and Bitwise Operations</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1036388869758337">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1041939805869910">Questions</a></h3>
+
+<h1>11. Persistent Segment Tree</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1049500875113803">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1053788711351686">Questions</a></h3>
+
+<h1>12. DP optimizations</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1058315734232317">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1062703480460209">Questions</a></h3>
+
+<h1>13. Disjoint Set Union (Union Find)</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1063774490353108">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1067801279950429">Questions</a></h3>
+
+<h1>14. Probability and Expected Value</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1071398092924081">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1077004705696753">Questions</a></h3>
+
+<h1>15. Treap</h1>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1084686398261917">Tutorials and Problems</a></h3>
+
+<h3><a href="https://www.facebook.com/sdspag/posts/1087646731299217">Questions</a></h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Interview: ACM ICPC Summer Camp 2015]]></title>
+    <link href="pag.sdslabs.co/blog/interview-acm-icpc-summer-camp"/>
+    <updated>2015-07-19T00:15:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/interview-acm-icpc-summer-camp</id>
+    <content type="html"><![CDATA[<p>This year 3 members from PAG were invited to attend the ACM ICPC Summer Camp 2015 at Amrita School of Engineering. ACM-ICPC World Finalist 2014,2015 and an alumnus of PAG, Surya Kiran was a trainer at the camp. Hear each of the attendees speak about his experience.</p>
+
+<p><img src="../../../../images/posts/ACM-ICPC-Camp-Interview/camp1.jpg" alt="" />
+<img src="../../../../images/posts/ACM-ICPC-Camp-Interview/surya.jpg" alt="" /></p>
+
+<h3>Vikas Yadav</h3>
+
+<p><img src = "../../../../images/posts/ACM-ICPC-Camp-Interview/vikas.jpg"></p>
+
+<p>As I had never been to any such training camp before, this surely was a new experience for me. The camp covered pretty advanced stuff like Treaps , FFT , Suffix arrays , Mobius function and some advanced graph theory topics and many other topics. Everyday we learned some new topics and solved hard problems on those topics. It was great to see how our trainers approached the hard problems (Div1 D,E) and solved problems that required really tricky concepts. This gave me some confidence to try hard problems. After a week long of learning new topics and trying hard problems, CodeChef served us a final contest. The problems were prepared by our trainers who had worked hard all night. And results pretty much showed that the camp was successful.</p>
+
+<p>These kind of camps would be a great experience for anyone who likes algorithms and coding. Personally I feel it was great to see many school students attending camps like these and preparing for IOI. But all this was possible due to the hard work of our trainers. Overall I would recommend going to any such camp, if the opportunity is available.</p>
+
+<h3>Saurabh Verma</h3>
+
+<p><img src = "../../../../images/posts/ACM-ICPC-Camp-Interview/verma.jpg"></p>
+
+<p>Picture yourself in a room with a proficient group of people doing what you love to do. Well, that is exactly what I experienced. Being a part of ACM ICPC summer camp at Amrita School of Engineering, Bangalore was a highly motivating and stimulating experience. Getting to solve many medium and hard problems certainly pushed the limits and brimmed the confidence. With just few months left for ICPC, this was essentially the best I could get after missing the winter camp opportunity. Learning many new topics from past World Finalists broadened the vision immensely. A competition concluded the camp with the hope and desire to perform better at the international level. With the awesome campus of Amrita and the city of Bangalore, the camp could not get better. An awesome week full of challenges, inspirations and amazements.</p>
+
+<h3>Vaibhav Gosain</h3>
+
+<p><img src = "../../../../images/posts/ACM-ICPC-Camp-Interview/gosain.jpg"></p>
+
+<p>This was a new and interesting experience for me, as I had never attended any kind of training camp before this.The main motive behind the camp was to cover topics which most of Indian competitive programmers are not fluent at, and which do not have very good tutorials on the internet. Some advanced topics were taught, and a number of difficult problems (~ div1 C,D,E) were solved during classes.</p>
+
+<p>The camp was very informative, and it was inspiring to see ACM ICPC world finalists solve tricky problems in front of us, giving us insights on what should be the thinking process while tackling such problems.</p>
+
+<p><img src="../../../../images/posts/ACM-ICPC-Camp-Interview/camp3.jpg" alt="" />
+<img src="../../../../images/posts/ACM-ICPC-Camp-Interview/camp2.jpg" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Second Year Recruitment Results]]></title>
+    <link href="pag.sdslabs.co/blog/second-year-recruitment-results"/>
+    <updated>2014-08-14T19:19:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/second-year-recruitment-results</id>
+    <content type="html"><![CDATA[<p>Congratulations to everyone who made it to the group. We were extremely happy to see the response by second yearites. We got to interview some of the most talented coders in our campus and it was a wonderful experience for us and hopefully for them too. We had to reject people only because of limited vacancies even though they were all equally capable.</p>
+
+<p>Here comes the result of Programming and Algorithms Group&rsquo;s second year recruitment test :</p>
+
+<ul>
+<li>Abhishek Uppal</li>
+<li>Akhil Gupta</li>
+<li>Analkumar Shahi</li>
+<li>Dhaval Kapil</li>
+<li>Harsh Sahu</li>
+<li>Jay Bosamiya</li>
+<li>Sai Varun Reddy</li>
+<li>Saurabh Verma</li>
+<li>Sopan Khosla</li>
+<li>Vikas Yadav</li>
+<li>Vaibhav Daga</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Interview: ACM ICPC World Finalist]]></title>
+    <link href="pag.sdslabs.co/blog/interview-acm-icpc-world-finalist"/>
+    <updated>2014-05-17T00:15:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/interview-acm-icpc-world-finalist</id>
+    <content type="html"><![CDATA[<p>This year we have our team 3Spades contesting in the ACM ICPC World Finals’ 14. Last year, IIT Roorkee was proud to having been represented by the team 65th bit comprising of Sharat Ibrahimpur, Tarun Goyal and Dipit Grover. Their team eventually finished 60th, and the first among all Indian teams for that year. We present to you an interview of Sharat Ibrahimpur as he speaks to PAG about what got him interested in competitive programming, where did he get his motivation from, what does it take to become a good programmer and about what students in general should focus on in college.</p>
+
+<h3>When and how were you introduced to programming?</h3>
+
+<p>I was introduced to competitive programming during the end of my third year at Roorkee. Before that for almost an year I was actively solving problems posted on projecteuler.net which gave me a stronghold on math based problems. I was introduced to Project Euler by one of my department seniors while CodeChef was a random accident on the internet.</p>
+
+<h3>What is the secret to becoming a good programmer?</h3>
+
+<p>The secret to becoming a good programmer is to have a basic understanding of algorithms in almost all the areas. Have a good understanding of few and try to be a master in one. This is pretty feasible.</p>
+
+<h3>How did you guys come together?</h3>
+
+<p>All three of us competed from different teams during 2011-12. Tarun&rsquo;s team had performed exceptionally well and I heard from many people about Dipit&rsquo;s problem solving skills. All that was left on my part was to convince these guys to team up with me. They said yes and rest as you know is history :P</p>
+
+<h3>When did you start taking it seriously to the extent of preparing for ICPC?</h3>
+
+<p>I started aspiring to perform well in ICPC at the beginning of my fourth year. Though serious preparations began when I failed to perform well in the Kanpur online round during my first attempt. Its good to take failures to your heart when you know you have another attempt left.</p>
+
+<h3>Who is your Inspiration/Motivation/role-model?</h3>
+
+<p>Inspiration? No one in particular. I was motivated by the fact that the best minds across the world will be taking part in this contest. What better way than this to challenge your problem solving skills.
+I have always looked up to the performance of team proof from IIT Delhi. Their team has been a role model to me.</p>
+
+<h3>How much does software engineering involves algorithmic problem-solving?</h3>
+
+<p>If you ask me how many problems, that we solve on a day to day basis, are as fancy as the problems you see in the contests then the answer is none. But, if you ask me if algorithmic problem solving skills help in delivering better solutions in your job then the answer is yes.</p>
+
+<h3>Did your deep interest in algorithms have any side effects too? Like maybe affecting your CGPA?</h3>
+
+<p>Yup it does have many side effects. CGPA is the one thing that took the hardest blow in my case. During my final exams I had on one hand the choice of studying courses that I didn&rsquo;t like and on the other I had the option of solving interesting problems. My brain would always convince me to pick the latter. Other things that got affected is the amount of time I spent on arbit things like watching TV series or bakar with friends. You can&rsquo;t really help it. Everyone gets 24 hours a day. Neither a minute less nor a minute more.</p>
+
+<h3>What are your plans for the future?</h3>
+
+<p>The learning curve at Goldman has been a steep one till now. Hoping to gain more work experience from this job.</p>
+
+<h3>Any piece of advice for the students?</h3>
+
+<p>Learn as many skills as you can now. This is the time when the day is all yours as you are not being paid to deliver something. Challenge yourself by doing something productive for long hours every day and then take a break from it to relax. The satisfaction is immense.
+On a side note, many of you might think spending time on quora or reading blogs is better than Facebook as it gives you a feeling that you have gained some precious knowledge. But let me tell you, any piece of knowledge that has not been put to good use is garbage. So don&rsquo;t acquire knowledge at a pace faster than at which you use it.</p>
+
+<p><img src = "../../../../images/posts/Interview/WF.jpg"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Codematics 2k14]]></title>
+    <link href="pag.sdslabs.co/blog/codematics-2k14"/>
+    <updated>2014-04-05T19:23:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/codematics-2k14</id>
+    <content type="html"><![CDATA[<p>On the 8th of March 2014, PAG organised an online Maths contest along the lines of Project Euler, <a href="http://erdos.sdslabs.co/">Codematics</a>, as part of the annual Hobbies club fest of IIT Roorkee, Shrishti. It was a 24 hour long competition (March 8 21:00 to March 9 21:00 IST) and was targeted at all the Maths enthusiasts of the IITR campus and the world. The contest had 24 questions - ranging from cakewalk to tricky - that challenged the participants. There was no negative scoring and everyone could make unlimited attempts for each question.</p>
+
+<p>The questions in the contest were based on a variety of concepts from number theory, combinatorics, geometry and some general aptitude and puzzles. And what’s more, we had an overwhelming response. There were more than 100 participants and over 1600 submissions. It was a close contest with three of the participants, Sukun Tarachandani, Priyanshu Seth and Yashpal Choudhary (all from IITR) solving as many as 16 questions, the highest. But the first one to solve them, Sukun Tarachandani was declared the winner of Codematics 2014.</p>
+
+<p>This year the special thing about Codematics was that it was hosted on a new platform, <a href="http://erdos.sdslabs.co/">Erdős</a>. It is an application for math geeks to try out new mathematical problems and keep track of who solves what. The design of Erdős is clean and card-based, with a focus on user-interaction above everything else. This web portal is maintained by <a href="https://www.facebook.com/SDSLabs">SDSLabs</a>.</p>
+
+<p>We tried our best to make the contest perfect for you guys, however there were small glitches or misunderstandings in some questions, which were soon fixed. We are sorry for that. Hope you enjoyed giving this competition and we would like to say that we enjoyed even more, putting it up for you. We’ll be back next year with another Codematics and in the meantime we will host more contests on Erdos.</p>
+
+<p>You can still attempt the codematics problems <a href="http://erdos.sdslabs.co/">here</a>. We would love to hear from you. Just drop us a mail at <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#112;&#x61;&#103;&#x69;&#x69;&#x74;&#x72;&#64;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#111;&#x6d;">&#x70;&#97;&#103;&#105;&#105;&#116;&#114;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#x6f;&#x6d;</a>.</p>
+
+<p><em>Team Codematics</em>:
+<img src = "../../../../images/posts/Codematics/2k14.jpg"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Insomnia 2k14]]></title>
+    <link href="pag.sdslabs.co/blog/insomnia-2k14"/>
+    <updated>2014-03-27T14:44:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/insomnia-2k14</id>
+    <content type="html"><![CDATA[<p>It has been a busy month for PAG. We have been organizing several contests on the IIT Roorkee intranet as well as online related to programming and general aptitude prowess. But it was the 15th of March that saw the occurrence of most awaited event organized by the group- Insomnia! This was the 5th edition of the annual international programming contest organized by PAG and yes- it lived up to its hype! Organized as part of the annual tech fest of IIT Roorkee, Cognizance, the event was hosted on CodeVillage, an online coding portal maintained jointly by <a href="https://www.facebook.com/SDSLabs">SDSLabs</a> and <a href="https://www.facebook.com/sdspag">PAG</a>.</p>
+
+<p>For the ones reading about it for the first time, Insomnia is an overnight programming contest held over 12 hours (9 pm IST - 9 am IST) . There are several questions of varying difficulty and each question carries one point (irrespective of difficulty). Ties are broken by the total time taken. Standard ACM-ICPC Rules. This year&rsquo;s edition saw participation from over 170 teams from around the globe and over 1000 submissions made. If you compare these figures to an average contest hosted on codechef or spoj, they might not sound much to you, but considering the fact that the event was hosted on an independent platform (independent portal and independent grader) with less than half the publicity- we are ecstatic with the results! There were a few glitches we faced (mainly with the leaderboard), but the contest was smooth otherwise. Nevertheless we promise you that we&rsquo;ll work them out before next year&rsquo;s edition.</p>
+
+<p>The overall winner of <a href="http://insomnia.cognizance.org.in/user/view_rank/1/10/27">Insomnia 2k14</a> was Mikhail Mayorov, a Russian guy(so no real surprises here!) who contested alone with the team name &lsquo;SADBOYS&rsquo;. Team &lsquo;good_piggies&rsquo; stood second. Kudos to the members Manu Kashyap, Rishav Pati and Sandeep Mohanty! From IIT Roorkee, 4 teams managed a draw with 7 accepted solutions. Sorted on the basis of time, team &lsquo;Invincibles&rsquo; came out at the top! Kudos to the members Rishabh Mor, Varun Syal and Yashpal Choudhary!</p>
+
+<p>All the problems have been added on spoj for practice. The editorials for each have also been published and are available <a href="http://ge.tt/3FdSdNS1/v/0?c">here</a>.</p>
+
+<p><em>Team Insomnia</em>:
+<img src = "/images/posts/Insomnia/2k14.jpg"></p>
+
+<p>As this post comes to an end, we&rsquo;d like to say that we hope you guys enjoyed solving the problems as much as we enjoyed putting them up and we hope you&rsquo;ll be back next year! For those of you who did not compete this year, we hope you&rsquo;ll turn up next year and tell us what you think about it! We love to hear from you so if you have anything that you&rsquo;d like to tell us- either about the contest problems, or about codevillage or about Putin taking over Crimea- we are all ears! For any sort of feedback, mail us at <a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#x3a;&#112;&#x61;&#x67;&#105;&#x69;&#x74;&#114;&#64;&#x67;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;">&#x70;&#97;&#x67;&#105;&#x69;&#x74;&#x72;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a>.</p>
+
+<p>Cheers!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-TWOSQRS]]></title>
+    <link href="pag.sdslabs.co/blog/spoj-twosqrs"/>
+    <updated>2014-01-31T17:02:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/spoj-twosqrs</id>
+    <content type="html"><![CDATA[<p><a href="http://www.spoj.com/problems/TWOSQRS/">Problem</a> : Given a number (N) and you need to find whether it can be represented as sum of two squares or not.</p>
+
+<p>Pre-Requisites : None</p>
+
+<p>Explanation :</p>
+
+<p>Any number (lets say A) can be represented in form 4*k+r  (where r can 0 , 1 , 2 , 3). Thus possible values for A<sup>2</sup> is 4*k and 4*k+1 , so sum of two squares can never be of the form  4*k +3 .</p>
+
+<p>N = p1 ^ x1 * p2 ^ x2 * &hellip;&hellip;  pm ^ xm (prime factorisation of N) can be represented as the sum of two squares if every prime of the form 4*k +3 have even degree (or power) .</p>
+
+<p>This can be proved using following 5 statements :-</p>
+
+<ol>
+<li>The product of two numbers, each of which is a sum of two squares, is itself a sum of       two squares.</li>
+<li>If a number which is a sum of two squares is divisible by a prime which is a sum of two     squares, then the quotient is a sum of two squares.</li>
+<li>If a number which can be written as a sum of two squares is divisible by a number  which is not a sum of two squares, then the quotient has a factor which is not a sum of     two squares.</li>
+<li>If a and b are relatively prime then every factor of a<sup>2</sup> + b<sup>2</sup> is a sum of two squares.</li>
+<li>Every prime of the form 4n+1 is a sum of two squares.</li>
+</ol>
+
+
+<p>For proof of these statements refer <a href="http://en.wikipedia.org/wiki/Proofs_of_Fermat's_theorem_on_sums_of_two_squares">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-GEEKOUNT]]></title>
+    <link href="pag.sdslabs.co/blog/spoj-geekount"/>
+    <updated>2014-01-08T15:54:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/spoj-geekount</id>
+    <content type="html"><![CDATA[<p><a href="www.spoj.com/problems/GEEKOUNT">Problem</a>: Let f(x) be the product of digits of a number. Given L and R, find the number of values of &lsquo;i&rsquo; such that L &lt;= i &lt;= R and f(i) is even.</p>
+
+<p>Pre-Requisites : None</p>
+
+<p>Explanation :</p>
+
+<p>We have to find the count of such numbers, between 2 given numbers, whose product of digits is even. Any number, in which any one digit is even, will come in this category. We will find all those numbers whose product of digits is odd and subtract them from total numbers between two given numbers. We will calculate required numbers from 1 to first number and lets call it num1, then from 1 to second number and lets call it num2 , then num2-num1 will be the answer.</p>
+
+<p>Suppose we consider any n digit number. Then the number of numbers with exactly n digits and all digits odd will be 5 raised to power n. So, the number of numbers from 1 digit to n digits with all digits odd will be sum of all powers of 5 raised to power 1 upto n
+ie. 5<sup>1</sup> + 5<sup>2</sup> + 5<sup>3</sup> +&hellip;&hellip;.+ 5<sup>n</sup>.</p>
+
+<p>The above formula of 5 gives the ans as 999..9(n times). But what about the case when the number is neither the smallest, nor the largest n digit number.</p>
+
+<p>So if we are a general n digit number, then we will use formula to calculate the required number of numbers upto n-1 digits and use the following approach to calculate the number of n digits numbers, smaller than given number, for which product of digits is odd.</p>
+
+<p>The number of such numbers will be equal to sum of the numbers of product of half of corresponding digit and 5^ [length-position-1] and  this digit will be from left digit to right digit. However, this process will stop when we encounter an even digit because from there we will not get any number where all digits will be odd.</p>
+
+<p>Pseudocode :</p>
+
+<pre><code>sum[0] = power[0] = 0
+for i = 1 to 10 :
+    power[i] = power[i-1] * 5 
+    sum[i] = sum[i-1] + power[i]
+//dig1 is string form of first number.
+//dig2 is string form of second number.
+//n1 stores the number of numbers whose product of digits is odd.
+//length1 is length of first string.
+//length2 is length of second string.
+n1 = sum[length1-1] 
+//Calculating upto length1-1 digits
+for j = 0 to length1:
+    n1 = n1 + dig1[j]/2 * power[length1-j-1]
+// n1 gives the number of numbers with all digits odd from 1 to dig1.
+</code></pre>
+
+<p>Do the same for second number.</p>
+
+<p>Subtract n1 from n2 and subtract this result from the difference between the
+given 2 numbers to obtain the required answer.</p>
+
+<p>Let us take an example. Suppose we have to calculate till 57981. So, from 10000 to 50000, our counting will be only from 10000 to 19999 and 30000 to 39999, so and the number will be equal to same which we found for 4-digit numbers. Then we will shift our counter from 5 to 7 in our number 57981. Now, our target will be from 1000 to 1999, 3000 to 3999, 5000 to 5999, and our answer will be same as we found for 3 digit numbers. Process terminates as we encounter 8 as after it, no more numbers with all digits odd.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-COINS]]></title>
+    <link href="pag.sdslabs.co/blog/spoj-coins"/>
+    <updated>2013-12-11T19:39:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/spoj-coins</id>
+    <content type="html"><![CDATA[<p><strong><a href="http://www.spoj.com/problems/COINS/">Problem</a></strong>: Given, a gold coin in Byteland, find the maximum amount of American dollars you can get for it.</p>
+
+<p><strong>EXPLANATION</strong> :</p>
+
+<p>Consider a golden coin with a number ‘n’ on it. Now, the coin can be exchanged by n/2, n/3, n/4 coins only (all rounded down). Obviously, one would exchange the coins only if n/2+n/3+n/4 is greater than n. And similar holds for n/2, n/3, and n/4 and so on. Looking into the pattern carefully, all the numbers less than 12, if exchanged with coins, would return either lesser or equal to the number. So, it is better to exchange them directly by American dollars (1:1). Let&rsquo;s try to solve it with a recursive function (a function in which we call our same function to solve it) :</p>
+
+<p><em>Pseudocode of the function</em> :</p>
+
+<pre><code>Return type coin (variable type n)
+if(n&lt;12)
+    return n;
+else
+    return summation over i of (maximum of n/i and coin(n/i))
+    //here i is 2,3 and 4.
+</code></pre>
+
+<p>Ok, now an example, say 40:
+If I would exchange 40 by coins:-40/2+40/3+40/4=20+13+10=43. But that&rsquo;s not the correct answer.
+20=20/2+20/3+20/4=10+6+5=21
+Now, as all the numbers have been reduced to numbers less than 12, they would return the same value.
+13=13/2+13/3+13/4=6+4+3=13
+10 being lesser than 12 would return the same value. So, 21+13+10= (44) American dollars would be the maximum one can get.</p>
+
+<p>Considering 81:
+81/2+81/3+81/4 = 40+27+20
+40=20+13+10;
+27=13+9+6=28;
+20=10+6+5=21;
+Correct answer being 93.</p>
+
+<p>Notice that 20 is being tested again (resulting from 40). We thus try to avoid solving a problem (which we have already solved once) again and again. For this we use dynamic programming (or memoization) which is the technique of storing already-calculated values for a fuction in  an array (or vector or some other way) so that we can read those values directly instead of having to solve them again and again.</p>
+
+<p>So, the pseudo code of the function finally becomes:</p>
+
+<pre><code>//Here we have used maps. One can use arrays or vectors as well.
+
+static map&lt;variable(n) type, function return type&gt; memo;
+if(n&lt;12)
+    {return n;}
+if(memo.count(n)&gt;0)
+    return memo[n];
+else
+    long long int ret;
+    ret= summation over i of (maximum of n/i and coin(n/i));  i=[2,3,4]
+    memo[n]=ret;
+    return ret;
+</code></pre>
+
+<p>This makes our solution pass well within the time-limit.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-PTIME]]></title>
+    <link href="pag.sdslabs.co/blog/spoj-ptime"/>
+    <updated>2013-12-11T19:17:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/spoj-ptime</id>
+    <content type="html"><![CDATA[<p><strong><a href="http://www.spoj.com/problems/PTIME/">Problem</a></strong>:  To write the prime factorisation of N! (N factorial).</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>The prime factorisation of N! would only contain primes less than  or equal to N.  Our main job is to find out the power of each prime factor and then write the prime factorisation in the correct form.</p>
+
+<p>Since the given N is always greater than or equal to 2, its factorial (N!) would have 2 in its prime factorisation. Now let us start by finding the power of 2 in the prime factorisation of N!</p>
+
+<p>N!  =  1*2*3…….(N-2)*(N-1)*N</p>
+
+<p>The number of integers less than or equal to N having a factor of 2 is : Floor(N/2)</p>
+
+<p>Some of the integers would be having more than one 2 in their prime factorisations ( 4 = 2*2, 12 = 2*2*3)
+So the number of integers less than or equal to N having a factor of 4 ( 2<sup>2</sup>) is : Floor( N/(2<sup>2</sup>) )</p>
+
+<p>Similarly the process will continue till 2<sup>i</sup> > N.</p>
+
+<p>So the power of 2 in the prime factorisation of N! would be:
+ Floor( N/2 ) + Floor( N/(2<sup>2</sup>) ) + Floor( N/(2<sup>3</sup>)  ) + …….. + Floor( N/(2<sup>i</sup>) )                           <br/>
+                                             where i is the highest number with 2<sup>i</sup> &lt;= N</p>
+
+<p>Similarly doing the process for all the prime factors  less than or equal to N, prime factorisation of N! can be obtained where N can be as large as 10000.</p>
+
+<p><em>Pseudocode</em> :</p>
+
+<pre><code>for i = 2 to N
+    k = 0
+    for a = 2 to sqrt(i)
+        if i % a = 0
+            k = 1
+            exit loop
+    if k = 0           // i is prime
+        s = 0
+        e = N/i
+        while e &gt; 0
+            s = s + e
+            e = e/i
+        // after loop completes s would be the power of i in prime factorisation of N!  
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ACM Qualifications 2013]]></title>
+    <link href="pag.sdslabs.co/blog/acm-qualifications-2013"/>
+    <updated>2013-11-25T22:20:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/acm-qualifications-2013</id>
+    <content type="html"><![CDATA[<p>As a long-awaited winter break comes closer catalyzing our recovery from the haunting memories of a badly screwed up end sem, it&rsquo;s  good news for the geeks at IIT Roorkee coming after the online prelims of the ACM ICPC Indian Regionals. ACM ICPC is arguably the most reputed programming competition for college students across the world, and seeing Roorkee perform impressively at this huge scale makes us all really proud.</p>
+
+<p>In India there are three sites which play host to the ACM ICPC Regionals: IIT Kanpur, IIT Kharagpur and Amritapuri. There have been a total of 14 qualifications from IIT Roorkee across the three sites this year, a new record in itself for the institute. In the regionals, which will be held around mid December, a total of about 600 teams from the very best technical institutes of the country and abroad shall be competing for their shot at a glorious opportunity of participating in the World Finals of the ACM ICPC. Every year the World Finals are held early July in Russia. This is a great achievement for the programmers and geeks alike at IIT Roorkee; and a record that we should strive to improve every year.</p>
+
+<p>PAG congratulates all the teams that will be representing IIT Roorkee at the Regionals this year and wishes them the very best of luck as they gear up to take on the best in the business.</p>
+
+<p>Here are the team and students from IIT Roorkee who have qualified for the ACM ICPC  Regionals 2013:</p>
+
+<h3>Amritapuri</h3>
+
+<ul>
+<li><p><strong>11coders</strong></p>
+
+<ul>
+<li> Anubhav Bindlish† (CSE 2nd year)</li>
+<li> Aman Kumar Kedia† (CSE 2nd year)</li>
+<li> Kshitij Bathla† (CSE 2nd year)</li>
+</ul>
+</li>
+<li><p><strong>the-royal-flush</strong></p>
+
+<ul>
+<li>Jaspreet Singh (CSE 4th year)</li>
+<li>Arpit Dua (MSP 5th year)</li>
+<li>Sukun Tarachandani (EPE 4th year)</li>
+</ul>
+</li>
+<li><p><strong>frick-freak</strong></p>
+
+<ul>
+<li>Ch. S Pramod (ECE 3rd year)</li>
+<li>R Shiva Tejesh (ECE 3rd year)</li>
+<li>Revanth Reddy (EE 3rd year)</li>
+</ul>
+</li>
+<li><p><strong>3Spades</strong></p>
+
+<ul>
+<li>Adury Surya Kiran† (ECE 3rd year)</li>
+<li>Praneeth Reddy† (ECE 3rd year)</li>
+<li>Harsh Jhamtani† (CSE 4th year)</li>
+</ul>
+</li>
+<li><p><strong>tehloneclubs</strong></p>
+
+<ul>
+<li>Vaibhav Gupta (CSE 4th year)</li>
+<li>Gaurav Singh   (CSE 4th year)</li>
+<li>Sushant Ojal (CSE 4th year)</li>
+</ul>
+</li>
+<li><p><strong>bapcoders</strong></p>
+
+<ul>
+<li>Pankaj Gudlani (CSE 2nd year)</li>
+<li>Ankur Garg (CSE 2nd year)</li>
+<li>Bharat Gaind (CSE 2nd year)</li>
+</ul>
+</li>
+<li><p><strong>the-mathletes</strong></p>
+
+<ul>
+<li>Aman Tripathi (EE 3rd year)</li>
+<li>Ankit Patel (CSE 3rd year)</li>
+<li>Saurabh Suman (ECE 3rd year)</li>
+</ul>
+</li>
+<li><p><strong>progenius</strong></p>
+
+<ul>
+<li>Rajat Jain† (CSE 2nd year)</li>
+<li>Divij Bindlish (EE 2nd year)</li>
+<li>Vibhor Goel (EE 2nd year)</li>
+</ul>
+</li>
+<li><p><strong>hedylogos</strong></p>
+
+<ul>
+<li>Saurabh Paliwal (CSE 4th year)</li>
+<li>Aayush Gupta (CSI 4th year)</li>
+<li>Siddharth Maheshwari (CSE 4th year)</li>
+</ul>
+</li>
+<li><p><strong>inquisitive</strong></p>
+
+<ul>
+<li>Abhishek Kandoi†          (CSE 2nd year)</li>
+<li>Priyanshu Sheth†          (CSE 2nd year)</li>
+<li>Satyam Vijay†                 (CSE 2nd year)</li>
+</ul>
+</li>
+<li><p><strong>codewarrior</strong></p>
+
+<ul>
+<li>Shubham Kansal†           (CSE 3rd year)</li>
+<li>Shubham Mittal                   (MSM 5th year)</li>
+<li>Vishu Goyal                     (CSE 3rd year)</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>IIT Kanpur</h3>
+
+<ul>
+<li><p><strong>3Spades</strong></p>
+
+<ul>
+<li>Adury Surya Kiran†        (ECE 3rd year)</li>
+<li>Praneeth Reddy†       (ECE 3rd year)</li>
+<li>Harsh Jhamtani† (CSE 4th year)</li>
+</ul>
+</li>
+<li><p><strong>inquisitive</strong></p>
+
+<ul>
+<li>Abhishek Kandoi†  (CSE 2nd year)</li>
+<li>Priyanshu Sheth†          (CSE 2nd year)</li>
+<li>Satyam Vijay†                 (CSE 2nd year)</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>IIT Kharagpur</h3>
+
+<ul>
+<li><strong>the-royal-flush</strong>
+
+<ul>
+<li>Jaspreet Singh (CSE 4th year)</li>
+<li>Arpit Dua (MSP 5th year)</li>
+<li>Sukun Tarachandani (EPE 4th year)</li>
+</ul>
+</li>
+</ul>
+
+
+<p><em>People marked with † are members of Programming and Algorithms Group</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-DCEPC202]]></title>
+    <link href="pag.sdslabs.co/blog/spoj-dcepc202"/>
+    <updated>2013-11-08T13:33:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/spoj-dcepc202</id>
+    <content type="html"><![CDATA[<p><strong><a href="http://www.spoj.com/problems/DCEPC202/">Problem</a></strong> :
+Given the number of unique shortest paths across a rectangular grid with broken tiles, to find its dimensions.</p>
+
+<p><strong>Pre-requisites</strong> : Principle of inclusion and exclusion, Binary Search</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>First consider a corridor of dimension m*n, with no broken tiles. Now, for &lsquo;shortest&rsquo; path, you can only move to tiles (x,y+1) or (x+1,y) if you&rsquo;re currently on tile (x,y). So, to go from (0,0) to (m-1,n-1), you need to move m+n-2 steps with m-1 steps in x direction and n-1 steps in y direction. The number of unique paths will be the number of ways in which you can choose those m-1 (or n-1) steps out of the total m+n steps
+i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub></p>
+
+<p>Now, lets take into account the broken tiles:</p>
+
+<pre><code>  .____.____.____.____.____.____.G
+  |    |    |    |    |    |    |
+ 4|    |    |    | F* |    |    |
+  .____.____.____.____.____.____.
+  |    |    |    |    |    |    |
+ 3|    |    |    |    |    |    |
+  .____.____.____.____.____.____.
+  |    |    |    |    |    |    |
+ 2| C *|    |    | D* |    | E* |
+  .____.____.____.____.____.____. 
+  |    |    |    |    |    |    |
+ 1|    |    |    |    |    |    |
+  .____.____.____.____.____.____.
+  |    |    |    |    |    |    |
+ 0|    |    |    | B *|    |    |
+  .____.____.____.____.____.____.
+ A  0     1        n/2       n-1
+</code></pre>
+
+<p>* represents broken tiles.</p>
+
+<p>Now, employing the principle of inclusion and exclusion, we will first determine the total number of paths and then subtract the number of paths passing through the broken tiles. The total number of paths, therefore, is:</p>
+
+<p>N(AG) - N(AB)*N(BG) - N(AC)*N(CG) - N(AD)*N(DG) - N(AE)*N(EG) - N(AF)*N(FG) + N(AB)*N(BD)*N(DG) + N(AB)*N(BE)*N(EG) + N(AC)*N(CD)*N(DG) + N(AC)*N(CF)*N(FG) + N(AD)*N(DE)*N(EG) + N(AD)*N(DF)*N(FG) - N(AB)*N(BD)*N(DF)*N(FG) - N(AC)*N(CD)*N(DE)*N(EG)</p>
+
+<p>where:</p>
+
+<p>N(AG)= <sup>(n - 1 + 4)</sup>C<sub>4</sub> = p</p>
+
+<p>N(AF)= <sup>(n/2 + 4)</sup>C<sub>4</sub> = q</p>
+
+<p>N(AE)=N(CG)= <sup>(n-1+2)</sup>C<sub>2</sub> = r</p>
+
+<p>N(BG)= <sup>(n - 1 - n/2 + 4)</sup>C<sub>4</sub> = s</p>
+
+<p>N(AD)=N(CF)= <sup>(n/2 + 2)</sup>C<sub>2</sub> = t</p>
+
+<p>N(BE)=N(DG)= <sup>(n - 1 - n/2 + 2)</sup>C<sub>2</sub> = u</p>
+
+<p>N(AB)=N(AC)=N(BD)=N(CD)=N(DE)=N(DF)=N(EG)=N(FG)=1</p>
+
+<p>So, the final expression for number of unique paths, k is:</p>
+
+<p>k = p - 1*s - 1*r - t*u - r*1 - q*1 + 1*1*u + 1*u*1 + 1*1*u + 1*t*1 + t*1*1 + t*1*1 - 1 - 1</p>
+
+<p>=>  k = p - s - 2*r - t*u -q + 3*u + 3*t -2</p>
+
+<p>According to the problem, we have to find out the dimension of the corridor i.e. n for a given k. For this we will make an array of the k values of all 1&lt;=n&lt;=10000 beforehand. Now for each k, we&rsquo;ll carry out a binary search in the array to find out the value of n for which no. of paths is equal to or just larger than k.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[First Year Recruitment Results]]></title>
+    <link href="pag.sdslabs.co/blog/first-year-recruitment-results"/>
+    <updated>2013-10-19T22:30:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/first-year-recruitment-results</id>
+    <content type="html"><![CDATA[<p>Congratulations to everyone who made it to the group. We were extremely happy to see the response by the first yearites. We got to interview some of the most talented first yearities in our campus and it was a wonderful experience for us and hopefully for them too. We had to reject people only because of limited vacancies even though they were all equally capable.</p>
+
+<p>Here comes the result of Programming and Algorithms Group&rsquo;s first year recruitment test :</p>
+
+<ul>
+<li>Abhishek Uppal</li>
+<li>Akhil Gupta</li>
+<li>Anal Kumar Shahi</li>
+<li>Chitra Kumari</li>
+<li>Dhaval Kapil</li>
+<li>Eklavya Sharma</li>
+<li>Harsh Kumar Sahu</li>
+<li>Ishu</li>
+<li>Jahnavi Singh</li>
+<li>Jay Bosamiya</li>
+<li><ol type="a">
+<li>Sai Varun Reddy</li>
+</ol>
+</li>
+<li>Rahul Yadav</li>
+<li>Rishabh Ravi Gupta</li>
+<li>Shubhangi Singar</li>
+<li>Vaibhav Daga</li>
+<li>Vinay Malik</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-DGAME]]></title>
+    <link href="pag.sdslabs.co/blog/spoj-dgame"/>
+    <updated>2013-10-18T21:16:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/spoj-dgame</id>
+    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> :  Game of Nim</p>
+
+<p><strong><a href="http://www.spoj.com/problems/DGAME/">Problem</a></strong> : Game of Nim with variations. (N piles with i<sup>th</sup> pile containing either 2<em>i or 2</em>i+1 stones where even number of stones may be removed from selected pile.)</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>At every index i, can have stones in two ways, so total no. of ways comes out to be 2 * 2 * &hellip; . * 2 (n times).</p>
+
+<p>Now whether an index have 2<em>i or 2</em>i+1 stones the game remains unaffected because if there are 2<em>i+1 stones in any pile there will be one stone left out anyways, and the game will be same as the one played with 2</em>i stones. We shall be considering only this case.</p>
+
+<p>At any point of the game i<sup>th</sup> pile contains 2*(i - k) stones (where k is any arbitrary constant). Now you can interpret the question as the ith pile had i stones in the beginning and you can take out any positive number of stones from it. This is the standard nim game containing N piles, where the ith pile contains i stones.</p>
+
+<p>Now our task is to find XOR of N numbers(1 to N). Every number can be represented 4*p+q where 0 &lt;= q &lt;= 3 and p is any arbitrary.</p>
+
+<p>For every N of type 4*p+3, it can be easily proved that XOR of 1 to N is 0. So the first person will always lose the game. The answer for such numbers is zero.</p>
+
+<p>For N of type 4*p+1 XOR of numbers from 1 to N is 1, so the first player can remove 1 stone from any pile containing odd number of stones so that the XOR becomes zero. There are (N+1)/2 piles containing odd number of stones, so the answer for this case is (N+1)/2.</p>
+
+<p>For numbers of type 4<em>p or 4</em>p+2 XOR is N and N+1 respectively So first player can make XOR zero by removing stones from any pile whose most significant bit is same as the most significant bit of N. Thus the answer for this case is the number of piles which has x stones, such that when x is represented in binary, it has the same number of bits as the binary representation of N. This can be obtained by subtracting from N the maximum power of 2 which is less than or equal to N.</p>
+
+<p><strong>Links</strong> : <a href="http://community.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=algorithmGames">Game of Nim</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-RRSCHED]]></title>
+    <link href="pag.sdslabs.co/blog/spoj-rrsched"/>
+    <updated>2013-10-03T18:38:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/spoj-rrsched</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/RRSCHED/">RRSCHED</a></p>
+
+<p><strong>Difficulty</strong> : Medium</p>
+
+<p><strong>Prerequisites</strong> : BIT</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>A very naive approach would be to iterate over time and keep on decreasing the no of tasks to be performed and storing the task completion time in a separate array.This implementation would definitely give TLE  O(N*T) with the given constraints.</p>
+
+<p>In the above approach we can observe that we can do better by jumping times from t = completion of easiest task (w.r.t time) to t = completion of next easiest task .</p>
+
+<p>For this we need to sort the input array w.r.t time .But we would also want their original indices(because order matters).So you can use pair&lt;int,int>  to store both the index and time  of a task.That way you would not lose your index’s by sorting the array.</p>
+
+<p>In the following discussion:</p>
+
+<p>Pair [i] denotes i th pair in sorted array
+Pair[i].Time denotes time needed for ‘Pir[i].Index’ th task to complete.</p>
+
+<p>Now for every iteration all we need to do is to keep track of  Current time and do as follows.</p>
+
+<ol>
+<li><p>Time Taken for present task to be completed
+ =   (no of remaining elements)*(Pair[i].Time-Pair[i-1].Time) +
+     1*no of Tasks before Pair[i].Index which are not completed</p></li>
+<li><p>Extra Time to complete the  round
+ = 1*no of Tasks after Pair[i].Index which are not completed.</p></li>
+<li><p>Update Pair[i].Index as completed</p></li>
+</ol>
+
+
+<p>Thus BIT comes in handy here where we have to query the no of tasks not completed and update a task as completed in O(logN). For this purpose initially keep a BIT array and update every element by ‘+1’ which means that the task is not completed yet.You can use Update(i,-1) to update the task as completed. You can find the no of tasks which are not completed  before an index i by Query(i).</p>
+
+<p>The <a href="http://code.hackerearth.com/d8db76J">pesudo code</a> is as follows:</p>
+
+<pre><code>//Initialize bit array to zero 
+
+BIT[MaxN] = 0
+
+// Update bit array 
+
+Upadte(i , x)
+    for(; i &lt;= n; i += i&amp;-i)
+        BIT[i] += x
+
+//Query Cummulative Frequency in a bit array 
+
+Query(i)
+    s=0
+    for(; i&gt;0 ; i-=i&amp;-i)
+        s += BIT[i]
+    return s
+
+//Take Input and Do the necessary initializations for BIT array
+
+TakeInput()
+for(i = 1; i &lt;= N; i++)
+    Update(i, 1)
+
+//Main Part
+
+CurrentTime = 0
+for(i = 1; i &lt;= N; i++)
+
+    //N-i+1 total uncompleted tasks
+
+    CurrentTime += (Pair[i].Time - Pair[i-1].Time - 1)*(N-i+1)
+
+    //query for uncompleted tasks before the present task
+
+    CurrentTime +=  Query(Pair[i].Index)
+
+    //Store the final anwer for the present task
+
+    Answer[Pair[i].Index] = CurrentTime
+
+    //Update current task as completed
+
+    Update(Pair[i].Index, -1)
+
+    //Increase by no of uncompleted tasks after the present task
+
+    CurrentTime += (N-i) - Query(Pair[i].Index)
+
+//Note that the above psudo code also handles the case where two tasks have equal completion Time.
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ TIC-TAC-TOE 2]]></title>
+    <link href="pag.sdslabs.co/blog/tic-tac-toe-2"/>
+    <updated>2013-09-27T16:30:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/tic-tac-toe-2</id>
+    <content type="html"><![CDATA[<p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/TOE2/">Tic Tac Toe 2</a></p>
+
+<p><strong>Difficulty</strong> : Easy</p>
+
+<p><strong>Prerequisites</strong> : Simple Maths</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>For the given board configuration we have to check whether it is the final state of some possible tic-tac-toe game or not.
+Let numX, numO and numE represents the number of X&rsquo;s, number of O&rsquo;s
+and number of dots in given board configuration.
+Also let xWins and oWins denotes the number of x winning possible configuration and number of o winning possible configurations respectively.
+There will be total of 8 winning configurations:</p>
+
+<pre><code>  |    x   |       |        |
+  |        |   x   |        |
+  |        |       |   x    |
+
+
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
+
+
+  |    x   |   x   |   x    |
+  |        |       |        |
+  |        |       |        |
+
+
+  |        |       |        |
+  |        |       |        |
+  |    x   |   x   |   x    |
+
+
+  |    x   |       |        |
+  |    x   |       |        |
+  |    x   |       |        |
+
+
+  |        |       |   x    |
+  |        |       |   x    |
+  |        |       |   x    |
+
+
+  |        |   x   |        |
+  |        |   x   |        |
+  |        |   x   |        |
+
+
+  |        |       |        |
+  |    x   |   x   |   x    |
+  |        |       |        |
+</code></pre>
+
+<p><strong>Pseudocode</strong> :</p>
+
+<pre><code>If |numX - numO|&lt;=1 # Since each player gets an alternative chance in tic tac toe game
+    If numE&gt;0 and xWins=0 and oWins=0  #Case when there is empty block and no player has win till now
+        then it is "invalid"
+    If xWins&gt;0 and oWins&gt;0 #Case when there is winning configuration of both players simultaneously
+        then it is "invalid"
+    If xWins&gt;0
+        If numX &gt; numO
+            then it is "valid"
+        Else 
+            then it is "invalid"
+    If oWins&gt;0
+        If numX &lt; numO
+            then it is "valid"
+        Else 
+            then it is "invalid"
+    rest all are "valid"
+Else
+    rest all are "invalid"
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ MORSE]]></title>
+    <link href="pag.sdslabs.co/blog/spoj-morse"/>
+    <updated>2013-09-16T18:30:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/spoj-morse</id>
+    <content type="html"><![CDATA[<p><strong>Prerequisites</strong> : Dynamic Programming, Trie</p>
+
+<p><strong><a href="http://www.spoj.com/problems/MORSE/">Problem</a></strong> :</p>
+
+<p>Given the Morse code for English alphabet, a list of words(dictionary) and a Morse sequence, the task is to compute the number of distinct phrases that can be obtained from the sequence using words from the dictionary.</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>In this problem, we are given N words in a dictionary and a Morse string containing ‘.’ and ‘-’ of length L. Now we are asked to find how many strings from the dictionary words when converted to their Morse part will exactly map to the given Morse sequence.</p>
+
+<p>Say we have .-..&ndash;.-..-.-…- and the dictionary as a aa bc acm shuka etc., one naive way is to generate all possible strings using the given words of the dictionary and see if they map to the given Morse string or not. But this approach is too slow and can take centuries to calculate if number of letters in dictionary are large enough (O(L<sup>N</sup>)).</p>
+
+<p>So, one thing to observe here is there will be several sub-cases counted a lot more times than required as in sub part of Morse string ‘.-..-’ might map to one english string and the rest part of Morse string doesn’t, so for calculating that this isn’t a valid string will itself take order O(L<sup>N</sup>) time.</p>
+
+<p>Such problems where only number of solutions are to be found are approached as given:</p>
+
+<ol>
+<li>Start iterating Morse string either from left or right.</li>
+<li>At each point,check if the current string covered using the iterator maps to any word in the dictionary(So this iteration is finding the last(or first) word that could be placed from dictionary to the position of the iterator).</li>
+<li>When a word is found,use recursion on the remaining string.</li>
+</ol>
+
+
+<p>Here we were also given some constraints to help us out with our complexity analysis:</p>
+
+<ol>
+<li>Length of Morse string : 10000</li>
+<li>Length of a word : 20</li>
+<li>Number of words in the dictionary : 10000</li>
+</ol>
+
+
+<p>The pseudocode of the above idea looks something like :</p>
+
+<pre><code>    Function TotalStrings(int i) //the current position of the iterator
+    {
+
+        for(k from i to Morselength) // Morselength stores the length of the Morse string
+        {
+
+            if string[i…k] is valid and in dictionary
+            then answer = answer + TotalStrings(k)
+
+        }
+
+        return answer;
+
+    }
+</code></pre>
+
+<p>Disclaimer: The below arguments are assuming we can search a Morse in a dictionary in O(1) time.</p>
+
+<p>The above solution still doesn’t seem to ease our problem as we still have to face the worst case time complexity as O(L<sup>N</sup>) but whenever we find some repeating subproblems we should always think of Dynamic Programming.</p>
+
+<p>Now the question is: What if in the above code, the value TotalStrings(k) was already known to us? In that case what would the time complexity be?</p>
+
+<p>It will be linear if all values of TotalStrings(k) are pre-known. Here comes the concept of Dynamic programming in which we can store the values of TotalStrings(k) whenever we calculate it. As we use linear time for calculating all the TotalStrings(k) with k in (0,Morselength),we use a total of O(L<sup>2</sup>) time where L is the length of the Morse string.</p>
+
+<p>All we need to change in code is before returning answer, just store the answer calculated in some global array so that next time the same value is asked it could be returned immediately.</p>
+
+<p>Now,taking advantage of the constraints :</p>
+
+<p>Length of a word cannot exceed 20 as given in the question,hence the conclusions are :</p>
+
+<ol>
+<li>Each alphabet can have maximum 4 ‘.’ or ’-‘ characters. So a word of length 20 can have maximum 80 Morse characters</li>
+<li>Hence in the inner loop of the above pseudo code k varies from i to i+80</li>
+<li>If the word searching is extremely fast, our complexity reduces to O(80*l)</li>
+</ol>
+
+
+<p>The problem left now is word searching. We can think of various methods and techniques to find a map from dictionary to the iterated part being used.</p>
+
+<ol>
+<li>Hash maps</li>
+<li>STL library map</li>
+<li>Brute force</li>
+<li>Trie implementation</li>
+</ol>
+
+
+<p>Of all the above methods,the most reliable for this problem is trie, given the constraints and the difficulty in using large length strings(~80).</p>
+
+<p>Trie implementation is simple and can be performed using arrays as well as link lists.</p>
+
+<p><strong>Links</strong> :</p>
+
+<p><a href="http://www.geeksforgeeks.org/trie-insert-and-search/">http://www.geeksforgeeks.org/trie-insert-and-search/</a></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Trie">http://en.wikipedia.org/wiki/Trie</a></p>
+
+<p><strong>Related problem on trie</strong> :</p>
+
+<p><a href="http://www.spoj.com/problems/REVFIB/">SPOJ-REVFIB</a> (Difficulty Level: Hard)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ NACCI]]></title>
+    <link href="pag.sdslabs.co/blog/spoj-nacci"/>
+    <updated>2013-08-28T20:00:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/spoj-nacci</id>
+    <content type="html"><![CDATA[<p>Prerequisites : Matrix Exponentation.</p>
+
+<p><a href="http://www.spoj.com/problems/NACCI/">Problem</a> :</p>
+
+<p>Find f[M] such that if (M > N) f[M] = sum(f[M - i]) for(i = 1 to N) else f[M] = M.</p>
+
+<p>Explanation :</p>
+
+<p>For convenience let us take k = 4. So f[n] = f[n - 1] + f[n - 2] + f[n - 3] + f[n - 4].
+Let us consider two matrices A,B of size (4 X 4)</p>
+
+<p>Matrix A :</p>
+
+<pre><code>{ f[i]  f[i - 1]  f[i - 2] f[i - 3] }
+{  0        0        0         0    }
+{  0        0        0         0    }
+{  0        0        0         0    }
+</code></pre>
+
+<p>Matrix B :</p>
+
+<pre><code>{ 1   1   0   0 }
+{ 1   0   1   0 }
+{ 1   0   0   1 }
+{ 1   0   0   0 }
+</code></pre>
+
+<p>MAtrix A X B :</p>
+
+<pre><code>{ (f[i]+f[i-1]+f[i-2]+f[i-3]   f[i]   f[i - 1]   f[i - 2] }
+{  0                             0        0         0     }
+{  0                             0        0         0     }
+{  0                             0        0         0     }
+</code></pre>
+
+<p>That will be equal to</p>
+
+<pre><code>{ (f[i+1]   f[i]   f[i - 1]   f[i - 2] }
+{    0        0        0         0     }
+{    0        0        0         0     }
+{    0        0        0         0     }        
+</code></pre>
+
+<p>So multiplying matrix A by matrix B by p times leaves f[i+p] in the first row first column position.
+Let initially Matrix A be</p>
+
+<pre><code>{ f[3]     f[2]     f[1]    f[0] }
+{  0        0        0       0   }
+{  0        0        0       0   }
+{  0        0        0       0   }
+</code></pre>
+
+<p>So Multiplying A with B by p times leaves f[3+p] in the first row first column element of product matrix.</p>
+
+<p>To get M'th element we just need to multiply A with B by M - 3 times. As M is very large we can calculate this my repeated squaring in O(logM) multiplications. For a (N X N) matrix as each matrix multiplication takes O(N<sup>3</sup>) steps overall complexity becomes O(log(M)*(N<sup>3</sup>)).</p>
+
+<p>For an (N X N) matrix, B might look as</p>
+
+<p>Matrix B :</p>
+
+<pre><code>{ 1  1  0  0  0 ...}
+{ 1  0  1  0  0 ...}
+{ 1  0  0  1  0 ...}
+{ 1  0  0  0  1 ...}  
+{ .................}
+</code></pre>
+
+<p>(So on till N rows N columns)</p>
+
+<p>To be generalized let b(i,j) be i'th row j'th column element of matrix. Then b(i,j) = 1 if (j == 0) or (j == i + 1)
+In general any linear equation of above type like f[n] = a1<em>f[n - 1] + a2</em>f[n - 2] + &hellip; can be solved by making B[i][0] = ai for all (i = 0 to N - 1)</p>
+
+<p>PseudoCode :</p>
+
+<pre><code>int[][] MatrixMul(int[][] A, int[][] B)
+
+    int[][] P;
+
+    int i,j,k;
+
+    for(k = 0 to n - 1)
+
+        for(i = 0 to n - 1)
+
+            for(j = 0 to n - 1)
+
+                P[i][j] += A[i][k] * B[k][j]
+
+            end loop
+
+        end loop
+
+    end loop
+
+    return P
+
+end MatrixMul
+
+
+int[][] PowerMatrix(int[][] B , power) :
+
+    if(power == 1) :
+
+        return B
+
+    else
+
+        int[][] temp = PowerMatrix(B , power / 2) 
+
+        temp = MatrixMul(temp,temp)
+
+        if(power % 2 == 1) :
+
+            temp = MatrixMul(temp,B)
+
+        end if
+
+        return temp
+
+    end ifelse
+
+end PowerMatrix
+
+
+int NACCI(int M , int N) :
+
+    if M &lt; N
+
+        return M
+    else
+
+        int A[N][N],B[N][N],i,j;
+
+        for(j = 0 to N - 1)
+
+            A[0][j] = N - 1 - j
+
+        end loop
+
+        for(i = 1 to N - 1)
+
+            for(j = 0 to N - 1)
+
+                A[i][j] = 0
+
+            end loop
+
+        end loop
+
+        for(i = 0 to N - 1)
+
+            B[i][0] = 1
+
+            for(j = 1 to N - 1)
+
+                if (j == i + 1)
+
+                    B[i][j] = 1
+
+                else 
+
+                    B[i][j] = 0
+
+                end ifelse
+
+            end loop
+
+        end loop
+
+        A = MatrixMul( A , PowerMatrix(B,M - N + 1) )
+
+        retrurn A[0][0]
+
+    end ifelse
+
+end NACCI
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SPOJ-TREZOR]]></title>
+    <link href="pag.sdslabs.co/blog/spoj-trezor"/>
+    <updated>2013-08-21T00:29:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/spoj-trezor</id>
+    <content type="html"><![CDATA[<p><a href="http://www.spoj.com/problems/TREZOR/">Problem</a> :</p>
+
+<p>Given a 2-D Coordinate Plane, find how many points are visible from one point. Two persons are standing at two other points, and you need to find how many other points are visible to both, points visible to only one, and none.</p>
+
+<p>Explanation:</p>
+
+<p>For Simplicity consider one guard standing at <strong>(0,0)</strong> and rectangle of size <strong>L*(A+B+1)</strong> is present with corner points <strong>(1,0) (L,0) (1,A+B) (L,A+B)</strong> and other guard is standing at <strong>(0,A+B)</strong>.</p>
+
+<p>Lets discuss the solution to one guard. A point <strong>(X,Y)</strong> will be blocked by another point <strong>(X1,Y1)</strong> to the origin if the slopes of lines joining points are equal, i.e <strong>X / X1 = Y / Y1 = Z (Z > 1)</strong>. That means <strong>X = X1 * Z</strong> and <strong>Y = Y1 * Z</strong>, which inturn means that <strong>X</strong> and <strong>Y</strong> are not coprimes (have a common factor). So for every horizontal row <strong>(i,Y)</strong> number of points visible to origin are number of <strong>i’s</strong> from <strong>1 to L</strong> that are coprime to <strong>Y</strong>.</p>
+
+<p>Similar is the situation to other guard, points of the form <strong>(i,Y)</strong> are visible if and only if <strong>‘i’</strong> is coprime to <strong>(A+B-Y)</strong>. and visible to both if <strong>‘i’</strong> is coprime to <strong>(A+B-Y)</strong> and <strong>Y</strong>, which means <strong>‘i’</strong> is coprime to <strong>(A+B-Y)*Y</strong>..</p>
+
+<p>Now the problem is reduced for a given <strong>Y</strong> , how many numbers from <strong>1 to L</strong> are coprime to <strong>Y</strong>. For this we can prime factorize <strong>Y</strong> and use inclusion and exclusion principle on primes to find the final answer. Total there can be at max 6 prime factors to <strong>Y</strong>, as the product of first six primes  > 4000 = <strong>(A+B)</strong>. Now it takes <strong>2<sup>N</sup> = (2<sup>6</sup>) = 64</strong> steps for finding number of coprimes of each Y, so 3 * 64 for each horizontal row, so (3 * 64 * 4000) for all rows  = 768000 steps which comes under time limit.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Second Year Recruitment Results]]></title>
+    <link href="pag.sdslabs.co/blog/second-year-recruitment-results"/>
+    <updated>2013-08-11T23:55:00+05:30</updated>
+    <id>pag.sdslabs.co/blog/second-year-recruitment-results</id>
+    <content type="html"><![CDATA[<p>Congratulations to everyone who made it to the group. We were extremely happy to see the response by second yearites. We got to interview some of the most talented coders in our campus and it was a wonderful experience for us and hopefully for them too. We had to reject people only because of limited vacancies even though they were all equally capable.</p>
+
+<p>Here comes the result of Programming and Algorithms Group&rsquo;s second year recruitment test :</p>
+
+<ul>
+<li>Aakshesh Doshi</li>
+<li>Abhishek Kandoi</li>
+<li>Akarsh Agarwal</li>
+<li>Aman Kedia</li>
+<li>Anubhav Bindlish</li>
+<li>Bharat Gaind</li>
+<li>Deepali Jain</li>
+<li>Ishu goyal</li>
+<li>Kshitij Bathla</li>
+<li>Meghana Agrawal</li>
+<li>Mehak Gupta</li>
+<li>Priyanshu Seth</li>
+<li>Rajat Jain</li>
+<li>Sandeep Pathry</li>
+<li>Satyam Vijay</li>
+<li>Ujjawal Mittal</li>
+<li>Varun Syal</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

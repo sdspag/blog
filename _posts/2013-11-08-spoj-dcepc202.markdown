@@ -1,0 +1,74 @@
+---
+layout: post
+title: "SPOJ-DCEPC202"
+date: 2013-11-08 13:33
+comments: true
+categories: [Editorial, SPOJ, Question of the Week, Principle of inclusion and exclusion, Binary Search]
+---
+**[Problem](http://www.spoj.com/problems/DCEPC202/)** :
+Given the number of unique shortest paths across a rectangular grid with broken tiles, to find its dimensions.
+
+**Pre-requisites** : Principle of inclusion and exclusion, Binary Search
+
+**Explanation** :
+
+First consider a corridor of dimension m\*n, with no broken tiles. Now, for 'shortest' path, you can only move to tiles (x,y+1) or (x+1,y) if you're currently on tile (x,y). So, to go from (0,0) to (m-1,n-1), you need to move m+n-2 steps with m-1 steps in x direction and n-1 steps in y direction. The number of unique paths will be the number of ways in which you can choose those m-1 (or n-1) steps out of the total m+n steps 
+i.e. <sup>(m+n-2)</sup>C<sub>(m-1)</sub>
+
+Now, lets take into account the broken tiles:
+
+```
+  .____.____.____.____.____.____.G
+  |    |    |    |    |    |    |
+ 4|    |    |    | F* |    |    |
+  .____.____.____.____.____.____.
+  |    |    |    |    |    |    |
+ 3|    |    |    |    |    |    |
+  .____.____.____.____.____.____.
+  |    |    |    |    |    |    |
+ 2| C *|    |    | D* |    | E* |
+  .____.____.____.____.____.____. 
+  |    |    |    |    |    |    |
+ 1|    |    |    |    |    |    |
+  .____.____.____.____.____.____.
+  |    |    |    |    |    |    |
+ 0|    |    |    | B *|    |    |
+  .____.____.____.____.____.____.
+ A  0     1        n/2       n-1
+
+```
+
+\* represents broken tiles.
+
+Now, employing the principle of inclusion and exclusion, we will first determine the total number of paths and then subtract the number of paths passing through the broken tiles. The total number of paths, therefore, is:
+
+N(AG) - N(AB)\*N(BG) - N(AC)\*N(CG) - N(AD)\*N(DG) - N(AE)\*N(EG) - N(AF)\*N(FG) + N(AB)\*N(BD)\*N(DG) + N(AB)\*N(BE)\*N(EG) + N(AC)\*N(CD)\*N(DG) + N(AC)\*N(CF)\*N(FG) + N(AD)\*N(DE)\*N(EG) + N(AD)\*N(DF)\*N(FG) - N(AB)\*N(BD)\*N(DF)\*N(FG) - N(AC)\*N(CD)\*N(DE)\*N(EG)
+
+where:
+
+
+N(AG)= <sup>(n - 1 + 4)</sup>C<sub>4</sub> = p
+
+N(AF)= <sup>(n/2 + 4)</sup>C<sub>4</sub> = q
+
+N(AE)=N(CG)= <sup>(n-1+2)</sup>C<sub>2</sub> = r
+
+N(BG)= <sup>(n - 1 - n/2 + 4)</sup>C<sub>4</sub> = s
+
+N(AD)=N(CF)= <sup>(n/2 + 2)</sup>C<sub>2</sub> = t
+
+N(BE)=N(DG)= <sup>(n - 1 - n/2 + 2)</sup>C<sub>2</sub> = u
+
+N(AB)=N(AC)=N(BD)=N(CD)=N(DE)=N(DF)=N(EG)=N(FG)=1
+
+
+
+So, the final expression for number of unique paths, k is:
+
+    
+k = p - 1\*s - 1\*r - t\*u - r\*1 - q\*1 + 1\*1\*u + 1\*u\*1 + 1\*1\*u + 1\*t\*1 + t\*1\*1 + t\*1\*1 - 1 - 1
+
+=>  k = p - s - 2\*r - t\*u -q + 3\*u + 3\*t -2
+
+
+According to the problem, we have to find out the dimension of the corridor i.e. n for a given k. For this we will make an array of the k values of all 1<=n<=10000 beforehand. Now for each k, we'll carry out a binary search in the array to find out the value of n for which no. of paths is equal to or just larger than k.

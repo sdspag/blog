@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>SPOJ-RRSCHED - </title>
+  <meta name="author" content="">
+
+  
+  <meta name="description" content="
+
+  
+  
+      SPOJ-RRSCHED
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+        
+      
+    
+  
+
+
+Problem : RRSCHED
+
+Difficulty : Medium
+
+Prerequisites : BIT...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="pag.sdslabs.co/blog/spoj-rrsched">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="" rel="alternate" title="" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <div id="header-inner">
+  <span class="first"><a href="/">Programming & Algorithms Group, SDS, IIT Roorkee</a></span>
+    <!--<span><a href="//pag.sdslabs.co">About</a></span><br><br>-->
+    <span class="icon"><a target="_blank" href="//github.com/"><img src="/images/social/gh-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="//facebook.com/"><img src="/images/social/fb-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="//plus.google.com/"><img src="/images/social/gp-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="" title="Subscribe via RSS"><img src="/images/social/rss-icon.png" alt=""></a></span>
+  </div>
+</hgroup>
+<div id="fb-root"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=487490921336262";
+              fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</header>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+      <h1 class="entry-title"><a href="/spoj-rrsched">SPOJ-RRSCHED</a></h1>
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-03T18:38:00+05:30" pubdate data-updated="true"></time>
+        <!--  -->
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><strong>Problem</strong> : <a href="http://www.spoj.com/problems/RRSCHED/">RRSCHED</a></p>
+
+<p><strong>Difficulty</strong> : Medium</p>
+
+<p><strong>Prerequisites</strong> : BIT</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>A very naive approach would be to iterate over time and keep on decreasing the no of tasks to be performed and storing the task completion time in a separate array.This implementation would definitely give TLE  O(N*T) with the given constraints.</p>
+
+<p>In the above approach we can observe that we can do better by jumping times from t = completion of easiest task (w.r.t time) to t = completion of next easiest task .</p>
+
+<p>For this we need to sort the input array w.r.t time .But we would also want their original indices(because order matters).So you can use pair&lt;int,int>  to store both the index and time  of a task.That way you would not lose your index’s by sorting the array.</p>
+
+<p>In the following discussion:</p>
+
+<p>Pair [i] denotes i th pair in sorted array
+Pair[i].Time denotes time needed for ‘Pir[i].Index’ th task to complete.</p>
+
+<p>Now for every iteration all we need to do is to keep track of  Current time and do as follows.</p>
+
+<ol>
+<li><p>Time Taken for present task to be completed
+ =   (no of remaining elements)*(Pair[i].Time-Pair[i-1].Time) +
+     1*no of Tasks before Pair[i].Index which are not completed</p></li>
+<li><p>Extra Time to complete the  round
+ = 1*no of Tasks after Pair[i].Index which are not completed.</p></li>
+<li><p>Update Pair[i].Index as completed</p></li>
+</ol>
+
+
+<p>Thus BIT comes in handy here where we have to query the no of tasks not completed and update a task as completed in O(logN). For this purpose initially keep a BIT array and update every element by ‘+1’ which means that the task is not completed yet.You can use Update(i,-1) to update the task as completed. You can find the no of tasks which are not completed  before an index i by Query(i).</p>
+
+<p>The <a href="http://code.hackerearth.com/d8db76J">pesudo code</a> is as follows:</p>
+
+<pre><code>//Initialize bit array to zero 
+
+BIT[MaxN] = 0
+
+// Update bit array 
+
+Upadte(i , x)
+    for(; i &lt;= n; i += i&amp;-i)
+        BIT[i] += x
+
+//Query Cummulative Frequency in a bit array 
+
+Query(i)
+    s=0
+    for(; i&gt;0 ; i-=i&amp;-i)
+        s += BIT[i]
+    return s
+
+//Take Input and Do the necessary initializations for BIT array
+
+TakeInput()
+for(i = 1; i &lt;= N; i++)
+    Update(i, 1)
+
+//Main Part
+
+CurrentTime = 0
+for(i = 1; i &lt;= N; i++)
+
+    //N-i+1 total uncompleted tasks
+
+    CurrentTime += (Pair[i].Time - Pair[i-1].Time - 1)*(N-i+1)
+
+    //query for uncompleted tasks before the present task
+
+    CurrentTime +=  Query(Pair[i].Index)
+
+    //Store the final anwer for the present task
+
+    Answer[Pair[i].Index] = CurrentTime
+
+    //Update current task as completed
+
+    Update(Pair[i].Index, -1)
+
+    //Increase by no of uncompleted tasks after the present task
+
+    CurrentTime += (N-i) - Query(Pair[i].Index)
+
+//Note that the above psudo code also handles the case where two tasks have equal completion Time.
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-03T18:38:00+05:30" pubdate data-updated="true"></time>
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/tic-tac-toe-2" title="Previous Post: SPOJ TIC-TAC-TOE 2">&laquo; SPOJ TIC-TAC-TOE 2</a>
+      
+      
+        <a class="basic-alignment right" href="/spoj-dgame" title="Next Post: SPOJ-DGAME">SPOJ-DGAME &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+<div class="fb-like" data-href="http://facebook.com/sdspag" data-send="true" data-width="1000" data-show-faces="true"></div>
+</p>
+<p>
+  Copyright &copy; 2016 - 
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>

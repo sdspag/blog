@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>SPOJ-PTIME - </title>
+  <meta name="author" content="">
+
+  
+  <meta name="description" content="
+
+  
+  
+      SPOJ-PTIME
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+        
+      
+    
+  
+
+
+Problem:  To write the prime factorisation of N! (N factorial...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="pag.sdslabs.co/blog/spoj-ptime">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="" rel="alternate" title="" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <div id="header-inner">
+  <span class="first"><a href="/">Programming & Algorithms Group, SDS, IIT Roorkee</a></span>
+    <!--<span><a href="//pag.sdslabs.co">About</a></span><br><br>-->
+    <span class="icon"><a target="_blank" href="//github.com/"><img src="/images/social/gh-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="//facebook.com/"><img src="/images/social/fb-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="//plus.google.com/"><img src="/images/social/gp-icon.png" alt=""></a></span>
+    <span class="icon"><a target="_blank" href="" title="Subscribe via RSS"><img src="/images/social/rss-icon.png" alt=""></a></span>
+  </div>
+</hgroup>
+<div id="fb-root"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=487490921336262";
+              fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</header>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+      <h1 class="entry-title"><a href="/spoj-ptime">SPOJ-PTIME</a></h1>
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-11T19:17:00+05:30" pubdate data-updated="true"></time>
+        <!--  -->
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><strong><a href="http://www.spoj.com/problems/PTIME/">Problem</a></strong>:  To write the prime factorisation of N! (N factorial).</p>
+
+<p><strong>Explanation</strong> :</p>
+
+<p>The prime factorisation of N! would only contain primes less than  or equal to N.  Our main job is to find out the power of each prime factor and then write the prime factorisation in the correct form.</p>
+
+<p>Since the given N is always greater than or equal to 2, its factorial (N!) would have 2 in its prime factorisation. Now let us start by finding the power of 2 in the prime factorisation of N!</p>
+
+<p>N!  =  1*2*3…….(N-2)*(N-1)*N</p>
+
+<p>The number of integers less than or equal to N having a factor of 2 is : Floor(N/2)</p>
+
+<p>Some of the integers would be having more than one 2 in their prime factorisations ( 4 = 2*2, 12 = 2*2*3)
+So the number of integers less than or equal to N having a factor of 4 ( 2<sup>2</sup>) is : Floor( N/(2<sup>2</sup>) )</p>
+
+<p>Similarly the process will continue till 2<sup>i</sup> > N.</p>
+
+<p>So the power of 2 in the prime factorisation of N! would be:
+ Floor( N/2 ) + Floor( N/(2<sup>2</sup>) ) + Floor( N/(2<sup>3</sup>)  ) + …….. + Floor( N/(2<sup>i</sup>) )                           <br/>
+                                             where i is the highest number with 2<sup>i</sup> &lt;= N</p>
+
+<p>Similarly doing the process for all the prime factors  less than or equal to N, prime factorisation of N! can be obtained where N can be as large as 10000.</p>
+
+<p><em>Pseudocode</em> :</p>
+
+<pre><code>for i = 2 to N
+    k = 0
+    for a = 2 to sqrt(i)
+        if i % a = 0
+            k = 1
+            exit loop
+    if k = 0           // i is prime
+        s = 0
+        e = N/i
+        while e &gt; 0
+            s = s + e
+            e = e/i
+        // after loop completes s would be the power of i in prime factorisation of N!  
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-11T19:17:00+05:30" pubdate data-updated="true"></time>
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/acm-qualifications-2013" title="Previous Post: ACM Qualifications 2013">&laquo; ACM Qualifications 2013</a>
+      
+      
+        <a class="basic-alignment right" href="/spoj-coins" title="Next Post: SPOJ-COINS">SPOJ-COINS &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+<div class="fb-like" data-href="http://facebook.com/sdspag" data-send="true" data-width="1000" data-show-faces="true"></div>
+</p>
+<p>
+  Copyright &copy; 2016 - 
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>

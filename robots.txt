@@ -1,4 +1,7 @@
+---
+layout: nil
+---
 User-agent: *
 Disallow: 
 
-Sitemap: http://pag.sdslabs.co/blog//sitemap.xml 
+Sitemap: {{ site.url }}/sitemap.xml 
