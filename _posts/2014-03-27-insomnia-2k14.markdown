@@ -14,7 +14,7 @@ The overall winner of [Insomnia 2k14](http://insomnia.cognizance.org.in/user/vie
 All the problems have been added on spoj for practice. The editorials for each have also been published and are available [here](http://ge.tt/3FdSdNS1/v/0?c).
 
 *Team Insomnia*: 
-<img src = "/images/posts/Insomnia/2k14.jpg">
+<img src = "../images/posts/Insomnia/2k14.jpg">
 
 As this post comes to an end, we'd like to say that we hope you guys enjoyed solving the problems as much as we enjoyed putting them up and we hope you'll be back next year! For those of you who did not compete this year, we hope you'll turn up next year and tell us what you think about it! We love to hear from you so if you have anything that you'd like to tell us- either about the contest problems, or about codevillage or about Putin taking over Crimea- we are all ears! For any sort of feedback, mail us at <pagiitr@gmail.com>.
 
