@@ -5,12 +5,15 @@ date: 2016-07-24 00:15
 comments: true
 categories: [Editorial]
 ---
-After a fierce competition in the 3 hour long Codeblitz, Saurabh Goel finished first with 5 problems in his pocket. One problem, Tricky Queries remained unsolved.
+After a fierce competition in the 3 hour long [Codeblitz](https://codevillage.sdslabs.co/competitions/CBLITZ16), Saurabh Goel finished first with 5 problems in his pocket. One problem, Tricky Queries remained unsolved.
+
+[Competition Link](https://codevillage.sdslabs.co/competitions/CBLITZ16)
+
 This blog post contains the editorials of the competition : 
 
 #Tricky Queries
 
-Prerequisites: A good understanding of Square-root Decomposition, and Mo’s Algorithm ( Mo's Algorithm Tutorial )
+Prerequisites: A good understanding of Square-root Decomposition, and [Mo’s Algorithm](https://blog.anudeep2011.com/mos-algorithm/)
 
 This problem can be solved by a modified version of square-root decomposition, mainly used in problems where Mo’s can be applied, but updates prevent us to do so.
 
@@ -25,17 +28,21 @@ All operations have become similar to Mo's algorithm's "add" and "delete" operat
 
 #Easy Queries
 
-Since the values of the elements in the array is less than 100000, we can maitain a count array that stores the count of each element.
-If we apply seive over this array, we will be able to create another array, lets say dp, which will store the number of elements in the array whose multiple is i.
 
-The answer initially would be 
+Since the values of the elements in the array is less than 100000, we can maitain a count
+array that stores the count of each element.
+
+If we apply seive over this array, we will be able to create another array, lets say dp, which
+will store the number of elements in the array whose multiple is i. The answer initially would be
 summation(dp[i] * count[i]).
 
-In the first query, we just need to print the ans. -> O(1).
+In the first query, we just need to print the ans. ­> O(1).
 
-In the second query, we need to update all the elements which have a[IND] as their multiples, decrease the count of a[IND] by 1 and increase the count of val by 1. We also need to decrease the number of multiples of a[i] and add the multiples of value to ans. Since the complexity of finding a number is sqrt(number) and since the maximum value of a[i] is 100000, the update operation will take at max sqrt(100000) iterations.
-
-Complexity : O(sqrt(MAX_VAL) * Q) where MAX_VAL = 100000
+In the second query, we need to update all the elements which have a[IND] as their
+multiples, decrease the count of a[IND] by 1 and increase the count of VAL by 1. We also
+need to decrease the number of multiples of a[i] and add the multiples of VAL to ans. Since
+the number of factors of VAL is O(sqrt(VAL)) and since the maximum value of VAL is
+100000, the update operation will take at max sqrt(100000) iterations. Complexity : O(sqrt(MAX_VAL) * Q) where MAX_VAL = 100000
 
 
 #Lamps
@@ -52,14 +59,12 @@ Hence answer = choose(n,m) * m!
 #Subset Sum
 
 In this question we have to find the path in graph such that sum of values 
-of nodes in path is maximized . As we can see we can reduce a SCC to a node 
-and form another graph which is directed acyclic graph(DAG) .
+of nodes in path is maximized . As we can see, we can always select all nodes which belong to the same scc, hence we can reduce every [Strongly Connected Component](https://en.wikipedia.org/wiki/Strongly_connected_component) to a node and form another graph which is directed acyclic graph(DAG) .
+Now the problem is reduced to finding largest sum path in a DAG ! We can simply do this using dp on tree.
 
-Now the problem is reduced to finding largest sum  path in a DAG ! We can simply do this using dp on tree  .
-
-Initially dp[i] with sum of values of all node of component i .
-Now  traverse the graph and calculate dp[i] for all components .
-dp[i]= dp[i] +max(dp[j]) where j is adjacent to i;
+Initialize dp[i] with sum of values of all node of scc i.
+Now, topologically sort the graph [link](http://www.geeksforgeeks.org/topological-sorting/), traverse the nodes in topological order and calculate dp[i] for all components.
+dp[i]=dp[i] +max(dp[j]) where j is adjacent to i;
 maximum over all values of dp is our answer .
 
 #Bracket Sequence
@@ -81,13 +86,20 @@ Pseudocode :
 
 Long long ans=0;
 for(int i=1;i<=n;i++){
+
 	// try to find how many subarray contains this element
+
 	Int p=prev[a[i]]+1;	// finding the left most index
+
 				// right most index will be n itself
+
 	Long long partof=1LL*(i-p+1)*(n-i+1);
+
 	ans+=partof*p;
 
 	// update the prev array now
+
 	prev[a[i]]=i;
+
 }
 
