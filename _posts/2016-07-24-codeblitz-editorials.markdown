@@ -84,9 +84,8 @@ Initially prev[x] = 0 for all x.
 
 Pseudocode :
 
-Long long ans=0;
-	for(int i=1;i<=n;i++){
-
+	Long long ans=0;
+	for(int i=1;i<=n;i++) {
 		// try to find how many subarray contains this element
 		Int p=prev[a[i]]+1;	// finding the left most index
 		// right most index will be n itself
