@@ -90,7 +90,7 @@ Pseudocode :
 		Int p=prev[a[i]]+1;	// finding the left most index
 		// right most index will be n itself
 		Long long partof = 1LL * (i-p+1) * (n-i+1);
-		ans+=partof * p;
+		ans+=partof * a[i];
 		// update the prev array now
 		prev[a[i]]=i;
 
