@@ -7,7 +7,6 @@ categories: [Editorial]
 ---
 After a fierce competition in the 3 hour long [Codeblitz](https://codevillage.sdslabs.co/competitions/CBLITZ16), Saurabh Goyal finished first with 5 problems in his pocket. One problem, Tricky Queries remained unsolved.
 
-[Competition Link](https://codevillage.sdslabs.co/competitions/CBLITZ16)
 
 This blog post contains the editorials of the competition : 
 
