@@ -85,21 +85,15 @@ Initially prev[x] = 0 for all x.
 Pseudocode :
 
 Long long ans=0;
-for(int i=1;i<=n;i++){
+	for(int i=1;i<=n;i++){
 
-	// try to find how many subarray contains this element
+		// try to find how many subarray contains this element
+		Int p=prev[a[i]]+1;	// finding the left most index
+		// right most index will be n itself
+		Long long partof = 1LL * (i-p+1) * (n-i+1);
+		ans+=partof * p;
+		// update the prev array now
+		prev[a[i]]=i;
 
-	Int p=prev[a[i]]+1;	// finding the left most index
-
-				// right most index will be n itself
-
-	Long long partof=1LL*(i-p+1)*(n-i+1);
-
-	ans+=partof*p;
-
-	// update the prev array now
-
-	prev[a[i]]=i;
-
-}
+	}
 
