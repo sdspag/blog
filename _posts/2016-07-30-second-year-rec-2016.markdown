@@ -11,7 +11,7 @@ Programming and Algorithms group's second year recruitments saw a large particip
 
 The following students have been shortlisted for interviews : 
 
-| Name                 | Time (Morning)| Venue        |
+| Name                 | Time(30/07/16)| Venue        |
 | -------------------- | ------------  | -----------  |	
 | Abhishek Kumar	   | 11:00         | Govind Bhawan| 
 | Abhishek sajwan	   | 11:00         | Govind Bhawan| 
