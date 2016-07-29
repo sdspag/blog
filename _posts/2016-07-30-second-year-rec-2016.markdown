@@ -5,7 +5,7 @@ date: 2016-07-24 00        :15
 comments: true
 categories: [recruitments]
 ---
-Programming and Algorithms group's second year recruitments saw a participation of a whooping 150 students. We are limited by slots but we have to say that the response from IITR was amazing considering the level of the question paper.
+Programming and Algorithms group's second year recruitments saw a large participation of 150 students. We are limited by slots but we have to say that the response from IITR was amazing considering the level of the question paper.
 
 <img src = "./images/posts/Interview/test.jpg">
 
