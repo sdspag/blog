@@ -10,8 +10,9 @@ Programming and Algorithms group's second year recruitments saw a participation 
 <img src = "./images/posts/Interview/test.jpg">
 
 The following students have been shortlisted for interviews : 
+
 | Name                 | Time          | Date        | Venue       |
-| -------------------- | ------------  | ----------- |-----------  |
+| -------------------- | ------------  | ----------- |-----------  |	
 | Abhishek Kumar	   | 11:00         | 30/07/2016	| Govind Bhawan| 
 | Abhishek sajwan	   | 11:00         | 30/07/2016	| Govind Bhawan| 
 | Akash Gupta	       | 11:00         | 30/07/2016	| Govind Bhawan| 
@@ -36,3 +37,4 @@ The following students have been shortlisted for interviews :
 | Utsav Mangal	       | 02:30	       | 30/07/2016	| Govind Bhawan| 
 | rinkle jain          | 04:00         | 30/07/2016	| Senate Steps | 
 | ankita saxena	       | 04:00         | 30/07/2016	| Senate Steps | 
+| Richa Gautam	       | 04:00         | 30/07/2016	| Senate Steps | 
