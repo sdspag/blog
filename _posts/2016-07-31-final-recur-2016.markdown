@@ -12,7 +12,7 @@ Here comes the result of Programming and Algorithms Group's second year recruitm
 
 *	Ketan Gupta
 
-*	Piyush Melhotra
+*	Piyush Mehrotra
 
 *	Abhishek Sajwan
 
@@ -34,6 +34,6 @@ Here comes the result of Programming and Algorithms Group's second year recruitm
 
 *	Ankita Saxena
 
-*	Anshuman Parashar
+*	Anshumaan Parashar
 
 *	Gulshan Grover
