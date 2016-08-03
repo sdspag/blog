@@ -6,7 +6,7 @@ comments: true
 categories: [Recruitments, Second Year] 
 ---
 
-I heard of PAG for the first time in my first year and came to know that it was a group for competetive programming and algorithms enthusiasts, but had no idea about either. I had no prior coding experience but still gave the recruitment test and was not able to make it through. In my first year i had acquired basic knowledge of C++, and some experience in web development. It was in the summer vacations of 2016 that I decided to have a go at competetive coding. I started out first with the PAG Questions of the Week compilation (QOTW). I read from the editorials given in the same and then tried to solve the questions given. Slowly I developed interest in competetive coding.
+I heard of PAG for the first time in my first year and came to know that it was a group for competitive programming and algorithms enthusiasts, but had no idea about either. I had no prior coding experience but still gave the recruitment test and was not able to make it through. In my first year i had acquired basic knowledge of C++, and some experience in web development. It was in the summer vacations of 2016 that I decided to have a go at competitive coding. I started out first with the PAG Questions of the Week compilation (QOTW). I read from the editorials given in the same and then tried to solve the questions given. Slowly I developed interest in competitive coding.
 
 I participated in the Codechef Snackdown, June and July challenge, all of which helped me in learning more. I continued reading write ups on the internet about algorithms (graph theory, dynamic programming, game theory etc). Other than codechef, I also practiced on other online judges like SPOJ, CodeForces, Project Euler and Erdos. 
 
