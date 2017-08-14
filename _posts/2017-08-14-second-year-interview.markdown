@@ -9,11 +9,12 @@ categories: [recruitments]
 Programming and Algorithms group's second year recruitments saw a large participation of 100 students. We are limited by slots but we have to say that the response from IITR was amazing considering the level of the question paper.
 
 Algophobic 2017  saw a particiaption of more than 100 with more than 500 submissions.
+
 The following students have been shortlisted for interviews :
 
 
-| 	Name                 	 | 	Branch		 	|	Venue			|	Time(30/07/16) |
-| 	-------------------------| ---------------  | ----------------  |	-------------- |
+| 	Name                 	 | 	Branch		 	|	Venue			|	Time(15/08/17) |
+| -------------------------  | ---------------- | ----------------- | ---------------- |
 | 	Aayush A Chaturvedi		 |	EE			 	|	16115002		|		11:00      | 
 | 	Abhishek Kanhar		 	 |	CSE			 	|	16114005		|		11:00      | 
 | 	Adarsh Kumar			 |	EE			 	|	16115009		|		11:00      | 
