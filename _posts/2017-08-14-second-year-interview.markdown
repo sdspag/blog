@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Recruitments 2016"
-date: 2016-07-24 00:15
+title: "Recruitments 2017"
+date: 2017-08-14 00:15
 comments: true
 categories: [recruitments]
 ---
+
 Programming and Algorithms group's second year recruitments saw a large participation of 100 students. We are limited by slots but we have to say that the response from IITR was amazing considering the level of the question paper.
+
 Algophobic 2017  saw a particiaption of more than 100 with more than 500 submissions.
 The following students have been shortlisted for interviews :
 
